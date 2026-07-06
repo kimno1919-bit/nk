@@ -2,6 +2,8 @@
 
 import { createClient } from "@/utils/supabase/client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Button } from "@/components/Button";
 
 export default function AlbumPage() {
   const supabase = createClient();
@@ -53,6 +55,11 @@ export default function AlbumPage() {
       </section>
 
       <div className="mx-auto max-w-[1200px] w-full px-5 mt-4">
+        <div className="flex justify-end mb-6">
+          <Link href="/admin/album/write">
+            <Button variant="secondary" className="!px-6">관리자 글쓰기</Button>
+          </Link>
+        </div>
         {albums && albums.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {albums.map((album) => {

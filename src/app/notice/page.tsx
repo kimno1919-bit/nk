@@ -13,6 +13,7 @@ export default function NoticePage() {
   const [schedules, setSchedules] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState("전체");
   const [currentDate, setCurrentDate] = useState(new Date());
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
   // 데이터 불러오기
   useEffect(() => {
@@ -41,6 +42,10 @@ export default function NoticePage() {
 
   const prevMonth = () => setCurrentDate(new Date(year, month - 1, 1));
   const nextMonth = () => setCurrentDate(new Date(year, month + 1, 1));
+
+  const toggleExpand = (id: string) => {
+    setExpandedId(prev => prev === id ? null : id);
+  };
 
   const firstDayOfMonth = new Date(year, month, 1).getDay();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -84,18 +89,46 @@ export default function NoticePage() {
           </div>
           <div className="divide-y divide-line-gray min-h-[300px]">
             {notices && notices.length > 0 ? (
-              notices.map((item) => (
-                <div key={item.id} className="p-6 hover:bg-paper-cream/50 transition-colors cursor-pointer group">
-                  <div className="flex items-center gap-3 mb-2">
+              notices.map((item) => {
+                const isExpanded = expandedId === item.id;
+                return (
+                <div key={item.id} onClick={() => toggleExpand(item.id)} className={`p-6 hover:bg-paper-cream/50 transition-all duration-300 cursor-pointer group ${isExpanded ? 'bg-paper-cream/30' : ''}`}>
+                  <div className="flex items-center gap-3 mb-3">
                     <span className={`px-2 py-0.5 text-[12px] font-bold rounded ${item.category === '공지' ? 'bg-terracotta/10 text-terracotta' : 'bg-deep-navy/10 text-deep-navy'}`}>
                       {item.category}
                     </span>
                     <span className="text-[13px] text-ink-2">{new Date(item.created_at).toLocaleDateString()}</span>
                   </div>
-                  <h3 className="font-bold text-[17px] text-ink group-hover:text-deep-navy transition-colors">{item.title}</h3>
-                  {item.content && <p className="mt-2 text-sm text-ink-2 line-clamp-2">{item.content}</p>}
+                  
+                  <h3 className={`font-bold text-ink group-hover:text-deep-navy transition-colors mb-3 ${isExpanded ? 'text-2xl' : 'text-[17px]'}`}>{item.title}</h3>
+                  
+                  {isExpanded && item.image_url && (
+                    <div className="mb-6 rounded-xl overflow-hidden border border-line-gray">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={item.image_url} alt={item.title} className="w-full h-auto object-cover" />
+                    </div>
+                  )}
+
+                  {item.content && (
+                    <p className={`text-ink-2 whitespace-pre-wrap leading-relaxed ${isExpanded ? 'text-base mb-6' : 'text-sm line-clamp-2 mt-2'}`}>
+                      {item.content}
+                    </p>
+                  )}
+
+                  <div className="mt-4 pt-4 border-t border-line-gray/50 flex justify-end">
+                    {isExpanded ? (
+                       <span className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors">
+                         접기 ▲
+                       </span>
+                    ) : (
+                      <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors">
+                        자세히 보기 ▼
+                      </span>
+                    )}
+                  </div>
                 </div>
-              ))
+                );
+              })
             ) : (
               <div className="p-12 text-center text-ink-2">등록된 게시글이 없습니다.</div>
             )}
