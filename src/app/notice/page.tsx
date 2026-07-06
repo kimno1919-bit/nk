@@ -1,8 +1,15 @@
-"use client";
 import Link from "next/link";
 import { Button } from "@/components/Button";
+import { createClient } from "@/utils/supabase/server";
 
-export default function NoticePage() {
+export default async function NoticePage() {
+  const supabase = await createClient();
+  const { data: notices } = await supabase
+    .from("notices")
+    .select("*")
+    .eq("is_public", true)
+    .order("created_at", { ascending: false });
+
   return (
     <div className="flex flex-col w-full pb-24 min-h-screen bg-paper-cream">
       <section className="pt-24 pb-16 px-5 text-center">
@@ -22,31 +29,27 @@ export default function NoticePage() {
               <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">공지</button>
               <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">행사</button>
             </div>
-            <Link href="/notice/write" onClick={(e) => {
-              if(!confirm('글쓰기는 관리자만 작성되도록 설정되어 있습니다. 계속하시겠습니까?')) {
-                e.preventDefault();
-              }
-            }}>
-              <Button variant="primary" className="!py-1.5 !px-4 !text-sm">글쓰기</Button>
+            <Link href="/admin/notice/write">
+              <Button variant="primary" className="!py-1.5 !px-4 !text-sm">관리자 글쓰기</Button>
             </Link>
           </div>
           <div className="divide-y divide-line-gray">
-            {[1, 2, 3, 4, 5].map((item) => (
-              <div key={item} className="p-6 hover:bg-paper-cream/50 transition-colors cursor-pointer group">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="px-2 py-0.5 bg-terracotta/10 text-terracotta text-[12px] font-bold rounded">공지</span>
-                  <span className="text-[13px] text-ink-2">2026.07.04</span>
+            {notices && notices.length > 0 ? (
+              notices.map((item) => (
+                <div key={item.id} className="p-6 hover:bg-paper-cream/50 transition-colors cursor-pointer group">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className={`px-2 py-0.5 text-[12px] font-bold rounded ${item.category === '공지' ? 'bg-terracotta/10 text-terracotta' : 'bg-deep-navy/10 text-deep-navy'}`}>
+                      {item.category}
+                    </span>
+                    <span className="text-[13px] text-ink-2">{new Date(item.created_at).toLocaleDateString()}</span>
+                  </div>
+                  <h3 className="font-bold text-[17px] text-ink group-hover:text-deep-navy transition-colors">{item.title}</h3>
+                  {item.content && <p className="mt-2 text-sm text-ink-2 line-clamp-2">{item.content}</p>}
                 </div>
-                <h3 className="font-bold text-[17px] text-ink group-hover:text-deep-navy transition-colors">남북청년연합선교회 신규 홈페이지 안내</h3>
-              </div>
-            ))}
-          </div>
-          <div className="p-4 border-t border-line-gray flex justify-center">
-            {/* 임시 페이지네이션 */}
-            <div className="flex gap-2">
-              <span className="w-8 h-8 flex items-center justify-center rounded bg-deep-navy text-white text-sm font-bold">1</span>
-              <span className="w-8 h-8 flex items-center justify-center rounded hover:bg-line-gray/30 text-ink-2 text-sm font-bold cursor-pointer transition-colors">2</span>
-            </div>
+              ))
+            ) : (
+              <div className="p-12 text-center text-ink-2">등록된 게시글이 없습니다.</div>
+            )}
           </div>
         </div>
 

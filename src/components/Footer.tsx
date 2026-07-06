@@ -19,7 +19,7 @@ export function Footer() {
             <p className="text-white/60 font-sans text-[14px] leading-relaxed">
               대표: 조여호수아 선교사<br />
               소속: 기독교한국침례회 해외선교회(FMB)<br />
-              소재지: 서울특별시 사당동
+              소재지: 서울 강남구 학동로101길 26 청담삼익쇼핑상가 304-1호
             </p>
           </div>
           
