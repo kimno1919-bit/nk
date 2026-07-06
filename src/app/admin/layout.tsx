@@ -13,6 +13,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
         <nav className="flex-1 p-4 space-y-2">
           <Link href="/admin" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">대시보드</Link>
           <Link href="/admin/notice" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">공지사항 관리</Link>
+          <Link href="/admin/schedule" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">일정 관리</Link>
           <Link href="/admin/album" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">앨범 관리</Link>
           <Link href="/admin/qt" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">QT 관리</Link>
           <Link href="/admin/history" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">연혁 관리</Link>

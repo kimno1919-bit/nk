@@ -1,14 +1,57 @@
-import Link from "next/link";
-import { Button } from "@/components/Button";
-import { createClient } from "@/utils/supabase/server";
+"use client";
 
-export default async function NoticePage() {
-  const supabase = await createClient();
-  const { data: notices } = await supabase
-    .from("notices")
-    .select("*")
-    .eq("is_public", true)
-    .order("created_at", { ascending: false });
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { Button } from "@/components/Button";
+import { createClient } from "@/utils/supabase/client";
+
+export default function NoticePage() {
+  const supabase = createClient();
+  
+  // 상태 관리
+  const [notices, setNotices] = useState<any[]>([]);
+  const [schedules, setSchedules] = useState<any[]>([]);
+  const [activeTab, setActiveTab] = useState("전체");
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  // 데이터 불러오기
+  useEffect(() => {
+    const fetchNotices = async () => {
+      let query = supabase.from("notices").select("*").eq("is_public", true).order("created_at", { ascending: false });
+      if (activeTab !== "전체") {
+        query = query.eq("category", activeTab);
+      }
+      const { data } = await query;
+      if (data) setNotices(data);
+    };
+
+    const fetchSchedules = async () => {
+      // 캘린더에 표시하기 위해 전체 일정을 가져오거나 현재 달만 가져올 수 있음 (여기선 단순화를 위해 전체 호출)
+      const { data } = await supabase.from("schedules").select("*").eq("is_public", true).order("date", { ascending: true });
+      if (data) setSchedules(data);
+    };
+
+    fetchNotices();
+    fetchSchedules();
+  }, [activeTab, supabase]);
+
+  // 캘린더 로직
+  const year = currentDate.getFullYear();
+  const month = currentDate.getMonth();
+
+  const prevMonth = () => setCurrentDate(new Date(year, month - 1, 1));
+  const nextMonth = () => setCurrentDate(new Date(year, month + 1, 1));
+
+  const firstDayOfMonth = new Date(year, month, 1).getDay();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const emptyDays = Array.from({ length: firstDayOfMonth }, (_, i) => i);
+  const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
+
+  // 현재 달의 일정 필터링
+  const currentMonthSchedules = schedules.filter(s => {
+    const d = new Date(s.date);
+    return d.getFullYear() === year && d.getMonth() === month;
+  });
 
   return (
     <div className="flex flex-col w-full pb-24 min-h-screen bg-paper-cream">
@@ -25,15 +68,21 @@ export default async function NoticePage() {
         <div className="flex-[1.15] w-full bg-white rounded-xl border border-line-gray overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
           <div className="flex items-center justify-between border-b border-line-gray bg-warm-sand/30 pr-4">
             <div className="flex">
-              <button className="px-6 py-4 font-bold text-deep-navy border-b-2 border-deep-navy text-[15px]">전체</button>
-              <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">공지</button>
-              <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">행사</button>
+              {['전체', '공지', '행사'].map((tab) => (
+                <button 
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-6 py-4 font-bold text-[15px] transition-colors ${activeTab === tab ? 'text-deep-navy border-b-2 border-deep-navy' : 'text-ink-2 hover:text-deep-navy'}`}
+                >
+                  {tab}
+                </button>
+              ))}
             </div>
             <Link href="/admin/notice/write">
               <Button variant="primary" className="!py-1.5 !px-4 !text-sm">관리자 글쓰기</Button>
             </Link>
           </div>
-          <div className="divide-y divide-line-gray">
+          <div className="divide-y divide-line-gray min-h-[300px]">
             {notices && notices.length > 0 ? (
               notices.map((item) => (
                 <div key={item.id} className="p-6 hover:bg-paper-cream/50 transition-colors cursor-pointer group">
@@ -58,12 +107,11 @@ export default async function NoticePage() {
           <h2 className="font-serif font-bold text-2xl text-deep-navy mb-6">주요 일정</h2>
           
           <div className="flex items-center justify-between mb-6">
-            <button className="text-ink-2 hover:text-deep-navy font-bold">&larr;</button>
-            <span className="font-bold text-lg text-ink">2026년 7월</span>
-            <button className="text-ink-2 hover:text-deep-navy font-bold">&rarr;</button>
+            <button onClick={prevMonth} className="text-ink-2 hover:text-deep-navy font-bold p-2">&larr;</button>
+            <span className="font-bold text-lg text-ink">{year}년 {month + 1}월</span>
+            <button onClick={nextMonth} className="text-ink-2 hover:text-deep-navy font-bold p-2">&rarr;</button>
           </div>
           
-          {/* 캘린더 그리드 임시 UI */}
           <div className="grid grid-cols-7 gap-1 text-center text-sm mb-2">
             <span className="text-terracotta font-bold py-2">일</span>
             <span className="font-bold py-2">월</span>
@@ -74,21 +122,52 @@ export default async function NoticePage() {
             <span className="font-bold py-2">토</span>
           </div>
           <div className="grid grid-cols-7 gap-1 text-center text-sm">
-            {Array.from({length: 31}).map((_, i) => (
-              <div key={i} className="aspect-square flex flex-col items-center justify-start pt-2 border border-line-gray/20 rounded hover:bg-paper-cream cursor-pointer relative">
-                <span className={i === 0 ? "text-terracotta font-bold" : "text-ink-2"}>{i + 1}</span>
-                {i % 7 === 3 && <span className="w-1.5 h-1.5 rounded-full bg-deep-navy mt-1"></span>}
-                {i === 15 && <span className="w-1.5 h-1.5 rounded-full bg-terracotta mt-1"></span>}
-              </div>
+            {emptyDays.map((_, i) => (
+              <div key={`empty-${i}`} className="aspect-square"></div>
             ))}
+            {days.map((day) => {
+              const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+              const daySchedules = schedules.filter(s => s.date === dateStr);
+              const hasRegular = daySchedules.some(s => s.category === '정기모임');
+              const hasEvent = daySchedules.some(s => s.category === '행사');
+              const isSunday = new Date(year, month, day).getDay() === 0;
+
+              return (
+                <div key={day} className="aspect-square flex flex-col items-center justify-start pt-2 border border-line-gray/20 rounded hover:bg-paper-cream cursor-pointer relative">
+                  <span className={isSunday ? "text-terracotta font-bold" : "text-ink-2"}>{day}</span>
+                  <div className="flex gap-1 mt-1">
+                    {hasEvent && <span className="w-1.5 h-1.5 rounded-full bg-deep-navy"></span>}
+                    {hasRegular && <span className="w-1.5 h-1.5 rounded-full bg-terracotta"></span>}
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <div className="mt-8 pt-6 border-t border-line-gray">
-            <h3 className="font-bold text-[15px] mb-4 text-ink">정기 모임</h3>
-            <ul className="space-y-3 text-[14px]">
-              <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-deep-navy"></span>수요일 19:30 - 수요 기도모임</li>
-              <li className="flex items-center gap-3"><span className="w-2 h-2 rounded-full bg-terracotta"></span>토요일 14:00 - 한강대교 전도</li>
-            </ul>
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="font-bold text-[15px] text-ink">이번 달 일정</h3>
+              <Link href="/admin/schedule/write" className="text-xs font-bold text-terracotta hover:underline">일정 추가</Link>
+            </div>
+            
+            {currentMonthSchedules.length > 0 ? (
+              <ul className="space-y-3 text-[14px]">
+                {currentMonthSchedules.map((s) => (
+                  <li key={s.id} className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                    <div className="flex items-center gap-2 w-[110px] shrink-0">
+                      <span className={`w-2 h-2 rounded-full ${s.category === '정기모임' ? 'bg-terracotta' : 'bg-deep-navy'}`}></span>
+                      <span className="font-bold text-ink-2">
+                        {new Date(s.date).getDate()}일
+                        {s.time && ` (${s.time})`}
+                      </span>
+                    </div>
+                    <span className="text-ink">{s.title}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-sm text-ink-2 text-center py-4">예정된 일정이 없습니다.</p>
+            )}
           </div>
         </div>
       </div>

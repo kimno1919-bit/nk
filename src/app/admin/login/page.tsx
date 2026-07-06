@@ -42,23 +42,23 @@ export default function AdminLoginPage() {
 
         <form onSubmit={handleLogin} className="space-y-6">
           <div>
-            <label className="block text-sm font-bold text-ink mb-2">이메일</label>
+            <label className="block text-[15px] font-bold text-ink mb-2">이메일</label>
             <input 
               type="email" 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors text-[16px]"
               placeholder="admin@example.com"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-bold text-ink mb-2">비밀번호</label>
+            <label className="block text-[15px] font-bold text-ink mb-2">비밀번호</label>
             <input 
               type="password" 
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors text-[16px]"
               placeholder="••••••••"
               required
             />
