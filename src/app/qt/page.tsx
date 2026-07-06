@@ -23,6 +23,15 @@ export default function QtPage() {
       if (data) setQts(data);
     };
     fetchQts();
+
+    // 메인 화면이나 공유된 링크로 들어왔을 때 해당 글 자동 열기
+    if (typeof window !== "undefined") {
+      const urlParams = new URLSearchParams(window.location.search);
+      const idParam = urlParams.get("id");
+      if (idParam) {
+        setExpandedId(idParam);
+      }
+    }
   }, [supabase]);
 
   const toggleExpand = async (id: string) => {
@@ -41,6 +50,17 @@ export default function QtPage() {
     e.stopPropagation(); // 카드 확장을 방지
     await supabase.rpc("increment_qt_like", { row_id: id });
     setQts((prev) => prev.map((qt) => qt.id === id ? { ...qt, likes: (qt.likes || 0) + 1 } : qt));
+  };
+
+  const handleShare = async (e: React.MouseEvent, id: string) => {
+    e.stopPropagation();
+    const url = `${window.location.origin}/qt?id=${id}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      alert("링크가 복사되었습니다. 카카오톡이나 문자 메시지로 공유해보세요!");
+    } catch (err) {
+      alert("링크 복사에 실패했습니다.");
+    }
   };
 
   const availableBooks = Array.from(new Set(qts.map(qt => qt.book))).filter(Boolean);
@@ -129,12 +149,20 @@ export default function QtPage() {
 
                   <div className="mt-auto pt-5 border-t border-line-gray/50 flex justify-between items-center">
                     {isExpanded ? (
-                      <button 
-                        onClick={(e) => handleLike(e, qt.id)}
-                        className="flex items-center gap-2 px-4 py-2 bg-warm-sand/50 hover:bg-terracotta/10 text-terracotta font-bold text-sm rounded-full transition-colors"
-                      >
-                        👍 좋아요 {qt.likes || 0}
-                      </button>
+                      <div className="flex gap-2">
+                        <button 
+                          onClick={(e) => handleLike(e, qt.id)}
+                          className="flex items-center gap-1.5 px-3 py-1.5 bg-warm-sand/50 hover:bg-terracotta/10 text-terracotta font-bold text-sm rounded-full transition-colors"
+                        >
+                          👍 좋아요 {qt.likes || 0}
+                        </button>
+                        <button 
+                          onClick={(e) => handleShare(e, qt.id)}
+                          className="flex items-center gap-1.5 px-3 py-1.5 bg-pine-green/10 hover:bg-pine-green/20 text-pine-green font-bold text-sm rounded-full transition-colors"
+                        >
+                          🔗 공유하기
+                        </button>
+                      </div>
                     ) : (
                       <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors flex items-center gap-1">
                         본문 읽기 ▼

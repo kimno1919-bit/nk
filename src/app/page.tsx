@@ -162,7 +162,7 @@ export default async function Home() {
             <div className="flex flex-col gap-4">
               {latestQts && latestQts.length > 0 ? (
                 latestQts.map((qt) => (
-                  <Link href="/qt" key={qt.id} className="block">
+                  <Link href={`/qt?id=${qt.id}`} key={qt.id} className="block">
                     <Card className="hover:border-deep-navy transition-colors cursor-pointer group !p-6">
                       <div className="flex justify-between items-center mb-4">
                         <span className="px-2.5 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded">{qt.book} {qt.chapter}</span>
