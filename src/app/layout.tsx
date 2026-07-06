@@ -41,6 +41,11 @@ export const metadata: Metadata = {
     shortcut: "/images/logo.png",
     apple: "/images/logo.png",
   },
+  verification: {
+    other: {
+      "naver-site-verification": "1e7906d5ff1fd79a190244b5e7494dae76f09c6c",
+    },
+  },
 };
 
 export default function RootLayout({
