@@ -134,7 +134,7 @@ export default function QtPage() {
                       {qt.book} {qt.chapter}
                     </span>
                     <div className="flex gap-4 text-[13px] text-ink-2 font-medium">
-                      <span>👁️ {qt.views || 0}</span>
+                      <span>조회 {qt.views || 0}</span>
                       <span>👍 {qt.likes || 0}</span>
                       <span>{qt.date}</span>
                     </div>
@@ -174,7 +174,11 @@ export default function QtPage() {
                        </span>
                     )}
                   </div>
-                  {isExpanded && <QtComments qtId={qt.id} />}
+                  {isExpanded && (
+                    <div onClick={(e) => e.stopPropagation()} className="cursor-auto">
+                      <QtComments qtId={qt.id} />
+                    </div>
+                  )}
                 </Card>
               </div>
             );
