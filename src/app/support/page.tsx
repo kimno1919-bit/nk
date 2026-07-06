@@ -91,8 +91,8 @@ export default function SupportPage() {
                 정기 후원 및 일시 후원과 관련하여 궁금하신 점이 있다면 언제든 문의해 주세요.
               </p>
               <div className="space-y-2 font-medium text-ink">
-                <p>전화: <span className="text-ink-2 ml-2">010-0000-0000</span></p>
-                <p>이메일: <span className="text-ink-2 ml-2">nkmission@example.com</span></p>
+                <p>전화: <span className="text-ink-2 ml-2">010-9064-2242</span></p>
+                <p>이메일: <span className="text-ink-2 ml-2">kimno1919@gmail.com</span></p>
               </div>
             </div>
           </section>
