@@ -1,5 +1,7 @@
-import { Card } from "@/components/Card";
+"use client";
 import Link from "next/link";
+import { Button } from "@/components/Button";
+import { Card } from "@/components/Card";
 
 const QT_DATA = [
   {
@@ -34,25 +36,34 @@ export default function QtPage() {
       <section className="bg-paper-cream pt-24 pb-16 px-5 text-center border-b border-line-gray">
         <h1 className="font-serif font-bold text-4xl sm:text-5xl text-deep-navy mb-6">3331 생명의 QT</h1>
         <p className="text-ink-2 text-lg max-w-2xl mx-auto leading-relaxed">
-          하루 3장씩 3번 반복, 1장 필사.<br />
+          하루 10구절씩 묵상합니다.<br />
           말씀으로 삶의 기준을 세우는 경건의 훈련입니다.
         </p>
       </section>
 
       <div className="mx-auto max-w-[1000px] w-full px-5 mt-16">
-        {/* 필터 임시 UI */}
-        <div className="flex flex-wrap gap-4 mb-10 pb-6 border-b border-line-gray">
-          <select className="px-4 py-2 bg-white border border-line-gray rounded text-sm text-ink font-medium focus:outline-none focus:border-deep-navy">
-            <option>모든 성경</option>
-            <option>창세기</option>
-            <option>마태복음</option>
-            <option>에베소서</option>
-            <option>빌립보서</option>
-          </select>
-          <select className="px-4 py-2 bg-white border border-line-gray rounded text-sm text-ink font-medium focus:outline-none focus:border-deep-navy">
-            <option>2026년</option>
-            <option>2025년</option>
-          </select>
+        {/* 필터 및 글쓰기 영역 */}
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-10 pb-6 border-b border-line-gray">
+          <div className="flex gap-4">
+            <select className="px-4 py-2 bg-white border border-line-gray rounded text-sm text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors">
+              <option>모든 성경</option>
+              <option>창세기</option>
+              <option>마태복음</option>
+              <option>에베소서</option>
+              <option>빌립보서</option>
+            </select>
+            <select className="px-4 py-2 bg-white border border-line-gray rounded text-sm text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors">
+              <option>2026년</option>
+              <option>2025년</option>
+            </select>
+          </div>
+          <Link href="/qt/write" onClick={(e) => {
+            if(!confirm('글쓰기는 관리자만 가능합니다. 계속하시겠습니까?')) {
+              e.preventDefault();
+            }
+          }}>
+            <Button variant="secondary" className="!px-6">글쓰기</Button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

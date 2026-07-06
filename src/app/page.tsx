@@ -63,7 +63,7 @@ export default function Home() {
                 기도로 뿌리내리고 말씀으로 자라나 마음을 움직입니다. 기도모임과 3331 생명의 큐티를 통해 훈련의 과정을 거칩니다.
               </p>
               <ul className="space-y-3 text-[15px] text-ink font-medium">
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 기도 훈련</li>
+                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 기도 모임</li>
                 <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 말씀 훈련 (3331 큐티)</li>
                 <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 봉사 활동 (연탄 나눔 등)</li>
               </ul>
@@ -96,19 +96,44 @@ export default function Home() {
               </Link>
             </div>
             <div className="space-y-8">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="flex gap-6 group">
-                  <div className="flex flex-col items-center">
-                    <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
-                    <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
-                  </div>
-                  <div className="pb-2">
-                    <span className="text-[13px] text-terracotta font-bold tracking-wider">2026. 05</span>
-                    <h4 className="text-[18px] font-bold text-ink mt-1.5">남북청년 연합 체육대회</h4>
-                    <p className="text-ink-2 mt-2 text-[15px] leading-relaxed">사당동 인근 체육관에서 50명의 청년들이 모여 친교의 시간을 가졌습니다.</p>
-                  </div>
+              {/* 항목 1 */}
+              <div className="flex gap-6 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
+                  <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
                 </div>
-              ))}
+                <div className="pb-2">
+                  <span className="text-[13px] text-terracotta font-bold tracking-wider">2026. 03</span>
+                  <h4 className="text-[18px] font-bold text-ink mt-1.5">리더십 캠프</h4>
+                  <p className="text-ink-2 mt-2 text-[15px] leading-relaxed">남북 청년 리더들이 모여 훈련과 교제를 나누는 캠프를 진행했습니다.</p>
+                </div>
+              </div>
+
+              {/* 항목 2 */}
+              <div className="flex gap-6 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
+                  <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
+                </div>
+                <div className="pb-2">
+                  <span className="text-[13px] text-terracotta font-bold tracking-wider">2026. 02</span>
+                  <h4 className="text-[18px] font-bold text-ink mt-1.5">사랑의 연탄 봉사활동</h4>
+                  <p className="text-ink-2 mt-2 text-[15px] leading-relaxed">추운 겨울, 이웃들에게 따뜻한 연탄과 예수님의 사랑을 전했습니다.</p>
+                </div>
+              </div>
+
+              {/* 항목 3 */}
+              <div className="flex gap-6 group">
+                <div className="flex flex-col items-center">
+                  <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
+                  <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
+                </div>
+                <div className="pb-2">
+                  <span className="text-[13px] text-terracotta font-bold tracking-wider">2025. 11</span>
+                  <h4 className="text-[18px] font-bold text-ink mt-1.5">석OO 감독 독립영화 초연 시사회</h4>
+                  <p className="text-ink-2 mt-2 text-[15px] leading-relaxed">청년들이 함께 모여 문화 활동과 교제를 가졌습니다.</p>
+                </div>
+              </div>
             </div>
           </div>
 

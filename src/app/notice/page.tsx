@@ -1,3 +1,7 @@
+"use client";
+import Link from "next/link";
+import { Button } from "@/components/Button";
+
 export default function NoticePage() {
   return (
     <div className="flex flex-col w-full pb-24 min-h-screen bg-paper-cream">
@@ -11,11 +15,20 @@ export default function NoticePage() {
       <div className="mx-auto max-w-[1200px] w-full px-5 mt-8 flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
         
         {/* 좌측: 게시판 (모바일 상단) */}
-        <div className="flex-[1.15] w-full bg-white rounded-xl border border-line-gray overflow-hidden">
-          <div className="flex border-b border-line-gray bg-warm-sand/30">
-            <button className="px-6 py-4 font-bold text-deep-navy border-b-2 border-deep-navy text-[15px]">전체</button>
-            <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">공지</button>
-            <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">행사</button>
+        <div className="flex-[1.15] w-full bg-white rounded-xl border border-line-gray overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div className="flex items-center justify-between border-b border-line-gray bg-warm-sand/30 pr-4">
+            <div className="flex">
+              <button className="px-6 py-4 font-bold text-deep-navy border-b-2 border-deep-navy text-[15px]">전체</button>
+              <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">공지</button>
+              <button className="px-6 py-4 font-bold text-ink-2 hover:text-deep-navy transition-colors text-[15px]">행사</button>
+            </div>
+            <Link href="/notice/write" onClick={(e) => {
+              if(!confirm('글쓰기는 관리자만 작성되도록 설정되어 있습니다. 계속하시겠습니까?')) {
+                e.preventDefault();
+              }
+            }}>
+              <Button variant="primary" className="!py-1.5 !px-4 !text-sm">글쓰기</Button>
+            </Link>
           </div>
           <div className="divide-y divide-line-gray">
             {[1, 2, 3, 4, 5].map((item) => (

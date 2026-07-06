@@ -4,57 +4,161 @@ const HISTORY_DATA = [
   {
     year: 2026,
     months: [
-      {
-        month: "07",
-        title: "남북청년연합선교회 홈페이지 리뉴얼 론칭",
-        category: "행사",
-        content: "새로운 사역 프레임(돌봄·양육·일꾼 세우기)에 맞춘 홈페이지 론칭",
-      },
-      {
-        month: "05",
-        title: "남북청년 연합 체육대회",
-        category: "행사",
-        content: "사당동 인근 체육관에서 50명의 청년들이 모여 친교의 시간을 가졌습니다.",
-      }
+      { month: "05", title: "[3331 생명의 QT] 빌립보서", category: "QT" },
+      { month: "05", title: "[3331 생명의 QT] 골로새서", category: "QT" },
+      { month: "04", title: "[3331 생명의 QT] 에베소서", category: "QT" },
+      { month: "04", title: "[3331 생명의 QT] 갈라디아서", category: "QT" },
+      { month: "03", title: "리더십 캠프", category: "캠프" },
+      { month: "03", title: "[3331 생명의 QT] 고린도후서", category: "QT" },
+      { month: "03", title: "[3331 생명의 QT] 고린도전서", category: "QT" },
+      { month: "02", title: "사랑의 연탄 봉사활동", category: "봉사" },
+      { month: "01", title: "[3331 생명의 QT] 고린도전서", category: "QT" },
+      { month: "상시", title: "매주 마포대교, 한강대교 노방전도", category: "전도" },
+      { month: "상시", title: "매주 기도모임", category: "행사" }
     ]
   },
   {
     year: 2025,
     months: [
-      {
-        month: "12",
-        title: "겨울 연탄 나눔 봉사",
-        category: "봉사",
-        content: "어려운 이웃을 위해 남북 청년들이 함께 연탄 2,000장을 배달했습니다.",
-      },
-      {
-        month: "상시",
-        title: "한강대교 노방전도",
-        category: "전도",
-        content: "매주 토요일, 한강대교에서 복음을 전합니다.",
-      }
+      { month: "12", title: "[3331 생명의 QT] 로마서", category: "QT" },
+      { month: "11", title: "석OO 감독 독립영화 초연 시사회", category: "행사" },
+      { month: "09", title: "[3331 생명의 QT] 사도행전", category: "QT" },
+      { month: "09", title: "[3331 생명의 QT] 사도행전", category: "QT" },
+      { month: "05", title: "일본 전도와 여행", category: "전도" },
+      { month: "05", title: "[3331 생명의 QT] 누가복음", category: "QT" },
+      { month: "01", title: "사랑의 연탄 봉사활동", category: "봉사" },
+      { month: "01", title: "[3331 생명의 QT] 출애굽기", category: "QT" },
+      { month: "상시", title: "매주 마포대교, 한강대교 노방전도", category: "전도" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
+    ]
+  },
+  {
+    year: 2024,
+    months: [
+      { month: "12", title: "제6회 남북청년 체육대회 개회(등산)", category: "행사" },
+      { month: "08", title: "[3331 생명의 QT] 창세기", category: "QT" },
+      { month: "07", title: "리더십 캠프", category: "캠프" },
+      { month: "06", title: "[3331 생명의 QT] 요한일서, 요한이서, 요한삼서, 요한계시록", category: "QT" },
+      { month: "05", title: "[3331 생명의 QT] 야고보서, 베드로전서, 베드로후서", category: "QT" },
+      { month: "04", title: "캠핑&풋살&바베큐 행사 개최", category: "행사" },
+      { month: "04", title: "[3331 생명의 QT] 빌레몬서, 히브리서", category: "QT" },
+      { month: "03", title: "[3331 생명의 QT] 데살로니가후서, 디모데전서, 디모데후서, 디도서", category: "QT" },
+      { month: "02", title: "[3331 생명의 QT] 빌립보서, 골로새서, 데살로니가전서", category: "QT" },
+      { month: "01", title: "일상 회복 및 누림을 위한 남북청년 낚시 교제", category: "행사" },
+      { month: "01", title: "사랑의 연탄 봉사활동", category: "봉사" },
+      { month: "01", title: "[3331 생명의 QT] 갈라디아서, 에베소서", category: "QT" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "매일 마포대교, 한강대교 노방전도", category: "전도" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
+    ]
+  },
+  {
+    year: 2023,
+    months: [
+      { month: "12", title: "제5회 남북청년 체육대회 개회", category: "행사" },
+      { month: "12", title: "[3331 생명의 QT] 고린도후서", category: "QT" },
+      { month: "10", title: "일상 회복 및 누림을 위한 남북청년 낚시 교제", category: "행사" },
+      { month: "10", title: "[3331 생명의 QT] 고린도전서", category: "QT" },
+      { month: "09", title: "캠핑&풋살&바베큐 행사 개최", category: "행사" },
+      { month: "09", title: "[3331 생명의 QT] 로마서", category: "QT" },
+      { month: "06", title: "[3331 생명의 QT] 사도행전", category: "QT" },
+      { month: "05", title: "캠핑&풋살&바베큐 행사 개최", category: "행사" },
+      { month: "03", title: "[3331 생명의 QT] 요한복음", category: "QT" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "매일 마포대교 노방전도", category: "전도" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
+    ]
+  },
+  {
+    year: 2022,
+    months: [
+      { month: "12", title: "제4회 남북청년 체육대회 개회", category: "행사" },
+      { month: "10", title: "시편 통독", "category": "QT" },
+      { month: "10", title: "박해민, 김재현, 정대한 침례식", category: "행사" },
+      { month: "10", title: "[예수님의 십자가를 생각하며] 싸이클 여행 서울-양평", category: "행사" },
+      { month: "09", title: "캠핑&풋살&바베큐 행사 개최", category: "행사" },
+      { month: "09", title: "박성재 선교사님 간증 예배", category: "행사" },
+      { month: "08", title: "일상 회복 및 누림을 위한 낚시 교제", category: "행사" },
+      { month: "07", title: "사도바울 서신서 통독", category: "QT" },
+      { month: "04", title: "일상 회복 및 누림이 있는 낚시 교제", category: "행사" },
+      { month: "02", title: "사랑의 연탄 봉사활동", category: "봉사" },
+      { month: "상시", title: "신흥재정학교 재정교육 실시", category: "기타" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
+    ]
+  },
+  {
+    year: 2021,
+    months: [
+      { month: "07", title: "[예수님의 십자가를 생각하며] 싸이클 국토종주 서울-문경", category: "행사" },
+      { month: "06", title: "[예수님의 십자가를 생각하며] 싸이클 국토종주 서울-춘천", category: "행사" },
+      { month: "04", title: "코로나 극복을 위한 낚시 교제", category: "행사" },
+      { month: "02", title: "사랑의 연탄 봉사활동", category: "봉사" },
+      { month: "상시", title: "신흥재정학교 재정교육 실시", category: "기타" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
+    ]
+  },
+  {
+    year: 2020,
+    months: [
+      { month: "11", title: "컴패션 버추얼 런(10km, 20km) 마라톤 실시", category: "행사" },
+      { month: "10", title: "코로나 극복을 위한 낚시 교제", category: "행사" },
+      { month: "03", title: "코로나 극복을 위한 온라인 NKFC Mission 챌린지", category: "행사" },
+      { month: "02", title: "NKFC Mission 단장 임명식", category: "기타" },
+      { month: "01", title: "사랑의 연탄 봉사활동", category: "봉사" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
+    ]
+  },
+  {
+    year: 2019,
+    months: [
+      { month: "09", title: "제3회 남북 청년 연합 풋살대회 \"THE ONE\" 개최", category: "행사" },
+      { month: "상시", title: "사랑의 연탄 봉사활동", category: "봉사" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
     ]
   },
   {
     year: 2018,
     months: [
-      {
-        month: "01",
-        title: "남북청년연합선교회 정식 출범",
-        category: "행사",
-        content: "2015년부터 시작된 남북청년 연합 모임이 정식 단체로 출범했습니다.",
-      }
+      { month: "12", title: "제3회 남북청년 체육대회 개회", category: "행사" },
+      { month: "10", title: "제2회 남북 청년 연합 풋살대회 \"THE ONE\" 개최", category: "행사" },
+      { month: "상시", title: "축구를 좋아하는 새로운 새터민 청년들과 만남 그리고 연합", content: "정대한, 김강유, 임평 등. 조 여호수아 선교사는 김재현 간사, 새터민 청년 멤버와 함께 기도 중 스포츠 선교의 비전을 소망하며 NKFC M 시작", category: "기타" },
+      { month: "상시", title: "매주 기도모임", category: "행사" },
+      { month: "상시", title: "NKFC 남북청년 축구팀 운영", category: "행사" }
+    ]
+  },
+  {
+    year: 2017,
+    months: [
+      { month: "12", title: "제2회 남북청년 체육대회 개회", category: "행사" },
+      { month: "09", title: "제1회 남북 청년 연합 풋살대회 \"THE ONE\" 개최", category: "행사" },
+      { month: "상시", title: "매주 기도모임", category: "행사" }
+    ]
+  },
+  {
+    year: 2015,
+    months: [
+      { month: "상시", title: "남한 청년 중심으로 구성된 선교동아리(오지랖)과 연합", category: "기타" },
+      { month: "상시", title: "무료영어 교실로 알게 된 탈북청년들과 오지랖 모임의 남한 청년들과의 기도 모임과 교제 시작", category: "기타" },
+      { month: "상시", title: "1회 남북 청년 체육대회 개최", category: "행사" }
+    ]
+  },
+  {
+    year: 2011,
+    months: [
+      { month: "상시", title: "기독교한국침례회 해외 선교회(FMB) 소속으로 국내 탈북민 선교사역 시작함", category: "기타" },
+      { month: "상시", title: "새터민 맞춤용 무료 영어교실 오픈", category: "기타" },
+      { month: "상시", title: "복음 증거 및 구제 활동", category: "전도" }
     ]
   },
   {
     year: 2010,
     months: [
-      {
-        month: "01",
-        title: "조여호수아 선교사 파송",
-        category: "기타",
-        content: "기독교한국침례회 해외선교회(FMB) 소속 선교사로 파송되었습니다.",
-      }
+      { month: "상시", title: "조 여호수아 선교사 미국(주님의 기쁨교회)에서 북한 선교사로 파송", category: "기타" }
     ]
   }
 ];

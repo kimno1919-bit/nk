@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function MinistryCarePage() {
   return (
     <div className="mx-auto max-w-[1000px] px-5 py-24">
@@ -13,28 +15,42 @@ export default function MinistryCarePage() {
         <section>
           <h3 className="font-serif font-bold text-2xl text-deep-navy mb-4">주요 활동</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <li className="bg-white p-6 rounded border border-line-gray">
+            <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
+              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
+                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              </div>
               <h4 className="font-bold text-ink mb-2 text-lg">친교 모임</h4>
               <p className="text-ink-2 text-sm leading-relaxed">정기적인 식사와 교제를 통해 서로의 삶을 나눕니다.</p>
             </li>
-            <li className="bg-white p-6 rounded border border-line-gray">
+            <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
+              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
+                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              </div>
               <h4 className="font-bold text-ink mb-2 text-lg">스포츠 활동</h4>
-              <p className="text-ink-2 text-sm leading-relaxed">NKFC 남북청년 축구팀 등 스포츠를 통한 건강한 교류를 이어갑니다.</p>
+              <p className="text-ink-2 text-sm leading-relaxed">축구, 등산, 낚시 등의 스포츠 모임을 통해 힐링과 기쁨을 누리는 교제를 이어갑니다.</p>
             </li>
-            <li className="bg-white p-6 rounded border border-line-gray">
+            <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
+              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
+                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              </div>
               <h4 className="font-bold text-ink mb-2 text-lg">심방 및 나눔</h4>
-              <p className="text-ink-2 text-sm leading-relaxed">어려움에 처한 청년들을 찾아가 위로하고 필요한 것을 나눕니다.</p>
+              <p className="text-ink-2 text-sm leading-relaxed">도움이 필요한 청년들을 찾아가 위로하고 필요한 것을 나눕니다.</p>
             </li>
           </ul>
         </section>
 
         <section>
-          <h3 className="font-serif font-bold text-2xl text-deep-navy mb-4">활동 갤러리</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {/* 임시 갤러리 플레이스홀더 */}
-            <div className="aspect-[4/3] bg-line-gray/30 rounded flex items-center justify-center text-ink-2 text-sm">이미지 1</div>
-            <div className="aspect-[4/3] bg-line-gray/30 rounded flex items-center justify-center text-ink-2 text-sm">이미지 2</div>
-            <div className="aspect-[4/3] bg-line-gray/30 rounded flex items-center justify-center text-ink-2 text-sm">이미지 3</div>
+          <h3 className="font-serif font-bold text-2xl text-deep-navy mb-6">돌봄 사역 현장</h3>
+          <div className="rounded-xl overflow-hidden shadow-lg border border-line-gray relative h-[400px] w-full group">
+            <Image 
+              src="/images/care.png" 
+              alt="돌봄 사역 현장" 
+              fill 
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+              <p className="text-white font-medium text-lg drop-shadow-md">따뜻한 교제와 나눔이 있는 돌봄의 시간</p>
+            </div>
           </div>
         </section>
       </div>
