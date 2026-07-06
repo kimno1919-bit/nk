@@ -129,15 +129,17 @@ export default function QtPage() {
             return (
               <div key={qt.id} onClick={() => toggleExpand(qt.id)} className={`cursor-pointer transition-all duration-300 ${isExpanded ? 'md:col-span-2' : ''}`}>
                 <Card bg="white" className="hover:border-deep-navy/40 transition-colors flex flex-col h-full !p-6 sm:!p-8 group shadow-sm hover:shadow-md">
-                  <div className="flex justify-between items-center mb-5">
-                    <span className="px-3 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded">
-                      {qt.book} {qt.chapter}
-                    </span>
-                    <div className="flex gap-4 text-[13px] text-ink-2 font-medium">
+                  <div className="flex flex-col gap-3 mb-5">
+                    <div className="flex justify-between items-start">
+                      <span className="px-3 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded shrink-0">
+                        {qt.book} {qt.chapter}
+                      </span>
+                      <span className="text-[13px] text-ink-2 font-medium pt-1 shrink-0">{qt.date}</span>
+                    </div>
+                    <div className="flex gap-3 text-[13px] text-ink-2 font-medium">
                       <span>조회 {qt.views || 0}</span>
                       <span>👍 {qt.likes || 0}</span>
                       <span>💬 {qt.qt_comments?.[0]?.count || 0}</span>
-                      <span>{qt.date}</span>
                     </div>
                   </div>
                   <h3 className={`font-serif font-bold text-deep-navy group-hover:text-terracotta transition-colors mb-4 ${isExpanded ? 'text-2xl sm:text-3xl' : 'text-xl'}`}>
