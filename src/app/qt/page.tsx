@@ -17,7 +17,7 @@ export default function QtPage() {
     const fetchQts = async () => {
       const { data } = await supabase
         .from("qts")
-        .select("*")
+        .select("*, qt_comments(count)")
         .eq("is_public", true)
         .order("date", { ascending: false });
       if (data) setQts(data);
@@ -136,6 +136,7 @@ export default function QtPage() {
                     <div className="flex gap-4 text-[13px] text-ink-2 font-medium">
                       <span>조회 {qt.views || 0}</span>
                       <span>👍 {qt.likes || 0}</span>
+                      <span>💬 {qt.qt_comments?.[0]?.count || 0}</span>
                       <span>{qt.date}</span>
                     </div>
                   </div>
