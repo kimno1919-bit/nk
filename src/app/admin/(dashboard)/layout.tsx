@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import { LogoutButton } from "@/components/LogoutButton";
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
@@ -29,7 +30,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
       <main className="flex-1 flex flex-col overflow-hidden">
         <header className="h-16 bg-white border-b border-line-gray flex items-center justify-between px-8 shrink-0">
           <h1 className="font-bold text-xl text-deep-navy">관리자 시스템</h1>
-          {/* 로그아웃 버튼은 나중에 구현 */}
+          <LogoutButton />
         </header>
         <div className="flex-1 overflow-auto p-8">
           {children}

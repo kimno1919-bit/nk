@@ -28,7 +28,25 @@ export async function updateSession(request: NextRequest) {
   );
 
   // refreshing the auth token
-  await supabase.auth.getUser();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  // 로그인하지 않은 사용자가 /admin 하위(login 제외)로 접근하려 할 때
+  if (
+    request.nextUrl.pathname.startsWith('/admin') &&
+    !request.nextUrl.pathname.startsWith('/admin/login') &&
+    !user
+  ) {
+    const url = request.nextUrl.clone();
+    url.pathname = '/admin/login';
+    return NextResponse.redirect(url);
+  }
+
+  // 이미 로그인한 사용자가 /admin/login 페이지로 접근하려 할 때
+  if (request.nextUrl.pathname.startsWith('/admin/login') && user) {
+    const url = request.nextUrl.clone();
+    url.pathname = '/admin';
+    return NextResponse.redirect(url);
+  }
 
   return supabaseResponse;
 }
