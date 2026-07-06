@@ -17,6 +17,7 @@ export default function QtPage() {
   const [qts, setQts] = useState<any[]>([]);
   const [selectedBook, setSelectedBook] = useState("모든 성경");
   const [selectedChapter, setSelectedChapter] = useState("모든 장");
+  const [displayCount, setDisplayCount] = useState(10);
 
   useEffect(() => {
     const fetchQts = async () => {
@@ -115,6 +116,7 @@ export default function QtPage() {
               onChange={(e) => {
                 setSelectedBook(e.target.value);
                 setSelectedChapter("모든 장"); // 성경 변경 시 장 초기화
+                setDisplayCount(10); // 필터 변경 시 표시 개수 초기화
               }}
               className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[120px]"
             >
@@ -127,7 +129,10 @@ export default function QtPage() {
             {selectedBook !== "모든 성경" && availableChapters.length > 0 && (
               <select 
                 value={selectedChapter}
-                onChange={(e) => setSelectedChapter(e.target.value)}
+                onChange={(e) => {
+                  setSelectedChapter(e.target.value);
+                  setDisplayCount(10);
+                }}
                 className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
               >
                 <option value="모든 장">모든 장</option>
@@ -143,7 +148,7 @@ export default function QtPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {filteredQts.length > 0 ? filteredQts.map((qt) => {
+          {filteredQts.length > 0 ? filteredQts.slice(0, displayCount).map((qt) => {
             const isExpanded = expandedId === qt.id;
             // 앞부분 100자 정도만 요약으로 보여줌
             const summary = qt.content ? qt.content.slice(0, 100) + (qt.content.length > 100 ? "..." : "") : "";
@@ -213,6 +218,19 @@ export default function QtPage() {
             </div>
           )}
         </div>
+
+        {/* 더보기 버튼 */}
+        {filteredQts.length > displayCount && (
+          <div className="mt-12 flex justify-center">
+            <Button 
+              variant="secondary" 
+              className="!px-12 !py-4 font-bold text-lg shadow-sm hover:shadow-md transition-all"
+              onClick={() => setDisplayCount(prev => prev + 10)}
+            >
+              더보기 ▼
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

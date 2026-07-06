@@ -45,15 +45,24 @@ function QtForm() {
 
     const payload = { date, book, chapter, title, content, is_public: isPublic };
 
+    let error;
     if (id) {
-      await supabase.from("qts").update(payload).eq("id", id);
+      const res = await supabase.from("qts").update(payload).eq("id", id);
+      error = res.error;
     } else {
-      await supabase.from("qts").insert([payload]);
+      const res = await supabase.from("qts").insert([payload]);
+      error = res.error;
     }
 
     setLoading(false);
-    router.push("/admin/qt");
+    
+    if (error) {
+      alert("저장 중 오류가 발생했습니다: " + error.message);
+      return;
+    }
+
     router.refresh();
+    router.push("/admin/qt");
   };
 
   const handleDelete = async () => {

@@ -95,15 +95,24 @@ function AlbumForm() {
       created_at: new Date(date).toISOString()
     };
 
+    let error;
     if (id) {
-      await supabase.from("albums").update(payload).eq("id", id);
+      const res = await supabase.from("albums").update(payload).eq("id", id);
+      error = res.error;
     } else {
-      await supabase.from("albums").insert([payload]);
+      const res = await supabase.from("albums").insert([payload]);
+      error = res.error;
     }
 
     setLoading(false);
-    router.push("/admin/album");
+
+    if (error) {
+      alert("저장 중 오류가 발생했습니다: " + error.message);
+      return;
+    }
+
     router.refresh();
+    router.push("/admin/album");
   };
 
   const handleDelete = async () => {

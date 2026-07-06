@@ -82,15 +82,24 @@ function NoticeForm() {
       created_at: new Date(date).toISOString() 
     };
 
+    let error;
     if (id) {
-      await supabase.from("notices").update(payload).eq("id", id);
+      const res = await supabase.from("notices").update(payload).eq("id", id);
+      error = res.error;
     } else {
-      await supabase.from("notices").insert([payload]);
+      const res = await supabase.from("notices").insert([payload]);
+      error = res.error;
     }
 
     setLoading(false);
-    router.push("/admin/notice");
+
+    if (error) {
+      alert("저장 중 오류가 발생했습니다: " + error.message);
+      return;
+    }
+
     router.refresh();
+    router.push("/admin/notice");
   };
 
   const handleDelete = async () => {
