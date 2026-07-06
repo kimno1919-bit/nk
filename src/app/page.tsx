@@ -52,41 +52,47 @@ export default async function Home() {
             <p className="text-ink-2 text-lg">남북청년연합선교회의 세 가지 주요 사역 방향입니다.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <Card bg="warm-sand" className="flex flex-col h-full !p-8">
-              <span className="text-pine-green font-bold text-sm mb-4 tracking-widest uppercase">01. Care</span>
-              <h3 className="font-serif font-bold text-3xl text-deep-navy mb-5">돌봄</h3>
-              <p className="text-ink-2 leading-relaxed mb-8 flex-1 text-[16px]">
-                남한과 북녘에서 온 청년들이 서로의 자리에 앉아 밥을 먹고, 뛰고, 이야기를 나눕니다. 관계가 곧 복음의 시작입니다.
-              </p>
-              <ul className="space-y-3 text-[15px] text-ink font-medium">
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span> 친교 모임</li>
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span> 스포츠 활동</li>
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span> 심방 및 나눔</li>
-              </ul>
-            </Card>
-            <Card bg="warm-sand" className="flex flex-col h-full !p-8">
-              <span className="text-pine-green font-bold text-sm mb-4 tracking-widest uppercase">02. Training</span>
-              <h3 className="font-serif font-bold text-3xl text-deep-navy mb-5">양육</h3>
-              <p className="text-ink-2 leading-relaxed mb-8 flex-1 text-[16px]">
-                기도로 뿌리내리고 말씀으로 자라나 마음을 움직입니다. 기도모임과 3331 생명의 큐티를 통해 훈련의 과정을 거칩니다.
-              </p>
-              <ul className="space-y-3 text-[15px] text-ink font-medium">
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 기도 모임</li>
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 말씀 훈련 (3331 큐티)</li>
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 봉사 활동 (연탄 나눔 등)</li>
-              </ul>
-            </Card>
-            <Card bg="warm-sand" className="flex flex-col h-full !p-8">
-              <span className="text-pine-green font-bold text-sm mb-4 tracking-widest uppercase">03. Mission</span>
-              <h3 className="font-serif font-bold text-3xl text-deep-navy mb-5">일꾼 세우기</h3>
-              <p className="text-ink-2 leading-relaxed mb-8 flex-1 text-[16px]">
-                남북청년들은 복음의 길 위에 섭니다. 국내 전도와 해외 전도로 복음을 전합니다.
-              </p>
-              <ul className="space-y-3 text-[15px] text-ink font-medium">
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-pine-green shrink-0"></span> 국내 전도 (한강 대교 등)</li>
-                <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-pine-green shrink-0"></span> 해외 전도</li>
-              </ul>
-            </Card>
+            <Link href="/ministry/care" className="block h-full group">
+              <Card bg="warm-sand" className="flex flex-col h-full !p-8 group-hover:shadow-lg group-hover:-translate-y-1 transition-all duration-300">
+                <span className="text-pine-green font-bold text-sm mb-4 tracking-widest uppercase">01. Care</span>
+                <h3 className="font-serif font-bold text-3xl text-deep-navy mb-5 group-hover:text-terracotta transition-colors">돌봄</h3>
+                <p className="text-ink-2 leading-relaxed mb-8 flex-1 text-[16px]">
+                  남한과 북녘에서 온 청년들이 서로의 자리에 앉아 밥을 먹고, 뛰고, 이야기를 나눕니다. 관계가 곧 복음의 시작입니다.
+                </p>
+                <ul className="space-y-3 text-[15px] text-ink font-medium">
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span> 친교 모임</li>
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span> 스포츠 활동</li>
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-terracotta shrink-0"></span> 심방 및 나눔</li>
+                </ul>
+              </Card>
+            </Link>
+            <Link href="/ministry/training" className="block h-full group">
+              <Card bg="warm-sand" className="flex flex-col h-full !p-8 group-hover:shadow-lg group-hover:-translate-y-1 transition-all duration-300">
+                <span className="text-pine-green font-bold text-sm mb-4 tracking-widest uppercase">02. Training</span>
+                <h3 className="font-serif font-bold text-3xl text-deep-navy mb-5 group-hover:text-deep-navy/70 transition-colors">양육</h3>
+                <p className="text-ink-2 leading-relaxed mb-8 flex-1 text-[16px]">
+                  기도로 뿌리내리고 말씀으로 자라나 마음을 움직입니다. 기도모임과 3331 생명의 큐티를 통해 훈련의 과정을 거칩니다.
+                </p>
+                <ul className="space-y-3 text-[15px] text-ink font-medium">
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 기도 모임</li>
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 말씀 훈련 (3331 큐티)</li>
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-deep-navy shrink-0"></span> 봉사 활동 (연탄 나눔 등)</li>
+                </ul>
+              </Card>
+            </Link>
+            <Link href="/ministry/mission" className="block h-full group">
+              <Card bg="warm-sand" className="flex flex-col h-full !p-8 group-hover:shadow-lg group-hover:-translate-y-1 transition-all duration-300">
+                <span className="text-pine-green font-bold text-sm mb-4 tracking-widest uppercase">03. Mission</span>
+                <h3 className="font-serif font-bold text-3xl text-deep-navy mb-5 group-hover:text-pine-green transition-colors">일꾼 세우기</h3>
+                <p className="text-ink-2 leading-relaxed mb-8 flex-1 text-[16px]">
+                  남북청년들은 복음의 길 위에 섭니다. 국내 전도와 해외 전도로 복음을 전합니다.
+                </p>
+                <ul className="space-y-3 text-[15px] text-ink font-medium">
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-pine-green shrink-0"></span> 국내 전도 (한강 대교 등)</li>
+                  <li className="flex items-center gap-3"><span className="w-1.5 h-1.5 rounded-full bg-pine-green shrink-0"></span> 해외 전도</li>
+                </ul>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
