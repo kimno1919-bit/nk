@@ -19,6 +19,8 @@ export function Footer() {
             <p className="text-white/60 font-sans text-[14px] leading-relaxed">
               대표: 조여호수아 선교사<br />
               소속: 기독교한국침례회 해외선교회(FMB)<br />
+              전화: 010-9064-2242<br />
+              이메일: kimno1919@gmail.com<br />
               소재지: 서울 강남구 학동로101길 26 청담삼익쇼핑상가 304-1호
             </p>
           </div>
@@ -36,6 +38,9 @@ export function Footer() {
           
           <div>
             <h3 className="font-serif font-bold text-[18px] mb-5 text-warm-sand">후원 안내</h3>
+            <p className="font-sans text-[15px] text-white/80 leading-relaxed mb-3">
+              정기 후원 및 일시 후원과 관련하여 궁금하신 점이 있다면 언제든 문의해 주세요.
+            </p>
             <p className="font-sans text-[15px] text-white/80 leading-relaxed mb-4">
               <span className="block font-medium text-white mb-1">카카오뱅크 3333-14-1526995</span>
               예금주: 김재현 (남북청년연합선교회)
