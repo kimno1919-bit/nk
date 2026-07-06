@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     apple: "/images/logo.png",
   },
   verification: {
+    google: "gkodYQ4e5bcAJvmfwUN4At7mUPFsvgELvDNnNIGqVT0",
     other: {
       "naver-site-verification": "1e7906d5ff1fd79a190244b5e7494dae76f09c6c",
     },
