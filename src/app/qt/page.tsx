@@ -9,6 +9,8 @@ export default function QtPage() {
   const supabase = createClient();
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [qts, setQts] = useState<any[]>([]);
+  const [selectedBook, setSelectedBook] = useState("모든 성경");
+  const [selectedChapter, setSelectedChapter] = useState("모든 장");
 
   useEffect(() => {
     const fetchQts = async () => {
@@ -34,6 +36,17 @@ export default function QtPage() {
     }
   };
 
+  const availableBooks = Array.from(new Set(qts.map(qt => qt.book))).filter(Boolean);
+  const availableChapters = Array.from(new Set(
+    qts.filter(qt => qt.book === selectedBook).map(qt => qt.chapter)
+  )).filter(Boolean).sort((a, b) => parseInt(a) - parseInt(b));
+
+  const filteredQts = qts.filter(qt => {
+    if (selectedBook !== "모든 성경" && qt.book !== selectedBook) return false;
+    if (selectedChapter !== "모든 장" && qt.chapter !== selectedChapter) return false;
+    return true;
+  });
+
   return (
     <div className="flex flex-col w-full pb-24 min-h-screen">
       <section className="bg-paper-cream pt-24 pb-16 px-5 text-center border-b border-line-gray">
@@ -47,10 +60,33 @@ export default function QtPage() {
       <div className="mx-auto max-w-[1000px] w-full px-5 mt-16">
         {/* 필터 및 글쓰기 영역 */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-10 pb-6 border-b border-line-gray">
-          <div className="flex gap-4">
-            <select className="px-4 py-2 bg-white border border-line-gray rounded text-sm text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors">
-              <option>모든 성경</option>
+          <div className="flex flex-wrap gap-4">
+            <select 
+              value={selectedBook}
+              onChange={(e) => {
+                setSelectedBook(e.target.value);
+                setSelectedChapter("모든 장"); // 성경 변경 시 장 초기화
+              }}
+              className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[120px]"
+            >
+              <option value="모든 성경">모든 성경</option>
+              {availableBooks.map(book => (
+                <option key={book} value={book}>{book}</option>
+              ))}
             </select>
+            
+            {selectedBook !== "모든 성경" && availableChapters.length > 0 && (
+              <select 
+                value={selectedChapter}
+                onChange={(e) => setSelectedChapter(e.target.value)}
+                className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
+              >
+                <option value="모든 장">모든 장</option>
+                {availableChapters.map(chapter => (
+                  <option key={chapter} value={chapter}>{chapter.includes('장') ? chapter : `${chapter}장`}</option>
+                ))}
+              </select>
+            )}
           </div>
           <Link href="/admin/qt">
             <Button variant="secondary" className="!px-6">관리자 글쓰기</Button>
@@ -58,7 +94,7 @@ export default function QtPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {qts.map((qt) => {
+          {filteredQts.length > 0 ? filteredQts.map((qt) => {
             const isExpanded = expandedId === qt.id;
             // 앞부분 100자 정도만 요약으로 보여줌
             const summary = qt.content ? qt.content.slice(0, 100) + (qt.content.length > 100 ? "..." : "") : "";
@@ -91,7 +127,11 @@ export default function QtPage() {
                 </Card>
               </div>
             );
-          })}
+          }) : (
+            <div className="col-span-full py-20 text-center text-ink-2 text-lg">
+              선택하신 성경 본문에 해당하는 묵상 글이 없습니다.
+            </div>
+          )}
         </div>
       </div>
     </div>
