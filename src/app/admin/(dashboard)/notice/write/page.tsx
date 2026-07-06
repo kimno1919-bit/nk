@@ -15,6 +15,7 @@ function NoticeForm() {
   const [content, setContent] = useState("");
   const [category, setCategory] = useState("일반");
   const [isPublic, setIsPublic] = useState(true);
+  const [date, setDate] = useState(() => new Date().toISOString().split('T')[0]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -26,6 +27,9 @@ function NoticeForm() {
           setContent(data.content || "");
           setCategory(data.category);
           setIsPublic(data.is_public);
+          if (data.created_at) {
+            setDate(data.created_at.split('T')[0]);
+          }
         }
       };
       fetchNotice();
@@ -36,7 +40,13 @@ function NoticeForm() {
     e.preventDefault();
     setLoading(true);
 
-    const payload = { title, content, category, is_public: isPublic };
+    const payload: any = { 
+      title, 
+      content, 
+      category, 
+      is_public: isPublic,
+      created_at: new Date(date).toISOString() 
+    };
 
     if (id) {
       await supabase.from("notices").update(payload).eq("id", id);
@@ -91,6 +101,17 @@ function NoticeForm() {
               <option value="false">비공개</option>
             </select>
           </div>
+        </div>
+        
+        <div>
+          <label className="block text-sm font-bold text-ink mb-2">작성일자 (과거 게시물 등록용)</label>
+          <input 
+            type="date" 
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            required
+            className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+          />
         </div>
 
         <div>

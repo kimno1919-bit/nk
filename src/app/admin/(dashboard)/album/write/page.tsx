@@ -13,8 +13,9 @@ function AlbumForm() {
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [mediaUrl, setMediaUrl] = useState("");
+  const [mediaUrls, setMediaUrls] = useState<string[]>([]);
   const [isPublic, setIsPublic] = useState(true);
+  const [date, setDate] = useState(() => new Date().toISOString().split('T')[0]);
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -26,8 +27,16 @@ function AlbumForm() {
         if (data) {
           setTitle(data.title);
           setContent(data.content || "");
-          setMediaUrl(data.media_url || "");
+          
+          // media_urls(배열)가 있으면 우선 적용, 없으면 이전 방식인 media_url로 마이그레이션 적용
+          if (data.media_urls && data.media_urls.length > 0) {
+            setMediaUrls(data.media_urls);
+          } else if (data.media_url) {
+            setMediaUrls([data.media_url]);
+          }
+          
           setIsPublic(data.is_public);
+          if (data.created_at) setDate(data.created_at.split('T')[0]);
         }
       };
       fetchAlbum();
@@ -37,39 +46,54 @@ function AlbumForm() {
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     try {
       setUploading(true);
-      if (!e.target.files || e.target.files.length === 0) {
-        throw new Error("You must select an image or video to upload.");
+      if (!e.target.files || e.target.files.length === 0) return;
+
+      const newUrls: string[] = [];
+      const files = Array.from(e.target.files);
+
+      for (const file of files) {
+        const fileExt = file.name.split(".").pop();
+        const fileName = `${Math.random()}.${fileExt}`;
+        const filePath = `${fileName}`;
+
+        const { error: uploadError } = await supabase.storage
+          .from("media")
+          .upload(filePath, file);
+
+        if (uploadError) {
+          alert(`업로드 실패 (${file.name}): Storage 버킷 'media'가 존재하지 않거나 권한이 없습니다.`);
+          continue;
+        }
+
+        const { data } = supabase.storage.from("media").getPublicUrl(filePath);
+        newUrls.push(data.publicUrl);
       }
 
-      const file = e.target.files[0];
-      const fileExt = file.name.split(".").pop();
-      const fileName = `${Math.random()}.${fileExt}`;
-      const filePath = `${fileName}`;
-
-      const { error: uploadError } = await supabase.storage
-        .from("media")
-        .upload(filePath, file);
-
-      if (uploadError) {
-        // If bucket doesn't exist or RLS fails
-        alert("업로드 실패: Storage 버킷 'media'가 존재하지 않거나 권한이 없습니다.");
-        throw uploadError;
-      }
-
-      const { data } = supabase.storage.from("media").getPublicUrl(filePath);
-      setMediaUrl(data.publicUrl);
+      setMediaUrls(prev => [...prev, ...newUrls]);
     } catch (error) {
       console.log(error);
     } finally {
       setUploading(false);
+      if (fileInputRef.current) fileInputRef.current.value = "";
     }
+  };
+
+  const removeMedia = (index: number) => {
+    setMediaUrls(prev => prev.filter((_, i) => i !== index));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    const payload = { title, content, media_url: mediaUrl, is_public: isPublic };
+    const payload: any = { 
+      title, 
+      content, 
+      media_urls: mediaUrls, 
+      media_url: mediaUrls[0] || null, // 하위 호환을 위해 첫 번째 이미지는 media_url에도 저장
+      is_public: isPublic,
+      created_at: new Date(date).toISOString()
+    };
 
     if (id) {
       await supabase.from("albums").update(payload).eq("id", id);
@@ -105,24 +129,37 @@ function AlbumForm() {
           <label className="block text-sm font-bold text-ink mb-2">사진 / 동영상 업로드</label>
           <div className="flex items-center gap-4 mb-4">
              <Button type="button" variant="secondary" onClick={() => fileInputRef.current?.click()} disabled={uploading}>
-               {uploading ? "업로드 중..." : "미디어 파일 선택"}
+               {uploading ? "업로드 중..." : "미디어 파일 선택 (여러 장 가능)"}
              </Button>
              <input 
                type="file" 
                accept="image/*, video/*"
+               multiple
                className="hidden"
                ref={fileInputRef}
                onChange={handleFileUpload}
              />
           </div>
-          {mediaUrl && (
-            <div className="w-48 h-48 rounded overflow-hidden border border-line-gray relative bg-paper-cream">
-              {mediaUrl.match(/\.(mp4|webm)$/i) ? (
-                 <video src={mediaUrl} className="w-full h-full object-cover" controls />
-              ) : (
-                 // eslint-disable-next-line @next/next/no-img-element
-                 <img src={mediaUrl} alt="preview" className="w-full h-full object-cover" />
-              )}
+          
+          {mediaUrls.length > 0 && (
+            <div className="flex gap-4 flex-wrap mt-4 p-4 bg-paper-cream rounded-xl border border-line-gray">
+              {mediaUrls.map((url, index) => (
+                <div key={index} className="w-32 h-32 rounded overflow-hidden border border-line-gray relative bg-white group">
+                  {url.match(/\.(mp4|webm)$/i) ? (
+                     <video src={url} className="w-full h-full object-cover" />
+                  ) : (
+                     // eslint-disable-next-line @next/next/no-img-element
+                     <img src={url} alt={`preview-${index}`} className="w-full h-full object-cover" />
+                  )}
+                  <button 
+                    type="button" 
+                    onClick={() => removeMedia(index)}
+                    className="absolute top-1 right-1 bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity font-bold text-xs shadow"
+                  >
+                    X
+                  </button>
+                </div>
+              ))}
             </div>
           )}
         </div>
@@ -138,6 +175,16 @@ function AlbumForm() {
               <option value="true">공개</option>
               <option value="false">비공개</option>
             </select>
+          </div>
+          <div>
+            <label className="block text-sm font-bold text-ink mb-2">작성일자 (과거 게시물 등록용)</label>
+            <input 
+              type="date" 
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              required
+              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+            />
           </div>
         </div>
 
