@@ -1,8 +1,16 @@
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
+import { createClient } from "@/utils/supabase/server";
 
-export default function Home() {
+export default async function Home() {
+  const supabase = await createClient();
+  const { data: latestQts } = await supabase
+    .from("qts")
+    .select("*")
+    .eq("is_public", true)
+    .order("date", { ascending: false })
+    .limit(3);
   return (
     <div className="flex flex-col w-full">
       {/* 1. Hero Section */}
@@ -146,20 +154,28 @@ export default function Home() {
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              {[1, 2, 3].map((item) => (
-                <Card key={item} className="hover:border-deep-navy transition-colors cursor-pointer group !p-6">
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="px-2.5 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded">빌립보서 1장</span>
-                    <span className="text-[13px] text-ink-2">2026-05-13</span>
-                  </div>
-                  <h4 className="font-serif font-bold text-xl text-ink group-hover:text-deep-navy transition-colors">
-                    바울의 기도와 복음의 진전
-                  </h4>
-                  <p className="text-ink-2 text-[15px] mt-3 line-clamp-2 leading-relaxed">
-                    내가 너희를 생각할 때마다 나의 하나님께 감사하며 간구할 때마다 너희 무리를 위하여 기쁨으로 항상 간구함은...
-                  </p>
-                </Card>
-              ))}
+              {latestQts && latestQts.length > 0 ? (
+                latestQts.map((qt) => (
+                  <Link href="/qt" key={qt.id} className="block">
+                    <Card className="hover:border-deep-navy transition-colors cursor-pointer group !p-6">
+                      <div className="flex justify-between items-center mb-4">
+                        <span className="px-2.5 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded">{qt.book} {qt.chapter}</span>
+                        <span className="text-[13px] text-ink-2">{qt.date}</span>
+                      </div>
+                      <h4 className="font-serif font-bold text-xl text-ink group-hover:text-deep-navy transition-colors">
+                        {qt.title}
+                      </h4>
+                      <p className="text-ink-2 text-[15px] mt-3 line-clamp-2 leading-relaxed">
+                        {qt.content}
+                      </p>
+                    </Card>
+                  </Link>
+                ))
+              ) : (
+                <div className="text-ink-2 text-center py-8 bg-white border border-line-gray rounded-xl shadow-sm">
+                  등록된 QT 묵상글이 없습니다.
+                </div>
+              )}
             </div>
           </div>
           

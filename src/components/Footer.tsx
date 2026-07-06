@@ -7,9 +7,6 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-[34px] w-[34px] bg-white flex items-center justify-center rounded-sm text-deep-navy font-bold text-[11px] shrink-0">
-                로고
-              </div>
               <span className="font-serif font-bold text-[20px] tracking-tight">남북청년연합선교회</span>
             </div>
             <p className="text-white/80 font-sans text-[15px] leading-relaxed mb-4">
