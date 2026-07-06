@@ -3,9 +3,9 @@ import { ReactNode } from "react";
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex h-screen bg-gray-50 text-ink">
+    <div className="flex flex-col md:flex-row h-screen bg-gray-50 text-ink">
       {/* Sidebar */}
-      <aside className="w-64 bg-deep-navy text-white flex flex-col shrink-0">
+      <aside className="w-full md:w-64 bg-deep-navy text-white flex flex-col shrink-0">
         <div className="p-6 border-b border-white/10">
           <h2 className="font-serif font-bold text-2xl">관리자 페이지</h2>
           <p className="text-white/60 text-sm mt-1">NK Mission Admin</p>
@@ -18,7 +18,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           <Link href="/admin/qt" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">QT 관리</Link>
           <Link href="/admin/history" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors font-medium">연혁 관리</Link>
         </nav>
-        <div className="p-4 border-t border-white/10">
+        <div className="p-4 border-t border-white/10 hidden md:block">
           <Link href="/" className="block px-4 py-3 rounded hover:bg-white/10 transition-colors text-sm text-center text-white/80">
             홈페이지로 돌아가기
           </Link>
