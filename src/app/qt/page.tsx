@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { createClient } from "@/utils/supabase/client";
+import { QtComments } from "./QtComments";
 
 export default function QtPage() {
   const supabase = createClient();
@@ -34,6 +35,12 @@ export default function QtPage() {
       // 로컬 상태 즉시 업데이트
       setQts((prev) => prev.map((qt) => qt.id === id ? { ...qt, views: (qt.views || 0) + 1 } : qt));
     }
+  };
+
+  const handleLike = async (e: React.MouseEvent, id: string) => {
+    e.stopPropagation(); // 카드 확장을 방지
+    await supabase.rpc("increment_qt_like", { row_id: id });
+    setQts((prev) => prev.map((qt) => qt.id === id ? { ...qt, likes: (qt.likes || 0) + 1 } : qt));
   };
 
   const availableBooks = Array.from(new Set(qts.map(qt => qt.book))).filter(Boolean);
@@ -108,6 +115,7 @@ export default function QtPage() {
                     </span>
                     <div className="flex gap-4 text-[13px] text-ink-2 font-medium">
                       <span>👁️ {qt.views || 0}</span>
+                      <span>👍 {qt.likes || 0}</span>
                       <span>{qt.date}</span>
                     </div>
                   </div>
@@ -120,10 +128,25 @@ export default function QtPage() {
                   </div>
 
                   <div className="mt-auto pt-5 border-t border-line-gray/50 flex justify-between items-center">
-                    <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors flex items-center gap-1">
-                      {isExpanded ? "접기 ▲" : "본문 읽기 ▼"}
-                    </span>
+                    {isExpanded ? (
+                      <button 
+                        onClick={(e) => handleLike(e, qt.id)}
+                        className="flex items-center gap-2 px-4 py-2 bg-warm-sand/50 hover:bg-terracotta/10 text-terracotta font-bold text-sm rounded-full transition-colors"
+                      >
+                        👍 좋아요 {qt.likes || 0}
+                      </button>
+                    ) : (
+                      <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors flex items-center gap-1">
+                        본문 읽기 ▼
+                      </span>
+                    )}
+                    {isExpanded && (
+                       <span className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors">
+                         접기 ▲
+                       </span>
+                    )}
                   </div>
+                  {isExpanded && <QtComments qtId={qt.id} />}
                 </Card>
               </div>
             );
