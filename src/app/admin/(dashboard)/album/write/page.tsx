@@ -82,6 +82,17 @@ function AlbumForm() {
     setMediaUrls(prev => prev.filter((_, i) => i !== index));
   };
 
+  const setAsThumbnail = (index: number) => {
+    if (index === 0) return;
+    setMediaUrls(prev => {
+      const newUrls = [...prev];
+      const temp = newUrls[0];
+      newUrls[0] = newUrls[index];
+      newUrls[index] = temp;
+      return newUrls;
+    });
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -151,22 +162,44 @@ function AlbumForm() {
           </div>
           
           {mediaUrls.length > 0 && (
-            <div className="flex gap-4 flex-wrap mt-4 p-4 bg-paper-cream rounded-xl border border-line-gray">
-              {mediaUrls.map((url, index) => (
-                <div key={index} className="w-32 h-32 rounded overflow-hidden border border-line-gray relative bg-white group">
-                  {url.match(/\.(mp4|webm)$/i) ? (
-                     <video src={url} className="w-full h-full object-cover" />
-                  ) : (
-                     // eslint-disable-next-line @next/next/no-img-element
-                     <img src={url} alt={`preview-${index}`} className="w-full h-full object-cover" />
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              {mediaUrls.map((url, idx) => (
+                <div key={idx} className={`relative group border-2 rounded-xl overflow-hidden aspect-square ${idx === 0 ? 'border-terracotta shadow-md' : 'border-line-gray/50 hover:border-deep-navy/30'}`}>
+                  {idx === 0 && (
+                    <div className="absolute top-0 left-0 bg-terracotta text-white text-[10px] font-bold px-2 py-0.5 rounded-br z-10 shadow-sm flex items-center gap-1">
+                      👑 대표사진
+                    </div>
                   )}
-                  <button 
-                    type="button" 
-                    onClick={() => removeMedia(index)}
-                    className="absolute top-1 right-1 bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity font-bold text-xs shadow"
-                  >
-                    X
-                  </button>
+                  {url.match(/\.(mp4|webm)$/i) ? (
+                    <video src={url} className="w-full h-full object-cover" muted />
+                  ) : (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={url} alt={`preview-${idx}`} className="w-full h-full object-cover" />
+                  )}
+                  
+                  {/* 상단 버튼 컨테이너 (호버 시 표시) */}
+                  <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex justify-between px-1.5 pt-1.5 z-20">
+                    {idx !== 0 ? (
+                      <button 
+                        type="button"
+                        onClick={() => setAsThumbnail(idx)}
+                        className="text-[10px] bg-black/60 hover:bg-terracotta text-white font-bold px-2 py-1 rounded transition-colors"
+                        title="대표사진으로 설정"
+                      >
+                        대표 지정
+                      </button>
+                    ) : (
+                      <div></div>
+                    )}
+                    <button 
+                      type="button"
+                      onClick={() => removeMedia(idx)}
+                      className="bg-red-500/80 hover:bg-red-600 text-white w-6 h-6 rounded-full flex items-center justify-center font-bold text-[10px] transition-colors"
+                      title="사진 삭제"
+                    >
+                      X
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>

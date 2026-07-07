@@ -4,6 +4,7 @@ import { createClient } from "@/utils/supabase/client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/Button";
+import { AlbumComments } from "./AlbumComments";
 
 export default function AlbumPage() {
   const supabase = createClient();
@@ -15,7 +16,7 @@ export default function AlbumPage() {
     const fetchAlbums = async () => {
       const { data } = await supabase
         .from("albums")
-        .select("*")
+        .select("*, album_comments(count)")
         .eq("is_public", true)
         .order("created_at", { ascending: false });
       if (data) setAlbums(data);
@@ -43,6 +44,23 @@ export default function AlbumPage() {
   const prevImage = (e: React.MouseEvent, maxLength: number) => {
     e.stopPropagation();
     setCurrentImageIndex((prev) => (prev - 1 + maxLength) % maxLength);
+  };
+
+  const handleLike = async (e: React.MouseEvent, id: string) => {
+    e.stopPropagation();
+    await supabase.rpc("increment_album_like", { row_id: id });
+    setAlbums(prev => prev.map(a => a.id === id ? { ...a, likes: (a.likes || 0) + 1 } : a));
+  };
+
+  const handleShare = async (e: React.MouseEvent, id: string) => {
+    e.stopPropagation();
+    const url = `${window.location.origin}/album?id=${id}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      alert("링크가 복사되었습니다. 카카오톡이나 문자 메시지로 공유해보세요!");
+    } catch (err) {
+      alert("링크 복사에 실패했습니다.");
+    }
   };
 
   return (
@@ -119,17 +137,60 @@ export default function AlbumPage() {
                     })()}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-[12px] font-bold text-ink-2">{new Date(album.created_at).toLocaleDateString()}</span>
-                      <span className="text-[12px] font-bold text-ink-2">👁️ {album.views || 0}</span>
+                    <div className="flex justify-between items-center mb-5">
+                      <span className="px-3 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded">
+                        {new Date(album.created_at).toLocaleDateString()}
+                      </span>
                     </div>
-                    <h3 className={`font-bold text-ink group-hover:text-deep-navy transition-colors mb-3 leading-snug ${isExpanded ? 'text-2xl' : 'text-lg line-clamp-2'}`}>
+                    <h3 className={`font-serif font-bold text-deep-navy group-hover:text-terracotta transition-colors mb-4 ${isExpanded ? 'text-2xl sm:text-3xl' : 'text-xl line-clamp-2'}`}>
                       {album.title}
                     </h3>
+                    
                     {album.content && (
-                      <p className={`text-ink-2 whitespace-pre-wrap leading-relaxed ${isExpanded ? 'text-base' : 'text-sm line-clamp-3 mt-auto'}`}>
+                      <div className={`text-ink flex-1 whitespace-pre-wrap break-keep ${isExpanded ? 'text-[15px] sm:text-[16px] leading-loose pb-6' : 'text-[15px] leading-relaxed mb-6 line-clamp-3 text-ink-2'}`}>
                         {album.content}
-                      </p>
+                      </div>
+                    )}
+
+                    <div className="mt-auto pt-5 border-t border-line-gray/50 flex justify-between items-center">
+                      {isExpanded ? (
+                        <div className="flex gap-2">
+                          <button 
+                            onClick={(e) => handleLike(e, album.id)}
+                            className="flex items-center gap-1.5 px-3 py-1.5 bg-warm-sand/50 hover:bg-terracotta/10 text-terracotta font-bold text-sm rounded-full transition-colors"
+                          >
+                            👍 좋아요 {album.likes || 0}
+                          </button>
+                          <button 
+                            onClick={(e) => handleShare(e, album.id)}
+                            className="flex items-center gap-1.5 px-3 py-1.5 bg-pine-green/10 hover:bg-pine-green/20 text-pine-green font-bold text-sm rounded-full transition-colors"
+                          >
+                            🔗 공유하기
+                          </button>
+                        </div>
+                      ) : (
+                        <>
+                          <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors flex items-center gap-1">
+                            자세히 보기 ▼
+                          </span>
+                          <div className="flex gap-3 text-[13px] text-ink-2 font-medium">
+                            <span>조회 {album.views || 0}</span>
+                            <span>👍 {album.likes || 0}</span>
+                            <span>💬 {album.album_comments?.[0]?.count || 0}</span>
+                          </div>
+                        </>
+                      )}
+                      {isExpanded && (
+                         <span className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors">
+                           접기 ▲
+                         </span>
+                      )}
+                    </div>
+
+                    {isExpanded && (
+                      <div onClick={(e) => e.stopPropagation()} className="cursor-auto">
+                        <AlbumComments albumId={album.id} />
+                      </div>
                     )}
                   </div>
                 </div>
