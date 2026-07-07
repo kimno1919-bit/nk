@@ -16,22 +16,22 @@ export default function MinistryCarePage() {
           <h3 className="font-serif font-bold text-2xl text-deep-navy mb-4">주요 활동</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
-              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
-                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              <div className="relative w-full h-48 rounded mb-4 overflow-hidden border border-line-gray/50">
+                <Image src="/images/care-fellowship.jpg" alt="친교 모임" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h4 className="font-bold text-ink mb-2 text-lg">친교 모임</h4>
               <p className="text-ink-2 text-sm leading-relaxed">정기적인 식사와 교제를 통해 서로의 삶을 나눕니다.</p>
             </li>
             <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
-              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
-                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              <div className="relative w-full h-48 rounded mb-4 overflow-hidden border border-line-gray/50">
+                <Image src="/images/care-sports.jpg" alt="스포츠 활동" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h4 className="font-bold text-ink mb-2 text-lg">스포츠 활동</h4>
               <p className="text-ink-2 text-sm leading-relaxed">축구, 등산, 낚시 등의 스포츠 모임을 통해 힐링과 기쁨을 누리는 교제를 이어갑니다.</p>
             </li>
             <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
-              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
-                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              <div className="relative w-full h-48 rounded mb-4 overflow-hidden border border-line-gray/50">
+                <Image src="/images/care-visitation.jpg" alt="심방 및 나눔" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h4 className="font-bold text-ink mb-2 text-lg">심방 및 나눔</h4>
               <p className="text-ink-2 text-sm leading-relaxed">도움이 필요한 청년들을 찾아가 위로하고 필요한 것을 나눕니다.</p>
@@ -43,7 +43,7 @@ export default function MinistryCarePage() {
           <h3 className="font-serif font-bold text-2xl text-deep-navy mb-6">돌봄 사역 현장</h3>
           <div className="rounded-xl overflow-hidden shadow-lg border border-line-gray relative h-[400px] w-full group">
             <Image 
-              src="/images/care.png" 
+              src="/images/care.jpg" 
               alt="돌봄 사역 현장" 
               fill 
               className="object-cover transition-transform duration-700 group-hover:scale-105"
