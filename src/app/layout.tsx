@@ -48,6 +48,9 @@ export const metadata: Metadata = {
       "naver-site-verification": "1e7906d5ff1fd79a190244b5e7494dae76f09c6c",
     },
   },
+  other: {
+    "google-adsense-account": "ca-pub-7690246214102794",
+  },
 };
 
 export default function RootLayout({
