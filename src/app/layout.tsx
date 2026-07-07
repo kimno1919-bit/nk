@@ -70,6 +70,15 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-TRNS6FPT');
           `}
         </Script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-FEFQ2NBRLG" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FEFQ2NBRLG');
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col font-sans bg-paper-cream text-ink">
         <noscript>
