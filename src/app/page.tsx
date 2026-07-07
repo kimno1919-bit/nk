@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { createClient } from "@/utils/supabase/server";
+import { CopyAccountButton } from "@/components/CopyAccountButton";
 
 export default async function Home() {
   const supabase = await createClient();
@@ -268,7 +269,7 @@ export default async function Home() {
                 <p className="text-[26px] font-bold tracking-tight mb-1">카카오뱅크 3333-14-1526995</p>
                 <p className="text-white/70 text-[15px]">예금주: 김재현 (남북청년연합선교회)</p>
               </div>
-              <Button variant="primary" className="shrink-0 w-full sm:w-auto !py-3.5 !px-6 text-[15px]">계좌번호 복사</Button>
+              <CopyAccountButton />
             </div>
           </div>
         </div>
