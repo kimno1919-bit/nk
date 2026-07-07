@@ -44,9 +44,6 @@ export default function SupportPage() {
           >
             {copied ? "복사 완료!" : "계좌번호 복사하기"}
           </Button>
-
-          <p className="mt-8 text-sm text-ink-2/80 bg-paper-cream p-4 rounded text-center">
-          </p>
         </Card>
 
         <div className="mt-16 space-y-12">
