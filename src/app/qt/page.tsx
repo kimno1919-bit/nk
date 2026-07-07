@@ -86,9 +86,15 @@ export default function QtPage() {
   ))
     .filter(Boolean)
     .sort((a: any, b: any) => {
-      const numA = parseInt(a.replace(/[^0-9]/g, '')) || 0;
-      const numB = parseInt(b.replace(/[^0-9]/g, '')) || 0;
-      return numA - numB;
+      const numsA = a.match(/\d+/g)?.map(Number) || [];
+      const numsB = b.match(/\d+/g)?.map(Number) || [];
+      
+      for (let i = 0; i < Math.max(numsA.length, numsB.length); i++) {
+        const nA = numsA[i] ?? 0;
+        const nB = numsB[i] ?? 0;
+        if (nA !== nB) return nA - nB;
+      }
+      return 0;
     });
 
   const filteredQts = qts.filter(qt => {
