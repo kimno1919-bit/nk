@@ -1,5 +1,7 @@
 import { Card } from "@/components/Card";
 import { createClient } from "@/utils/supabase/server";
+import Link from "next/link";
+import { Button } from "@/components/Button";
 
 const CATEGORY_COLORS: Record<string, string> = {
   "QT": "bg-pine-green/10 text-pine-green",
@@ -42,6 +44,11 @@ export default async function HistoryPage() {
       <div className="mx-auto max-w-[1200px] w-full px-5 flex flex-col md:flex-row gap-12 relative items-start">
         
         <div className="flex-1 max-w-[800px] mx-auto md:mx-0 w-full">
+          <div className="flex justify-end mb-6">
+            <Link href="/admin/history/write">
+              <Button variant="secondary" className="!px-6">관리자 글쓰기</Button>
+            </Link>
+          </div>
           {/* 모바일 전용 Sticky 연도 내비게이션 */}
           <div className="md:hidden sticky top-16 z-20 bg-paper-cream/90 backdrop-blur-md border-b border-line-gray py-3 px-2 -mx-5 mb-8 flex gap-6 overflow-x-auto">
             {years.map(year => (
