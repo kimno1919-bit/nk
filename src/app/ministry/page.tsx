@@ -17,7 +17,7 @@ export default function MinistryIndex() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Card bg="white" className="flex flex-col h-full !p-0 overflow-hidden group">
           <div className="relative h-56 w-full overflow-hidden border-b border-line-gray">
-            <Image src="/images/care.png" alt="돌봄" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+            <Image src="/images/care.jpg" alt="돌봄" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="p-8 flex flex-col flex-1">
             <span className="text-pine-green font-bold text-sm tracking-widest mb-4">CARE</span>
@@ -31,7 +31,7 @@ export default function MinistryIndex() {
         
         <Card bg="white" className="flex flex-col h-full !p-0 overflow-hidden group">
           <div className="relative h-56 w-full overflow-hidden border-b border-line-gray">
-            <Image src="/images/training.png" alt="양육" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+            <Image src="/images/training.jpg" alt="양육" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="p-8 flex flex-col flex-1">
             <span className="text-pine-green font-bold text-sm tracking-widest mb-4">TRAINING</span>
@@ -45,7 +45,7 @@ export default function MinistryIndex() {
         
         <Card bg="white" className="flex flex-col h-full !p-0 overflow-hidden group">
           <div className="relative h-56 w-full overflow-hidden border-b border-line-gray">
-            <Image src="/images/mission.png" alt="일꾼 세우기" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+            <Image src="/images/mission.jpg" alt="일꾼 세우기" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="p-8 flex flex-col flex-1">
             <span className="text-pine-green font-bold text-sm tracking-widest mb-4">MISSION</span>
