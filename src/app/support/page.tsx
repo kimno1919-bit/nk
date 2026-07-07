@@ -45,8 +45,7 @@ export default function SupportPage() {
             {copied ? "복사 완료!" : "계좌번호 복사하기"}
           </Button>
 
-          <p className="text-sm text-ink-2 mt-6">
-            * 후원금 영수증 발급 등 관련 문의는 아래 연락처로 부탁드립니다.
+          <p className="mt-8 text-sm text-ink-2/80 bg-paper-cream p-4 rounded text-center">
           </p>
         </Card>
 
