@@ -183,7 +183,7 @@ function HistoryForm() {
             )}
           </div>
           <div className="flex gap-4">
-            <Button type="button" variant="outline" onClick={() => router.push("/admin/history")}>
+            <Button type="button" variant="tertiary" onClick={() => router.push("/admin/history")}>
               취소
             </Button>
             <Button type="submit" variant="primary" disabled={loading}>
