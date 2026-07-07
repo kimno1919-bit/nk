@@ -27,6 +27,7 @@ export default async function AdminHistoryPage() {
               <th className="px-6 py-4">월</th>
               <th className="px-6 py-4">카테고리</th>
               <th className="px-6 py-4">제목</th>
+              <th className="px-6 py-4">정렬순서</th>
               <th className="px-6 py-4 text-right">관리</th>
             </tr>
           </thead>
@@ -34,10 +35,15 @@ export default async function AdminHistoryPage() {
             {histories && histories.length > 0 ? (
               histories.map((history) => (
                 <tr key={history.id} className="border-b border-line-gray hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 font-bold">{history.year}</td>
-                  <td className="px-6 py-4 font-bold text-terracotta">{history.month}</td>
-                  <td className="px-6 py-4">{history.category}</td>
+                  <td className="px-6 py-4">{history.year}</td>
+                  <td className="px-6 py-4">{history.month}</td>
+                  <td className="px-6 py-4">
+                    <span className="px-2 py-1 rounded text-xs font-bold bg-line-gray/30 text-ink">
+                      {history.category}
+                    </span>
+                  </td>
                   <td className="px-6 py-4 font-medium text-ink">{history.title}</td>
+                  <td className="px-6 py-4">{history.sort_order}</td>
                   <td className="px-6 py-4 text-right">
                     <Link href={`/admin/history/write?id=${history.id}`} className="text-terracotta hover:underline font-medium">수정</Link>
                   </td>
@@ -45,7 +51,7 @@ export default async function AdminHistoryPage() {
               ))
             ) : (
               <tr>
-                <td colSpan={5} className="px-6 py-12 text-center text-ink-2">
+                <td colSpan={6} className="px-6 py-12 text-center text-ink-2">
                   등록된 연혁이 없습니다.
                 </td>
               </tr>

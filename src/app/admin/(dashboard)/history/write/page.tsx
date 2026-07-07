@@ -13,10 +13,10 @@ function HistoryForm() {
 
   const [year, setYear] = useState<number>(new Date().getFullYear());
   const [month, setMonth] = useState("01");
+  const [category, setCategory] = useState("기타");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [category, setCategory] = useState("기타");
-  const [sortOrder, setSortOrder] = useState(0);
+  const [sortOrder, setSortOrder] = useState<number>(0);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -26,10 +26,10 @@ function HistoryForm() {
         if (data) {
           setYear(data.year);
           setMonth(data.month);
+          setCategory(data.category || "기타");
           setTitle(data.title);
           setContent(data.content || "");
-          setCategory(data.category);
-          setSortOrder(data.sort_order);
+          setSortOrder(data.sort_order || 0);
         }
       };
       fetchHistory();
@@ -40,57 +40,81 @@ function HistoryForm() {
     e.preventDefault();
     setLoading(true);
 
-    const payload = { year, month, title, content, category, sort_order: sortOrder };
+    const payload = { 
+      year, 
+      month, 
+      category, 
+      title, 
+      content,
+      sort_order: sortOrder
+    };
 
+    let error;
     if (id) {
-      await supabase.from("histories").update(payload).eq("id", id);
+      const res = await supabase.from("histories").update(payload).eq("id", id);
+      error = res.error;
     } else {
-      await supabase.from("histories").insert([payload]);
+      const res = await supabase.from("histories").insert([payload]);
+      error = res.error;
     }
 
     setLoading(false);
+
+    if (error) {
+      alert("저장 중 오류가 발생했습니다: " + error.message);
+      return;
+    }
+
     router.push("/admin/history");
     router.refresh();
   };
 
   const handleDelete = async () => {
-    if (confirm("정말로 삭제하시겠습니까?")) {
-      setLoading(true);
-      await supabase.from("histories").delete().eq("id", id);
-      router.push("/admin/history");
-      router.refresh();
+    if (!id) return;
+    if (!confirm("정말 이 연혁을 삭제하시겠습니까?")) return;
+    
+    setLoading(true);
+    const { error } = await supabase.from("histories").delete().eq("id", id);
+    setLoading(false);
+
+    if (error) {
+      alert("삭제 중 오류가 발생했습니다: " + error.message);
+      return;
     }
+
+    router.push("/admin/history");
+    router.refresh();
   };
 
   return (
-    <div className="max-w-3xl">
-      <div className="flex items-center justify-between mb-8">
+    <div className="max-w-2xl mx-auto">
+      <div className="flex justify-between items-center mb-8">
         <h2 className="font-serif font-bold text-3xl text-deep-navy">
-          연혁 {id ? "수정" : "작성"}
+          {id ? "연혁 수정" : "새 연혁 작성"}
         </h2>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-xl border border-line-gray shadow-sm">
+      <form onSubmit={handleSubmit} className="bg-white border border-line-gray rounded-xl p-8 shadow-sm space-y-6">
         <div className="grid grid-cols-2 gap-6">
           <div>
-            <label className="block text-sm font-bold text-ink mb-2">연도</label>
+            <label className="block text-sm font-bold text-ink mb-2">연도 *</label>
             <input 
               type="number" 
+              required 
               value={year}
-              onChange={(e) => setYear(parseInt(e.target.value))}
-              required
-              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+              onChange={(e) => setYear(Number(e.target.value))}
+              className="w-full border border-line-gray rounded px-4 py-3 focus:outline-none focus:border-terracotta"
             />
           </div>
           <div>
-            <label className="block text-sm font-bold text-ink mb-2">월</label>
+            <label className="block text-sm font-bold text-ink mb-2">월 * (상시, 01, 12 등)</label>
             <input 
               type="text" 
+              required 
               value={month}
               onChange={(e) => setMonth(e.target.value)}
-              required
-              placeholder="ex) 01, 10, 상시"
-              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+              className="w-full border border-line-gray rounded px-4 py-3 focus:outline-none focus:border-terracotta"
+              placeholder="예: 05, 상시"
             />
           </div>
         </div>
@@ -101,59 +125,67 @@ function HistoryForm() {
             <select 
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+              className="w-full border border-line-gray rounded px-4 py-3 focus:outline-none focus:border-terracotta"
             >
               <option value="QT">QT</option>
-              <option value="봉사">봉사</option>
-              <option value="전도">전도</option>
-              <option value="캠프">캠프</option>
               <option value="행사">행사</option>
+              <option value="전도">전도</option>
+              <option value="봉사">봉사</option>
+              <option value="캠프">캠프</option>
               <option value="기타">기타</option>
             </select>
           </div>
           <div>
-            <label className="block text-sm font-bold text-ink mb-2">정렬 순서</label>
+            <label className="block text-sm font-bold text-ink mb-2">정렬 순서 (숫자가 낮을수록 위로)</label>
             <input 
               type="number" 
               value={sortOrder}
-              onChange={(e) => setSortOrder(parseInt(e.target.value))}
-              className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
-              placeholder="기본값: 0 (낮은 순서가 먼저 나옴)"
+              onChange={(e) => setSortOrder(Number(e.target.value))}
+              className="w-full border border-line-gray rounded px-4 py-3 focus:outline-none focus:border-terracotta"
             />
           </div>
         </div>
 
         <div>
-          <label className="block text-sm font-bold text-ink mb-2">제목</label>
+          <label className="block text-sm font-bold text-ink mb-2">제목 *</label>
           <input 
             type="text" 
+            required 
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            required
-            className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors"
+            className="w-full border border-line-gray rounded px-4 py-3 focus:outline-none focus:border-terracotta"
+            placeholder="예: 제6회 남북청년 체육대회"
           />
         </div>
 
         <div>
           <label className="block text-sm font-bold text-ink mb-2">내용 (선택)</label>
           <textarea 
-            rows={4}
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            className="w-full px-4 py-3 bg-paper-cream border border-line-gray rounded focus:outline-none focus:border-deep-navy transition-colors resize-none"
-          ></textarea>
+            rows={5}
+            className="w-full border border-line-gray rounded px-4 py-3 focus:outline-none focus:border-terracotta"
+            placeholder="세부 내용을 입력하세요."
+          />
         </div>
 
         <div className="pt-4 flex justify-between">
           <div>
             {id && (
-              <Button type="button" variant="tertiary" onClick={handleDelete} disabled={loading}>
-                삭제
-              </Button>
+              <button 
+                type="button" 
+                onClick={handleDelete}
+                disabled={loading}
+                className="text-red-500 hover:underline font-bold px-4 py-3"
+              >
+                삭제하기
+              </button>
             )}
           </div>
-          <div className="flex gap-3">
-            <Button type="button" variant="tertiary" onClick={() => router.push("/admin/history")}>취소</Button>
+          <div className="flex gap-4">
+            <Button type="button" variant="outline" onClick={() => router.push("/admin/history")}>
+              취소
+            </Button>
             <Button type="submit" variant="primary" disabled={loading}>
               {loading ? "저장 중..." : "저장하기"}
             </Button>
