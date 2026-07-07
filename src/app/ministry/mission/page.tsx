@@ -16,15 +16,15 @@ export default function MinistryMissionPage() {
           <h3 className="font-serif font-bold text-2xl text-deep-navy mb-4">주요 활동</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
-              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
-                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              <div className="relative w-full h-48 rounded mb-4 overflow-hidden border border-line-gray/50">
+                <Image src="/images/mission-domestic.jpg" alt="국내 전도" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h4 className="font-bold text-ink mb-2 text-lg">국내 전도</h4>
               <p className="text-ink-2 text-sm leading-relaxed">한강 대교, 마포 대교 등에서 노방 전도를 통해 생명을 살리는 사역을 감당합니다.</p>
             </li>
             <li className="bg-white p-6 rounded border border-line-gray transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-default flex flex-col">
-              <div className="w-full h-32 bg-paper-cream rounded mb-4 flex items-center justify-center border border-line-gray/50">
-                 <span className="text-sm font-bold text-line-gray">사진 영역</span>
+              <div className="relative w-full h-48 rounded mb-4 overflow-hidden border border-line-gray/50">
+                <Image src="/images/mission-overseas.jpg" alt="해외 전도" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h4 className="font-bold text-ink mb-2 text-lg">해외 전도</h4>
               <p className="text-ink-2 text-sm leading-relaxed">열방을 향해 나아가 복음을 전파하며 세계 선교의 비전을 품습니다.</p>
@@ -36,7 +36,7 @@ export default function MinistryMissionPage() {
           <h3 className="font-serif font-bold text-2xl text-deep-navy mb-6">전도 사역 현장</h3>
           <div className="rounded-xl overflow-hidden shadow-lg border border-line-gray relative h-[400px] w-full group">
             <Image 
-              src="/images/mission.png" 
+              src="/images/mission.jpg" 
               alt="전도 사역 현장" 
               fill 
               className="object-cover transition-transform duration-700 group-hover:scale-105"
