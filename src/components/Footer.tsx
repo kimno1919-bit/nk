@@ -40,7 +40,7 @@ export function Footer() {
             </p>
             <p className="font-sans text-[15px] text-white/80 leading-relaxed mb-4">
               <span className="block font-medium text-white mb-1">카카오뱅크 3333-14-1526995</span>
-              예금주: 김재현 (남북청년연합선교회)
+              예금주: 김재현(남북 청년연합선교회 회계통장)
             </p>
             <Link href="/support" className="inline-block text-[14px] text-warm-sand underline underline-offset-4 hover:text-white transition-colors">
               재정 사용 안내 보기

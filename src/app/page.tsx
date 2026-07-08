@@ -267,7 +267,7 @@ export default async function Home() {
             <div className="flex flex-col sm:flex-row sm:items-center gap-8 justify-between">
               <div>
                 <p className="text-[26px] font-bold tracking-tight mb-1">카카오뱅크 3333-14-1526995</p>
-                <p className="text-white/70 text-[15px]">예금주: 김재현 (남북청년연합선교회)</p>
+                <p className="text-white/70 text-[15px]">예금주: 김재현(남북 청년연합선교회 회계통장)</p>
               </div>
               <CopyAccountButton />
             </div>

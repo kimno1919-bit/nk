@@ -23,10 +23,10 @@ export default function AboutPage() {
           <h2 className="font-serif font-bold text-3xl text-deep-navy mb-8">대표 인사말</h2>
           <div className="space-y-6 text-[17px] text-ink-2 leading-[1.8] break-keep">
             <p>
-              우리는 현재 남북 분단 70년의 아픔의 현실을 가지고 있습니다. 특별히 북녘땅에는 독재 체제와 경제적 어려움으로 백성들이 고통을 당하고 있습니다. 그곳에는 기독교인들에 대한 탄압으로 복음이 막혀 있습니다.
+              우리는 현재 남북 분단 73년의 아픔의 현실을 가지고 있습니다. 특별히 북녘땅에는 독재 체제와 경제적 어려움으로 백성들이 고통을 당하고 있습니다. 그곳에는 기독교인들에 대한 탄압으로 복음이 막혀 있습니다.
             </p>
             <p>
-              하나님은 모든 사실을 아시고 대안을 이미 준비하셨습니다. 즉 환경을 통하여 현재 3만5천 명의 새터민을 남한에 이미 보내셨습니다. 그들은 외형적으로는 단지 남한 땅에 살기 위해 왔지만 사실 북한에 복음을 가장 쉽게 전할 복음의 통로요 선물인 것입니다. 성경 구약에 등장한 요셉처럼 고향의 가족들을 살리기 위해 먼저 건너온 마중물이라고 볼 수가 있습니다.
+              하나님은 모든 사실을 아시고 대안을 이미 준비하셨습니다. 즉 환경을 통하여 현재 약 3만5천 명의 새터민을 남한에 이미 보내셨습니다. 그들은 외형적으로는 단지 남한 땅에 살기 위해 왔지만 사실 북한에 복음을 가장 쉽게 전할 복음의 통로요 선물인 것입니다. 성경 구약에 등장한 요셉처럼 고향의 가족들을 살리기 위해 먼저 건너온 마중물이라고 볼 수가 있습니다.
             </p>
             <p>
               그들이 이곳에서 잘 적응하고 더 나아가 주님의 일꾼으로 거듭나서 남한 형제들과 함께 북한 복음화와 더불어 세계 복음화를 함께할 것을 꿈꾸어 봅니다. 그러기 위해서는 먼저 주님 안에서 연합하고 사랑하며 잘 놀아야겠습니다.
@@ -37,7 +37,11 @@ export default function AboutPage() {
           </div>
           <div className="mt-10 text-right">
             <span className="block text-ink font-bold text-lg">남북청년연합선교회 대표</span>
-            <span className="block font-serif font-bold text-2xl text-deep-navy mt-1">조여호수아 선교사</span>
+            <span className="block font-serif font-bold text-2xl text-deep-navy mt-1 mb-2">조여호수아 선교사(목사)</span>
+            <span className="block text-ink-2 text-[15px] leading-relaxed">
+              미국 Southwestern Baptist Theological Seminary M.Div.<br />
+              탈북민 선교사(2011~현재)
+            </span>
           </div>
         </section>
 

@@ -34,7 +34,7 @@ export default function SupportPage() {
           
           <div className="bg-warm-sand/50 rounded-xl p-8 mb-8 border border-line-gray">
             <p className="text-xl sm:text-2xl font-bold text-ink tracking-tight mb-2">카카오뱅크 {accountInfo}</p>
-            <p className="text-ink-2 font-medium">예금주: 김재현 (남북청년연합선교회)</p>
+            <p className="text-ink-2 font-medium">예금주: 김재현(남북 청년연합선교회 회계통장)</p>
           </div>
 
           <Button 
