@@ -11,6 +11,7 @@ export default function AlbumPage() {
   const [albums, setAlbums] = useState<any[]>([]);
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [imageIndices, setImageIndices] = useState<Record<string, number>>({});
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchAlbums = async () => {
@@ -20,6 +21,7 @@ export default function AlbumPage() {
         .eq("is_public", true)
         .order("created_at", { ascending: false });
       if (data) setAlbums(data);
+      setIsLoading(false);
     };
     fetchAlbums();
   }, [supabase]);
@@ -76,7 +78,12 @@ export default function AlbumPage() {
             <Button variant="secondary" className="!px-6">관리자 글쓰기</Button>
           </Link>
         </div>
-        {albums && albums.length > 0 ? (
+        {isLoading ? (
+          <div className="py-24 text-center">
+            <div className="w-10 h-10 border-4 border-deep-navy border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <p className="text-ink-2 font-medium">로딩 중...</p>
+          </div>
+        ) : albums && albums.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {albums.map((album) => {
               const isExpanded = expandedId === album.id;

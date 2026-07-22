@@ -1,24 +1,13 @@
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { createClient } from "@/utils/supabase/server";
 import { CopyAccountButton } from "@/components/CopyAccountButton";
+import { LatestQts } from "@/components/LatestQts";
+import { LatestAlbums } from "@/components/LatestAlbums";
 
-export default async function Home() {
-  const supabase = await createClient();
-  const { data: latestQts } = await supabase
-    .from("qts")
-    .select("*")
-    .eq("is_public", true)
-    .order("date", { ascending: false })
-    .limit(3);
-  const { data: latestAlbums } = await supabase
-    .from("albums")
-    .select("*")
-    .eq("is_public", true)
-    .order("created_at", { ascending: false })
-    .limit(4);
+export const revalidate = 60; // 60초마다 캐시 갱신 (ISR)
 
+export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* 1. Hero Section */}
@@ -168,28 +157,7 @@ export default async function Home() {
               </Link>
             </div>
             <div className="flex flex-col gap-4">
-              {latestQts && latestQts.length > 0 ? (
-                latestQts.map((qt) => (
-                  <Link href={`/qt?id=${qt.id}`} key={qt.id} className="block">
-                    <Card className="hover:border-deep-navy transition-colors cursor-pointer group !p-6">
-                      <div className="flex justify-between items-center mb-4">
-                        <span className="px-2.5 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded">{qt.book} {qt.chapter}</span>
-                        <span className="text-[13px] text-ink-2">{qt.date}</span>
-                      </div>
-                      <h4 className="font-serif font-bold text-xl text-ink group-hover:text-deep-navy transition-colors">
-                        {qt.title}
-                      </h4>
-                      <p className="text-ink-2 text-[15px] mt-3 line-clamp-2 leading-relaxed">
-                        {qt.content}
-                      </p>
-                    </Card>
-                  </Link>
-                ))
-              ) : (
-                <div className="text-ink-2 text-center py-8 bg-white border border-line-gray rounded-xl shadow-sm">
-                  등록된 QT 묵상글이 없습니다.
-                </div>
-              )}
+              <LatestQts />
             </div>
           </div>
           
@@ -206,49 +174,7 @@ export default async function Home() {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {latestAlbums && latestAlbums.length > 0 ? (
-              latestAlbums.map((album) => {
-                const urls = (album.media_urls && album.media_urls.length > 0) 
-                  ? album.media_urls 
-                  : (album.media_url ? [album.media_url] : []);
-                const thumbnail = urls[0];
-
-                return (
-                  <Link href={`/album?id=${album.id}`} key={album.id} className="block group h-full">
-                    <div className="bg-white rounded-xl border border-line-gray overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 h-full flex flex-col">
-                      <div className="w-full aspect-square bg-line-gray/30 relative overflow-hidden flex-shrink-0">
-                        {thumbnail ? (
-                          thumbnail.match(/\.(mp4|webm)$/i) ? (
-                            <div className="w-full h-full flex items-center justify-center bg-black/10">
-                              <span className="text-4xl">▶️</span>
-                            </div>
-                          ) : (
-                            <img src={thumbnail} alt={album.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                          )
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center text-ink-2/50 font-bold">No Image</div>
-                        )}
-                        {urls.length > 1 && (
-                          <div className="absolute bottom-2 right-2 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded font-bold">
-                            +{urls.length - 1}
-                          </div>
-                        )}
-                      </div>
-                      <div className="p-5 flex flex-col flex-grow">
-                        <span className="text-[12px] font-bold text-ink-2 mb-2">{new Date(album.created_at).toLocaleDateString()}</span>
-                        <h4 className="font-serif font-bold text-lg text-ink group-hover:text-deep-navy transition-colors line-clamp-2">
-                          {album.title}
-                        </h4>
-                      </div>
-                    </div>
-                  </Link>
-                );
-              })
-            ) : (
-              <div className="col-span-full text-ink-2 text-center py-12 bg-paper-cream border border-line-gray rounded-xl shadow-sm">
-                등록된 앨범이 없습니다.
-              </div>
-            )}
+            <LatestAlbums />
           </div>
         </div>
       </section>

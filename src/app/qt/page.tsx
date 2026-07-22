@@ -18,6 +18,7 @@ export default function QtPage() {
   const [selectedBook, setSelectedBook] = useState("모든 성경");
   const [selectedChapter, setSelectedChapter] = useState("모든 장");
   const [displayCount, setDisplayCount] = useState(10);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchQts = async () => {
@@ -27,6 +28,7 @@ export default function QtPage() {
         .eq("is_public", true)
         .order("date", { ascending: false });
       if (data) setQts(data);
+      setIsLoading(false);
     };
     fetchQts();
 
@@ -154,7 +156,12 @@ export default function QtPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {filteredQts.length > 0 ? filteredQts.slice(0, displayCount).map((qt) => {
+          {isLoading ? (
+            <div className="col-span-full py-20 text-center">
+              <div className="w-10 h-10 border-4 border-deep-navy border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+              <p className="text-ink-2 font-medium">불러오는 중입니다...</p>
+            </div>
+          ) : filteredQts.length > 0 ? filteredQts.slice(0, displayCount).map((qt) => {
             const isExpanded = expandedId === qt.id;
             // 앞부분 100자 정도만 요약으로 보여줌
             const summary = qt.content ? qt.content.slice(0, 100) + (qt.content.length > 100 ? "..." : "") : "";
