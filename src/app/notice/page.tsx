@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/Button";
 import { createClient } from "@/utils/supabase/client";
+import { NoticeComments } from "./NoticeComments";
 
 export default function NoticePage() {
   const supabase = createClient();
@@ -18,7 +19,7 @@ export default function NoticePage() {
   // 데이터 불러오기
   useEffect(() => {
     const fetchNotices = async () => {
-      let query = supabase.from("notices").select("*").eq("is_public", true).order("created_at", { ascending: false });
+      let query = supabase.from("notices").select("*, notice_comments(count)").eq("is_public", true).order("created_at", { ascending: false });
       if (activeTab !== "전체") {
         query = query.eq("category", activeTab);
       }
@@ -43,8 +44,20 @@ export default function NoticePage() {
   const prevMonth = () => setCurrentDate(new Date(year, month - 1, 1));
   const nextMonth = () => setCurrentDate(new Date(year, month + 1, 1));
 
-  const toggleExpand = (id: string) => {
-    setExpandedId(prev => prev === id ? null : id);
+  const toggleExpand = async (id: string) => {
+    if (expandedId === id) {
+      setExpandedId(null);
+    } else {
+      setExpandedId(id);
+      await supabase.rpc("increment_view_count", { table_name: "notices", row_id: id });
+      setNotices((prev) => prev.map((notice) => notice.id === id ? { ...notice, views: (notice.views || 0) + 1 } : notice));
+    }
+  };
+
+  const handleLike = async (e: React.MouseEvent, id: string) => {
+    e.stopPropagation();
+    await supabase.rpc("increment_notice_like", { row_id: id });
+    setNotices((prev) => prev.map((notice) => notice.id === id ? { ...notice, likes: (notice.likes || 0) + 1 } : notice));
   };
 
   const firstDayOfMonth = new Date(year, month, 1).getDay();
@@ -115,17 +128,27 @@ export default function NoticePage() {
                     </p>
                   )}
 
-                  <div className="mt-4 pt-4 border-t border-line-gray/50 flex justify-end">
-                    {isExpanded ? (
-                       <span className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors">
-                         접기 ▲
-                       </span>
-                    ) : (
-                      <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors">
-                        자세히 보기 ▼
-                      </span>
-                    )}
+                  <div className="mt-4 pt-4 border-t border-line-gray/50 flex justify-between items-center">
+                    <div className="flex gap-4 text-[13px] text-ink-2 font-bold">
+                      <span>조회 {item.views || 0}</span>
+                      <button onClick={(e) => handleLike(e, item.id)} className="flex items-center gap-1 hover:text-terracotta transition-colors">
+                        <span>❤️</span> {item.likes || 0}
+                      </button>
+                      <span>💬 {item.notice_comments?.[0]?.count || 0}</span>
+                    </div>
+                    <div>
+                      {isExpanded ? (
+                         <span className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors">
+                           접기 ▲
+                         </span>
+                      ) : (
+                        <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors">
+                          자세히 보기 ▼
+                        </span>
+                      )}
+                    </div>
                   </div>
+                  {isExpanded && <NoticeComments noticeId={item.id} />}
                 </div>
                 );
               })
