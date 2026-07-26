@@ -15,16 +15,19 @@ export default function NoticePage() {
   const [activeTab, setActiveTab] = useState("전체");
   const [currentDate, setCurrentDate] = useState(new Date());
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   // 데이터 불러오기
   useEffect(() => {
     const fetchNotices = async () => {
+      setIsLoading(true);
       let query = supabase.from("notices").select("*, notice_comments(count)").eq("is_public", true).order("created_at", { ascending: false });
       if (activeTab !== "전체") {
         query = query.eq("category", activeTab);
       }
       const { data } = await query;
       if (data) setNotices(data);
+      setIsLoading(false);
     };
 
     const fetchSchedules = async () => {
@@ -101,7 +104,12 @@ export default function NoticePage() {
             </Link>
           </div>
           <div className="divide-y divide-line-gray min-h-[300px]">
-            {notices && notices.length > 0 ? (
+            {isLoading ? (
+              <div className="py-20 text-center">
+                <div className="w-10 h-10 border-4 border-deep-navy border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <p className="text-ink-2 font-medium">불러오는 중입니다...</p>
+              </div>
+            ) : notices && notices.length > 0 ? (
               notices.map((item) => {
                 const isExpanded = expandedId === item.id;
                 return (
