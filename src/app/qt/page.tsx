@@ -19,6 +19,7 @@ export default function QtPage() {
   const [selectedChapter, setSelectedChapter] = useState("모든 장");
   const [displayCount, setDisplayCount] = useState(10);
   const [isLoading, setIsLoading] = useState(true);
+  const [sortOrder, setSortOrder] = useState("최신순");
 
   useEffect(() => {
     const fetchQts = async () => {
@@ -103,6 +104,30 @@ export default function QtPage() {
     if (selectedBook !== "모든 성경" && qt.book !== selectedBook) return false;
     if (selectedChapter !== "모든 장" && qt.chapter !== selectedChapter) return false;
     return true;
+  }).sort((a, b) => {
+    if (sortOrder === "최신순") {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    } else {
+      const indexA = BIBLE_BOOKS.indexOf(a.book);
+      const indexB = BIBLE_BOOKS.indexOf(b.book);
+      
+      if (indexA !== indexB) {
+        if (indexA === -1 && indexB === -1) return a.book.localeCompare(b.book);
+        if (indexA === -1) return 1;
+        if (indexB === -1) return -1;
+        return indexA - indexB;
+      }
+      
+      const numsA = a.chapter?.match(/\d+/g)?.map(Number) || [];
+      const numsB = b.chapter?.match(/\d+/g)?.map(Number) || [];
+      
+      for (let i = 0; i < Math.max(numsA.length, numsB.length); i++) {
+        const nA = numsA[i] ?? 0;
+        const nB = numsB[i] ?? 0;
+        if (nA !== nB) return nA - nB;
+      }
+      return 0;
+    }
   });
 
   return (
@@ -149,6 +174,18 @@ export default function QtPage() {
                 ))}
               </select>
             )}
+
+            <select
+              value={sortOrder}
+              onChange={(e) => {
+                setSortOrder(e.target.value);
+                setDisplayCount(10);
+              }}
+              className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
+            >
+              <option value="최신순">최신순</option>
+              <option value="성경순">성경순</option>
+            </select>
           </div>
           <Link href="/admin/qt">
             <Button variant="secondary" className="!px-6">관리자 글쓰기</Button>
