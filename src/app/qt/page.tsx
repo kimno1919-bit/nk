@@ -204,7 +204,7 @@ export default function QtPage() {
             const summary = qt.content ? qt.content.slice(0, 100) + (qt.content.length > 100 ? "..." : "") : "";
             
             return (
-              <div key={qt.id} onClick={() => toggleExpand(qt.id)} className={`cursor-pointer transition-all duration-300 ${isExpanded ? 'md:col-span-2' : ''}`}>
+              <div key={qt.id} onClick={() => !isExpanded && toggleExpand(qt.id)} className={`transition-all duration-300 ${isExpanded ? 'md:col-span-2' : 'cursor-pointer'}`}>
                 <Card bg="white" className="hover:border-deep-navy/40 transition-colors flex flex-col h-full !p-6 sm:!p-8 group shadow-sm hover:shadow-md">
                   <div className="flex justify-between items-center mb-5">
                     <span className="px-3 py-1 bg-pine-green/10 text-pine-green text-[13px] font-bold rounded">
@@ -222,7 +222,13 @@ export default function QtPage() {
 
                   <div className="mt-auto pt-5 border-t border-line-gray/50 flex justify-between items-center">
                     {isExpanded ? (
-                      <div className="flex gap-2">
+                      <div className="flex flex-wrap gap-2">
+                        <button 
+                          onClick={(e) => { e.stopPropagation(); toggleExpand(qt.id); }}
+                          className="flex items-center gap-1.5 px-3 py-1.5 bg-line-gray/50 hover:bg-line-gray text-ink-2 hover:text-ink font-bold text-sm rounded-full transition-colors"
+                        >
+                          접기 ▲
+                        </button>
                         <button 
                           onClick={(e) => handleLike(e, qt.id)}
                           className="flex items-center gap-1.5 px-3 py-1.5 bg-warm-sand/50 hover:bg-terracotta/10 text-terracotta font-bold text-sm rounded-full transition-colors"
