@@ -92,7 +92,7 @@ export default function AdminQtPage() {
               <option key={book} value={book}>{book}</option>
             ))}
           </select>
-          <Link href="/admin/qt/write">
+          <Link href={`/admin/qt/write?page=${currentPage}&book=${selectedBook}`}>
             <Button variant="primary">새 QT 등록</Button>
           </Link>
         </div>
@@ -125,7 +125,7 @@ export default function AdminQtPage() {
                   <td className="px-6 py-4 text-ink font-medium">{qt.title}</td>
                   <td className="px-6 py-4">{qt.views || 0}</td>
                   <td className="px-6 py-4 text-right">
-                    <Link href={`/admin/qt/write?id=${qt.id}`} className="text-terracotta hover:underline font-medium">수정</Link>
+                    <Link href={`/admin/qt/write?id=${qt.id}&page=${currentPage}&book=${selectedBook}`} className="text-terracotta hover:underline font-medium">수정</Link>
                   </td>
                 </tr>
               ))

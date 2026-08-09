@@ -9,7 +9,17 @@ function QtForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
+  const returnPage = searchParams.get("page") || "1";
+  const returnBook = searchParams.get("book") || "모든 성경";
   const supabase = createClient();
+
+  const goBack = () => {
+    const params = new URLSearchParams();
+    params.set("page", returnPage);
+    params.set("book", returnBook);
+    router.push(`/admin/qt?${params.toString()}`);
+    router.refresh();
+  };
 
   // 오늘 날짜 기본값 세팅 (YYYY-MM-DD 형식)
   const today = new Date().toISOString().split('T')[0];
@@ -61,16 +71,14 @@ function QtForm() {
       return;
     }
 
-    router.refresh();
-    router.back();
+    goBack();
   };
 
   const handleDelete = async () => {
     if (confirm("정말로 삭제하시겠습니까?")) {
       setLoading(true);
       await supabase.from("qts").delete().eq("id", id);
-      router.refresh();
-      router.back();
+      goBack();
     }
   };
 
@@ -151,7 +159,7 @@ function QtForm() {
             )}
           </div>
           <div className="flex gap-3">
-            <Button type="button" variant="tertiary" onClick={() => router.back()}>취소</Button>
+            <Button type="button" variant="tertiary" onClick={goBack}>취소</Button>
             <Button type="submit" variant="primary" disabled={loading}>
               {loading ? "저장 중..." : "저장하기"}
             </Button>
