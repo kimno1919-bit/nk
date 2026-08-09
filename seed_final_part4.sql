@@ -2728,7 +2728,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-02-14', '데살로니가전서', '3장 1절 ~ 13절', '교회의 신실함이 주는 기쁨&nbsp;', '데살로니가전서 3장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-02-14', '데살로니가전서', '3장 1절 ~ 13절', '교회의 신실함이 주는 기쁨 ', '데살로니가전서 3장
 1   이러므로 우리가 참다 못하여 우리만 아덴에 머물기를 좋게 생각하고
 2   우리 형제 곧 그리스도의 복음을 전하는 하나님의 일꾼인 디모데를 보내노니 이는 너희를 굳건하게 하고 너희 믿음에 대하여 위로함으로
 3   아무도 이 여러 환난 중에 흔들리지 않게 하려 함이라 우리가 이것을 위하여 세움 받은 줄을 너희가 친히 알리라
@@ -3297,7 +3297,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-02-25', '디모데전서', '', '디모데전서 시작', '디모데전서 시작', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-02-26', '디모데전서', '1장 1절 ~ 10절', '디모데를 에베소교회에 머물게 한 이유&nbsp;', '디모데전서 1장 1~10절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-02-26', '디모데전서', '1장 1절 ~ 10절', '디모데를 에베소교회에 머물게 한 이유 ', '디모데전서 1장 1~10절
 1   우리 구주 하나님과 우리의 소망이신 그리스도 예수의 명령을 따라 그리스도 예수의 사도 된 바울은
 2   믿음 안에서 참 아들 된 디모데에게 편지하노니 하나님 아버지와 그리스도 예수 우리 주께로부터 은혜와 긍휼과 평강이 네게 있을지어다
 다른 교훈을 가르치지 말라

@@ -1648,7 +1648,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 11. 믿음과 회개 및 감사기도로 마무리', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-12-15', '로마서', '3장 21~31절', '하나님의 의&nbsp;', '로마서 3장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-12-15', '로마서', '3장 21~31절', '하나님의 의 ', '로마서 3장
 21   이제는 율법 외에 하나님의 한 의가 나타났으니 율법과 선지자들에게 증거를 받은 것이라
 22   곧 예수 그리스도를 믿음으로 말미암아 모든 믿는 자에게 미치는 하나님의 의니 차별이 없느니라
 23   모든 사람이 죄를 범하였으매 하나님의 영광에 이르지 못하더니
@@ -1791,7 +1791,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 11. 믿음과 회개 및 감사기도로 마무리', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-12-17', '로마서', '4장 11~20절', '믿는 자에게 주시는 은혜의 약속&nbsp;', '로마서 4장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-12-17', '로마서', '4장 11~20절', '믿는 자에게 주시는 은혜의 약속 ', '로마서 4장
 11   그가 할례의 표를 받은 것은 무할례시에 믿음으로 된 의를 인친 것이니 이는 무할례자로서 믿는 모든 자의 조상이 되어 그들도 의로 여기심을 얻게 하려 하심이라
 12   또한 할례자의 조상이 되었나니 곧 할례 받을 자에게뿐 아니라 우리 조상 아브라함이 무할례시에 가졌던 믿음의 자취를 따르는 자들에게도 그러하니라
 13   아브라함이나 그 후손에게 세상의 상속자가 되리라고 하신 언약은 율법으로 말미암은 것이 아니요 오직 믿음의 의로 말미암은 것이니라
@@ -3647,7 +3647,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-01-13', '로마서', '14장 11~23절', '모든 사람이 자신의 행위대로 하나님께 심판을 받는다&nbsp;', '로마서 14장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-01-13', '로마서', '14장 11~23절', '모든 사람이 자신의 행위대로 하나님께 심판을 받는다 ', '로마서 14장
 11   기록되었으되 주께서 이르시되 내가 살았노니 모든 무릎이 내게 꿇을 것이요 모든 혀가 하나님께 자백하리라 하였느니라
 12   이러므로 우리 각 사람이 자기 일을 하나님께 직고하리라
 13   그런즉 우리가 다시는 서로 비판하지 말고 도리어 부딪칠 것이나 거칠 것을 형제 앞에 두지 아니하도록 주의하라
@@ -4114,7 +4114,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-01-20', '고린도전서', '1장 1~10절', '고린도교회에 보내는 편지&nbsp;', '고린도전서 1장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-01-20', '고린도전서', '1장 1~10절', '고린도교회에 보내는 편지 ', '고린도전서 1장
 1   하나님의 뜻을 따라 그리스도 예수의 사도로 부르심을 받은 바울과 형제 소스데네는
 2   고린도에 있는 하나님의 교회 곧 그리스도 예수 안에서 거룩하여지고 성도라 부르심을 받은 자들과 또 각처에서 우리의 주 곧 그들과 우리의 주 되신 예수 그리스도의 이름을 부르는 모든 자들에게
 3   하나님 우리 아버지와 주 예수 그리스도로부터 은혜와 평강이 있기를 원하노라
@@ -4404,7 +4404,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 11. 믿음과 회개 및 감사기도로 마무리', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-01-24', '고린도전서', '2장 1~10절', '만세전부터 계획하신 하나님&nbsp;', '[고전2:1-10]
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-01-24', '고린도전서', '2장 1~10절', '만세전부터 계획하신 하나님 ', '[고전2:1-10]
 1 형제들아 내가 너희에게 나아가 하나님의 증거를 전할 때에 말과 지혜의 아름다운 것으로 아니하였나니
 2 내가 너희 중에서 예수 그리스도와 그가 십자가에 못 박히신 것 외에는 아무 것도 알지 아니하기로 작정하였음이라
 3 내가 너희 가운데 거할 때에 약하고 두려워하고 심히 떨었노라
@@ -5083,7 +5083,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-03', '고린도전서', '7장 21~30절', '부르심을 받은 그대로 하나님과 함께 거하라&nbsp;', '고린도전서 7장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-03', '고린도전서', '7장 21~30절', '부르심을 받은 그대로 하나님과 함께 거하라 ', '고린도전서 7장
 21   네가 종으로 있을 때에 부르심을 받았느냐 염려하지 말라 그러나 네가 자유롭게 될 수 있거든 그것을 이용하라
 22   주 안에서 부르심을 받은 자는 종이라도 주께 속한 자유인이요 또 그와 같이 자유인으로 있을 때에 부르심을 받은 자는 그리스도의 종이니라
 23   너희는 값으로 사신 것이니 사람들의 종이 되지 말라
@@ -5705,7 +5705,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-12', '고린도전서', '11장 1~10절', '교회의 질서&nbsp;', '고린도전서 11장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-12', '고린도전서', '11장 1~10절', '교회의 질서 ', '고린도전서 11장
 1   내가 그리스도를 본받는 자가 된 것 같이 너희는 나를 본받는 자가 되라
 2   너희가 모든 일에 나를 기억하고 또 내가 너희에게 전하여 준 대로 그 전통을 너희가 지키므로 너희를 칭찬하노라
 3   그러나 나는 너희가 알기를 원하노니 각 남자의 머리는 그리스도요 여자의 머리는 남자요 그리스도의 머리는 하나님이시라
@@ -6513,7 +6513,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-24', '고린도전서', '15장 11~20절', '예수님의 부활, 잠자는 자들의 첫 열매&nbsp;', '고린도전서 15장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-24', '고린도전서', '15장 11~20절', '예수님의 부활, 잠자는 자들의 첫 열매 ', '고린도전서 15장
 11   그러므로 나나 그들이나 이같이 전파하매 너희도 이같이 믿었느니라
 12   그리스도께서 죽은 자 가운데서 다시 살아나셨다 전파되었거늘 너희 중에서 어떤 사람들은 어찌하여 죽은 자 가운데서 부활이 없다 하느냐
 13   만일 죽은 자의 부활이 없으면 그리스도도 다시 살아나지 못하셨으리라
@@ -6653,7 +6653,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-26', '고린도전서', '15장 31~40절', '하늘에 속한 형체&nbsp;', '고린도전서 15장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-02-26', '고린도전서', '15장 31~40절', '하늘에 속한 형체 ', '고린도전서 15장
 31   형제들아 내가 그리스도 예수 우리 주 안에서 가진 바 너희에 대한 나의 자랑을 두고 단언하노니 나는 날마다 죽노라
 32   내가 사람의 방법으로 에베소에서 맹수와 더불어 싸웠다면 내게 무슨 유익이 있으리요 죽은 자가 다시 살아나지 못한다면 내일 죽을 터이니 먹고 마시자 하리라
 33   속지 말라 악한 동무들은 선한 행실을 더럽히나니

@@ -735,7 +735,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-12', '고린도후서', '5장 11~21절', '하나님과 화목하라&nbsp;', '고린도후서 5장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-12', '고린도후서', '5장 11~21절', '하나님과 화목하라 ', '고린도후서 5장
 11   우리는 주의 두려우심을 알므로 사람들을 권면하거니와 우리가 하나님 앞에 알리어졌으니 또 너희의 양심에도 알리어지기를 바라노라
 12   우리가 다시 너희에게 자천하는 것이 아니요 오직 우리로 말미암아 자랑할 기회를 너희에게 주어 마음으로 하지 않고 외모로 자랑하는 자들에게 대답하게 하려 하는 것이라
 13   우리가 만일 미쳤어도 하나님을 위한 것이요 정신이 온전하여도 너희를 위한 것이니
@@ -1119,7 +1119,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-17', '고린도후서', '8장 1~10절', '은혜로운 구제에 동참하라&nbsp;', '고린도후서 8장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-17', '고린도후서', '8장 1~10절', '은혜로운 구제에 동참하라 ', '고린도후서 8장
 1   형제들아 하나님께서 마게도냐 교회들에게 주신 은혜를 우리가 너희에게 알리노니
 2   환난의 많은 시련 가운데서 그들의 넘치는 기쁨과 극심한 가난이 그들의 풍성한 연보를 넘치도록 하게 하였느니라
 3   내가 증언하노니 그들이 힘대로 할 뿐 아니라 힘에 지나도록 자원하여
@@ -1612,7 +1612,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-24', '고린도후서', '11장 11~20절', '가짜와 진짜&nbsp;', '고린도후서 11장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-24', '고린도후서', '11장 11~20절', '가짜와 진짜 ', '고린도후서 11장
 11   어떠한 까닭이냐 내가 너희를 사랑하지 아니함이냐 하나님이 아시느니라
 12   나는 내가 해 온 그대로 앞으로도 하리니 기회를 찾는 자들이 그 자랑하는 일로 우리와 같이 인정 받으려는 그 기회를 끊으려 함이라
 13   그런 사람들은 거짓 사도요 속이는 일꾼이니 자기를 그리스도의 사도로 가장하는 자들이니라
@@ -1763,7 +1763,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-26', '고린도후서', '12장 1~10절', '환상과 계시&nbsp;', '고린도후서 12장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-03-26', '고린도후서', '12장 1~10절', '환상과 계시 ', '고린도후서 12장
 1   무익하나마 내가 부득불 자랑하노니 주의 환상과 계시를 말하리라
 2   내가 그리스도 안에 있는 한 사람을 아노니 그는 십사 년 전에 셋째 하늘에 이끌려 간 자라 (그가 몸 안에 있었는지 몸 밖에 있었는지 나는 모르거니와 하나님은 아시느니라)
 3   내가 이런 사람을 아노니 (그가 몸 안에 있었는지 몸 밖에 있었는지 나는 모르거니와 하나님은 아시느니라)
@@ -2654,7 +2654,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-07', '갈라디아서', '4장 21~31절', '사라와 하갈&nbsp;', '갈라디아서 4장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-07', '갈라디아서', '4장 21~31절', '사라와 하갈 ', '갈라디아서 4장
 21   내게 말하라 율법 아래에 있고자 하는 자들아 율법을 듣지 못하였느냐
 22   기록된 바 아브라함에게 두 아들이 있으니 하나는 여종에게서, 하나는 자유 있는 여자에게서 났다 하였으며
 23   여종에게서는 육체를 따라 났고 자유 있는 여자에게서는 약속으로 말미암았느니라
@@ -3759,7 +3759,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-22', '에베소서', '4장 21~32절', '하나님을 따르는 삶&nbsp;', '에베소서 4장 21~32절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-22', '에베소서', '4장 21~32절', '하나님을 따르는 삶 ', '에베소서 4장 21~32절
 21   진리가 예수 안에 있는 것 같이 너희가 참으로 그에게서 듣고 또한 그 안에서 가르침을 받았을진대
 22   너희는 유혹의 욕심을 따라 썩어져 가는 구습을 따르는 옛 사람을 벗어 버리고
 23   오직 너희의 심령이 새롭게 되어
@@ -3895,7 +3895,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-24', '에베소서', '5장 11~20절', '그리스도의 비추심&nbsp;', '에베소서 5장 11~20절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-24', '에베소서', '5장 11~20절', '그리스도의 비추심 ', '에베소서 5장 11~20절
 11   너희는 열매 없는 어둠의 일에 참여하지 말고 도리어 책망하라
 12   그들이 은밀히 행하는 것들은 말하기도 부끄러운 것들이라
 13   그러나 책망을 받는 모든 것은 빛으로 말미암아 드러나나니 드러나는 것마다 빛이니라
@@ -4228,7 +4228,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-28', '빌립보서', '1장 11~20절', '&nbsp;', '빌립보서 1장 11~20절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-04-28', '빌립보서', '1장 11~20절', ' ', '빌립보서 1장 11~20절
 11   예수 그리스도로 말미암아 의의 열매가 가득하여 하나님의 영광과 찬송이 되기를 원하노라
 12   형제들아 내가 당한 일이 도리어 복음 전파에 진전이 된 줄을 너희가 알기를 원하노라
 13   이러므로 나의 매임이 그리스도 안에서 모든 시위대 안과 그 밖의 모든 사람에게 나타났으니
@@ -4717,7 +4717,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-05-04', '빌립보서', '4장 1~10절', '주 안에서 기뻐하라&nbsp;', '빌립보서 4장 1~10절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-05-04', '빌립보서', '4장 1~10절', '주 안에서 기뻐하라 ', '빌립보서 4장 1~10절
 1   그러므로 나의 사랑하고 사모하는 형제들, 나의 기쁨이요 면류관인 사랑하는 자들아 이와 같이 주 안에 서라
 2   내가 유오디아를 권하고 순두게를 권하노니 주 안에서 같은 마음을 품으라
 3   또 참으로 나와 멍에를 같이한 네게 구하노니 복음에 나와 함께 힘쓰던 저 여인들을 돕고 또한 글레멘드와 그 외에 나의 동역자들을 도우라 그 이름들이 생명책에 있느니라
@@ -6277,7 +6277,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-05-26', '데살로니가후서', '1장 1~12절', '하나님의 공의로운 심판의 표&nbsp;', '데살로니가후서 1장 1~12절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-05-26', '데살로니가후서', '1장 1~12절', '하나님의 공의로운 심판의 표 ', '데살로니가후서 1장 1~12절
 
 1   바울과 실루아노와 디모데는 하나님 우리 아버지와 주 예수 그리스도 안에 있는 데살로니가인의 교회에 편지하노니
 2   하나님 아버지와 주 예수 그리스도로부터 은혜와 평강이 너희에게 있을지어다
@@ -6946,7 +6946,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-06-04', '디모데전서서', '3장 1~10절', '감독과 집사의 자격&nbsp;', '디모데전서 3장 1~10절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-06-04', '디모데전서서', '3장 1~10절', '감독과 집사의 자격 ', '디모데전서 3장 1~10절
 1   미쁘다 이 말이여, 곧 사람이 감독의 직분을 얻으려 함은 선한 일을 사모하는 것이라 함이로다
 2   그러므로 감독은 책망할 것이 없으며 한 아내의 남편이 되며 절제하며 신중하며 단정하며 나그네를 대접하며 가르치기를 잘하며
 3   술을 즐기지 아니하며 구타하지 아니하며 오직 관용하며 다투지 아니하며 돈을 사랑하지 아니하며

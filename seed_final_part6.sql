@@ -1,4 +1,4 @@
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-09', '요한계시록', '11장 11절 ~ 19절', '&nbsp;', '(요한계시록 11장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-09', '요한계시록', '11장 11절 ~ 19절', ' ', '(요한계시록 11장)
 11. 삼 일 반 후에 하나님께로부터 생기가 그들 속에 들어가매 그들이 발로 일어서니 구경하는 자들이 크게 두려워하더라
 12. 하늘로부터 큰 음성이 있어 이리로 올라오라 함을 그들이 듣고 구름을 타고 하늘로 올라가니 그들의 원수들도 구경하더라
 13. 그 때에 큰 지진이 나서 성 십분의 일이 무너지고 지진에 죽은 사람이 칠천이라 그 남은 자들이 두려워하여 영광을 하늘의 하나님께 돌리더라
@@ -51,7 +51,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-10', '요한계시록', '12장 1절 ~ 10절', '&nbsp;', '(요한계시록 12장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-10', '요한계시록', '12장 1절 ~ 10절', ' ', '(요한계시록 12장)
 1.  하늘에 큰 이적이 보이니 해를 옷 입은 한 여자가 있는데 그 발 아래에는 달이 있고 그 머리에는 열두 별의 관을 썼더라
 2. 이 여자가 아이를 배어 해산하게 되매 아파서 애를 쓰며 부르짖더라
 3. 하늘에 또 다른 이적이 보이니 보라 한 큰 붉은 용이 있어 머리가 일곱이요 뿔이 열이라 그 여러 머리에 일곱 왕관이 있는데
@@ -233,7 +233,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-13', '요한계시록', '13장 11절 ~ 18절', '&nbsp;', '(요한계시록 13장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-13', '요한계시록', '13장 11절 ~ 18절', ' ', '(요한계시록 13장)
 11. 내가 보매 또 다른 짐승이 땅에서 올라오니 어린 양 같이 두 뿔이 있고 용처럼 말을 하더라
 12. 그가 먼저 나온 짐승의 모든 권세를 그 앞에서 행하고 땅과 땅에 사는 자들을 처음 짐승에게 경배하게 하니 곧 죽게 되었던 상처가 나은 자니라
 13. 큰 이적을 행하되 심지어 사람들 앞에서 불이 하늘로부터 땅에 내려오게 하고
@@ -421,7 +421,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-16', '요한계시록', '15장 1절 ~ 8절', '&nbsp;', '(요한계시록 15장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-16', '요한계시록', '15장 1절 ~ 8절', ' ', '(요한계시록 15장)
 1. 또 하늘에 크고 이상한 다른 이적을 보매 일곱 천사가 일곱 재앙을 가졌으니 곧 마지막 재앙이라 하나님의 진노가 이것으로 마치리로다
 2. 또 내가 보니 불이 섞인 유리 바다 같은 것이 있고 짐승과 그의 우상과 그의 이름의 수를 이기고 벗어난 자들이 유리 바다 가에 서서 하나님의 거문고를 가지고
 3. 하나님의 종 모세의 노래, 어린 양의 노래를 불러 이르되 주 하나님 곧 전능하신 이시여 하시는 일이 크고 놀라우시도다 만국의 왕이시여 주의 길이 의롭고 참되시도다
@@ -478,7 +478,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-17', '요한계시록', '16장 1절 ~ 10절', '&nbsp;', '(요한계시록 16장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-17', '요한계시록', '16장 1절 ~ 10절', ' ', '(요한계시록 16장)
 1.  또 내가 들으니 성전에서 큰 음성이 나서 일곱 천사에게 말하되 너희는 가서 하나님의 진노의 일곱 대접을 땅에 쏟으라 하더라
 2. 첫째 천사가 가서 그 대접을 땅에 쏟으매 짐승의 표를 받은 사람들과 그 우상에게 경배하는 자들에게 악하고 독한 종기가 나더라
 3. 둘째 천사가 그 대접을 바다에 쏟으매 바다가 곧 죽은 자의 피 같이 되니 바다 가운데 모든 생물이 죽더라
@@ -755,7 +755,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-21', '요한계시록', '17장 11절 ~ 18절', '&nbsp;', '(요한계시록 17장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-21', '요한계시록', '17장 11절 ~ 18절', ' ', '(요한계시록 17장)
 11. 전에 있었다가 지금 없어진 짐승은 여덟째 왕이니 일곱 중에 속한 자라 그가 멸망으로 들어가리라
 12. 네가 보던 열 뿔은 열 왕이니 아직 나라를 얻지 못하였으나 다만 짐승과 더불어 임금처럼 한동안 권세를 받으리라
 13. 그들이 한 뜻을 가지고 자기의 능력과 권세를 짐승에게 주더라
@@ -941,7 +941,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-24', '요한계시록', '19장 1절 ~ 10절', '&nbsp;', '(요한계시록 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-24', '요한계시록', '19장 1절 ~ 10절', ' ', '(요한계시록 19장)
 1.  이 일 후에 내가 들으니 하늘에 허다한 무리의 큰 음성 같은 것이 있어 이르되 할렐루야 구원과 영광과 능력이 우리 하나님께 있도다
 2. 그의 심판은 참되고 의로운지라 음행으로 땅을 더럽게 한 큰 음녀를 심판하사 자기 종들의 피를 그 음녀의 손에 갚으셨도다 하고
 3. 두 번째로 할렐루야 하니 그 연기가 세세토록 올라가더라
@@ -1010,7 +1010,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-25', '요한계시록', '19장 11절 ~ 21절', '&nbsp;', '(요한계시록 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-25', '요한계시록', '19장 11절 ~ 21절', ' ', '(요한계시록 19장)
 11.  또 내가 하늘이 열린 것을 보니 보라 백마와 그것을 탄 자가 있으니 그 이름은 충신과 진실이라 그가 공의로 심판하며 싸우더라
 12. 그 눈은 불꽃 같고 그 머리에는 많은 관들이 있고 또 이름 쓴 것 하나가 있으니 자기밖에 아는 자가 없고
 13. 또 그가 피 뿌린 옷을 입었는데 그 이름은 하나님의 말씀이라 칭하더라
@@ -1179,7 +1179,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-28', '요한계시록', '21장 1절 ~ 10절', '&nbsp;', '(요한계시록 21장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-28', '요한계시록', '21장 1절 ~ 10절', ' ', '(요한계시록 21장)
 1.  또 내가 새 하늘과 새 땅을 보니 처음 하늘과 처음 땅이 없어졌고 바다도 다시 있지 않더라
 2. 또 내가 보매 거룩한 성 새 예루살렘이 하나님께로부터 하늘에서 내려오니 그 준비한 것이 신부가 남편을 위하여 단장한 것 같더라
 3. 내가 들으니 보좌에서 큰 음성이 나서 이르되 보라 하나님의 장막이 사람들과 함께 있으매 하나님이 그들과 함께 계시리니 그들은 하나님의 백성이 되고 하나님은 친히 그들과 함께 계셔서
@@ -1242,7 +1242,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-29', '요한계시록', '21장 1절 ~ 10절', '&nbsp;', '(요한계시록 21장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-29', '요한계시록', '21장 1절 ~ 10절', ' ', '(요한계시록 21장)
 1.  또 내가 새 하늘과 새 땅을 보니 처음 하늘과 처음 땅이 없어졌고 바다도 다시 있지 않더라
 2. 또 내가 보매 거룩한 성 새 예루살렘이 하나님께로부터 하늘에서 내려오니 그 준비한 것이 신부가 남편을 위하여 단장한 것 같더라
 3. 내가 들으니 보좌에서 큰 음성이 나서 이르되 보라 하나님의 장막이 사람들과 함께 있으매 하나님이 그들과 함께 계시리니 그들은 하나님의 백성이 되고 하나님은 친히 그들과 함께 계셔서
@@ -1426,7 +1426,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-01', '요한계시록', '22장 1절 ~ 10절', '&nbsp;', '(요한계시록 22장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-01', '요한계시록', '22장 1절 ~ 10절', ' ', '(요한계시록 22장)
 1. 또 그가 수정 같이 맑은 생명수의 강을 내게 보이니 하나님과 및 어린 양의 보좌로부터 나와서
 2. 길 가운데로 흐르더라 강 좌우에 생명나무가 있어 열두 가지 열매를 맺되 달마다 그 열매를 맺고 그 나무 잎사귀들은 만국을 치료하기 위하여 있더라
 3. 다시 저주가 없으며 하나님과 그 어린 양의 보좌가 그 가운데에 있으리니 그의 종들이 그를 섬기며
@@ -1490,7 +1490,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-02', '요한계시록', '22장 11절 ~ 21절', '&nbsp;', '(요한계시록 22장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-02', '요한계시록', '22장 11절 ~ 21절', ' ', '(요한계시록 22장)
 11. 불의를 행하는 자는 그대로 불의를 행하고 더러운 자는 그대로 더럽고 의로운 자는 그대로 의를 행하고 거룩한 자는 그대로 거룩하게 하라
 12. 보라 내가 속히 오리니 내가 줄 상이 내게 있어 각 사람에게 그가 행한 대로 갚아 주리라
 13. 나는 알파와 오메가요 처음과 마지막이요 시작과 마침이라
@@ -1690,7 +1690,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-06', '창세기', '1장 21절 ~ 31절', '&nbsp;', '(창세기 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-06', '창세기', '1장 21절 ~ 31절', ' ', '(창세기 1장)
 21. 하나님이 큰 바다 짐승들과 물에서 번성하여 움직이는 모든 생물을 그 종류대로, 날개 있는 모든 새를 그 종류대로 창조하시니 하나님이 보시기에 좋았더라
 22. 하나님이 그들에게 복을 주시며 이르시되 생육하고 번성하여 여러 바닷물에 충만하라 새들도 땅에 번성하라 하시니라
 23. 저녁이 되고 아침이 되니 이는 다섯째 날이니라
@@ -1879,7 +1879,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-09', '창세기', '2장 21절 ~ 25절', '&nbsp;', '(창세기 2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-09', '창세기', '2장 21절 ~ 25절', ' ', '(창세기 2장)
 21. 여호와 하나님이 아담을 깊이 잠들게 하시니 잠들매 그가 그 갈빗대 하나를 취하고 살로 대신 채우시고
 22. 여호와 하나님이 아담에게서 취하신 그 갈빗대로 여자를 만드시고 그를 아담에게로 이끌어 오시니
 23. 아담이 이르되 이는 내 뼈 중의 뼈요 살 중의 살이라 이것을 남자에게서 취하였은즉 여자라 부르리라 하니라
@@ -1933,7 +1933,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-10', '창세기', '3장 1절 ~ 10절', '&nbsp;', '(창세기 3장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-10', '창세기', '3장 1절 ~ 10절', ' ', '(창세기 3장)
 1.  그런데 뱀은 여호와 하나님이 지으신 들짐승 중에 가장 간교하니라 뱀이 여자에게 물어 이르되 하나님이 참으로 너희에게 동산 모든 나무의 열매를 먹지 말라 하시더냐
 2. 여자가 뱀에게 말하되 동산 나무의 열매를 우리가 먹을 수 있으나
 3. 동산 중앙에 있는 나무의 열매는 하나님의 말씀에 너희는 먹지도 말고 만지지도 말라 너희가 죽을까 하노라 하셨느니라
@@ -2331,7 +2331,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-16', '창세기', '5장 11절 ~ 20절', '&nbsp;', '(창세기 5장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-16', '창세기', '5장 11절 ~ 20절', ' ', '(창세기 5장)
 11. 그는 구백오 세를 살고 죽었더라
 12. 게난은 칠십 세에 마할랄렐을 낳았고
 13. 마할랄렐을 낳은 후 팔백사십 년을 지내며 자녀들을 낳았으며
@@ -2392,7 +2392,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-17', '창세기', '5장 21절 ~ 32절', '&nbsp;', '(창세기 5장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-17', '창세기', '5장 21절 ~ 32절', ' ', '(창세기 5장)
 21. 에녹은 육십오 세에 므두셀라를 낳았고
 22. 므두셀라를 낳은 후 삼백 년을 하나님과 동행하며 자녀들을 낳았으며
 23. 그는 삼백육십오 세를 살았더라
@@ -2603,7 +2603,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-20', '창세기', '7장 1절 ~ 10절', '&nbsp;', '(창세기 7장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-20', '창세기', '7장 1절 ~ 10절', ' ', '(창세기 7장)
 1.  여호와께서 노아에게 이르시되 너와 네 온 집은 방주로 들어가라 이 세대에서 네가 내 앞에 의로움을 내가 보았음이니라
 2. 너는 모든 정결한 짐승은 암수 일곱씩, 부정한 것은 암수 둘씩을 네게로 데려오며
 3. 공중의 새도 암수 일곱씩을 데려와 그 씨를 온 지면에 유전하게 하라
@@ -2808,7 +2808,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-23', '창세기', '8장 11절 ~ 22절', '&nbsp;', '(창세기 8장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-23', '창세기', '8장 11절 ~ 22절', ' ', '(창세기 8장)
 11. 저녁때에 비둘기가 그에게로 돌아왔는데 그 입에 감람나무 새 잎사귀가 있는지라 이에 노아가 땅에 물이 줄어든 줄을 알았으며
 12. 또 칠 일을 기다려 비둘기를 내놓으매 다시는 그에게로 돌아오지 아니하였더라
 13. 육백일 년 첫째 달 곧 그 달 초하룻날에 땅 위에서 물이 걷힌지라 노아가 방주 뚜껑을 제치고 본즉 지면에서 물이 걷혔더니
@@ -2879,7 +2879,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-24', '창세기', '9장 1절 ~ 10절', '&nbsp;', '(창세기 9장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-24', '창세기', '9장 1절 ~ 10절', ' ', '(창세기 9장)
 1.  하나님이 노아와 그 아들들에게 복을 주시며 그들에게 이르시되 생육하고 번성하여 땅에 충만하라
 2. 땅의 모든 짐승과 공중의 모든 새와 땅에 기는 모든 것과 바다의 모든 물고기가 너희를 두려워하며 너희를 무서워하리니 이것들은 너희의 손에 붙였음이니라
 3. 모든 산 동물은 너희의 먹을 것이 될지라 채소 같이 내가 이것을 다 너희에게 주노라
@@ -3109,7 +3109,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-27', '창세기', '10장 1절 ~ 10절', '&nbsp;', '(창세기 10장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-08-27', '창세기', '10장 1절 ~ 10절', ' ', '(창세기 10장)
 1.  노아의 아들 셈과 함과 야벳의 족보는 이러하니라 홍수 후에 그들이 아들들을 낳았으니
 2. 야벳의 아들은 고멜과 마곡과 마대와 야완과 두발과 메섹과 디라스요
 3. 고멜의 아들은 아스그나스와 리밧과 도갈마요
@@ -3507,7 +3507,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-03', '창세기', '12장 11절 ~ 20절', '&nbsp;', '(창세기 12장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-03', '창세기', '12장 11절 ~ 20절', ' ', '(창세기 12장)
 11. 그가 애굽에 가까이 이르렀을 때에 그의 아내 사래에게 말하되 내가 알기에 그대는 아리따운 여인이라
 12. 애굽 사람이 그대를 볼 때에 이르기를 이는 그의 아내라 하여 나는 죽이고 그대는 살리리니
 13. 원하건대 그대는 나의 누이라 하라 그러면 내가 그대로 말미암아 안전하고 내 목숨이 그대로 말미암아 보존되리라 하니라
@@ -3702,7 +3702,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-06', '창세기', '14장 1절 ~ 10절', '&nbsp;', '(창세기 14장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-06', '창세기', '14장 1절 ~ 10절', ' ', '(창세기 14장)
 1.  당시에 시날 왕 아므라벨과 엘라살 왕 아리옥과 엘람 왕 그돌라오멜과 고임 왕 디달이
 2. 소돔 왕 베라와 고모라 왕 비르사와 아드마 왕 시납과 스보임 왕 세메벨과 벨라 곧 소알 왕과 싸우니라
 3. 이들이 다 싯딤 골짜기 곧 지금의 염해에 모였더라
@@ -3757,7 +3757,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-07', '창세기', '14장 11절 ~ 24절', '&nbsp;', '(창세기 14장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-07', '창세기', '14장 11절 ~ 24절', ' ', '(창세기 14장)
 11. 네 왕이 소돔과 고모라의 모든 재물과 양식을 빼앗아 가고
 12. 소돔에 거주하는 아브람의 조카 롯도 사로잡고 그 재물까지 노략하여 갔더라
 13. 도망한 자가 와서 히브리 사람 아브람에게 알리니 그 때에 아브람이 아모리 족속 마므레의 상수리 수풀 근처에 거주하였더라 마므레는 에스골의 형제요 또 아넬의 형제라 이들은 아브람과 동맹한 사람들이더라
@@ -3954,7 +3954,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-10', '창세기', '16장 1절 ~ 10절', '&nbsp;', '(창세기 16장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-10', '창세기', '16장 1절 ~ 10절', ' ', '(창세기 16장)
 1.  아브람의 아내 사래는 출산하지 못하였고 그에게 한 여종이 있으니 애굽 사람이요 이름은 하갈이라
 2. 사래가 아브람에게 이르되 여호와께서 내 출산을 허락하지 아니하셨으니 원하건대 내 여종에게 들어가라 내가 혹 그로 말미암아 자녀를 얻을까 하노라 하매 아브람이 사래의 말을 들으니라
 3. 아브람의 아내 사래가 그 여종 애굽 사람 하갈을 데려다가 그 남편 아브람에게 첩으로 준 때는 아브람이 가나안 땅에 거주한 지 십 년 후였더라
@@ -4291,7 +4291,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-16', '창세기', '18장 11절 ~ 20절', '하나님께서 아브라함의 자손을 통해 이루실 일&nbsp;', '창세기 18장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-16', '창세기', '18장 11절 ~ 20절', '하나님께서 아브라함의 자손을 통해 이루실 일 ', '창세기 18장
 11   아브라함과 사라는 나이가 많아 늙었고 사라에게는 여성의 생리가 끊어졌는지라
 12   사라가 속으로 웃고 이르되 내가 노쇠하였고 내 주인도 늙었으니 내게 무슨 즐거움이 있으리요
 13   여호와께서 아브라함에게 이르시되 사라가 왜 웃으며 이르기를 내가 늙었거늘 어떻게 아들을 낳으리요 하느냐
@@ -4367,7 +4367,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-17', '창세기', '18장 21절 ~ 31절', '&nbsp;', '(창세기 18장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-17', '창세기', '18장 21절 ~ 31절', ' ', '(창세기 18장)
 21. 내가 이제 내려가서 그 모든 행한 것이 과연 내게 들린 부르짖음과 같은지 그렇지 않은지 내가 보고 알려 하노라
 22. 그 사람들이 거기서 떠나 소돔으로 향하여 가고 아브라함은 여호와 앞에 그대로 섰더니
 23. 아브라함이 가까이 나아가 이르되 주께서 의인을 악인과 함께 멸하려 하시나이까
@@ -4550,7 +4550,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-20', '창세기', '19장 21절 ~ 30절', '&nbsp;', '(창세기 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-20', '창세기', '19장 21절 ~ 30절', ' ', '(창세기 19장)
 21. 그가 그에게 이르되 내가 이 일에도 네 소원을 들었은즉 네가 말하는 그 성읍을 멸하지 아니하리니
 22. 그리로 속히 도망하라 네가 거기 이르기까지는 내가 아무 일도 행할 수 없노라 하였더라 그러므로 그 성읍 이름을 소알이라 불렀더라
 23.  롯이 소알에 들어갈 때에 해가 돋았더라
@@ -4608,7 +4608,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-21', '창세기', '19장 31절 ~ 38절', '&nbsp;', '(창세기 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-21', '창세기', '19장 31절 ~ 38절', ' ', '(창세기 19장)
 31. 큰 딸이 작은 딸에게 이르되 우리 아버지는 늙으셨고 온 세상의 도리를 따라 우리의 배필 될 사람이 이 땅에는 없으니
 32. 우리가 우리 아버지에게 술을 마시게 하고 동침하여 우리 아버지로 말미암아 후손을 이어가자 하고
 33. 그 밤에 그들이 아버지에게 술을 마시게 하고 큰 딸이 들어가서 그 아버지와 동침하니라 그러나 그 아버지는 그 딸이 눕고 일어나는 것을 깨닫지 못하였더라
@@ -4785,7 +4785,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-24', '창세기', '21장 1절 ~ 10절', '&nbsp;', '(창세기 21장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-24', '창세기', '21장 1절 ~ 10절', ' ', '(창세기 21장)
 1.  여호와께서 말씀하신 대로 사라를 돌보셨고 여호와께서 말씀하신 대로 사라에게 행하셨으므로
 2. 사라가 임신하고 하나님이 말씀하신 시기가 되어 노년의 아브라함에게 아들을 낳으니
 3. 아브라함이 그에게 태어난 아들 곧 사라가 자기에게 낳은 아들을 이름하여 이삭이라 하였고
@@ -4988,7 +4988,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-27', '창세기', '22장 1절 ~ 10절', '&nbsp;', '(창세기 22장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-27', '창세기', '22장 1절 ~ 10절', ' ', '(창세기 22장)
 1.  그 일 후에 하나님이 아브라함을 시험하시려고 그를 부르시되 아브라함아 하시니 그가 이르되 내가 여기 있나이다
 2. 여호와께서 이르시되 네 아들 네 사랑하는 독자 이삭을 데리고 모리아 땅으로 가서 내가 네게 일러 준 한 산 거기서 그를 번제로 드리라
 3. 아브라함이 아침에 일찍이 일어나 나귀에 안장을 지우고 두 종과 그의 아들 이삭을 데리고 번제에 쓸 나무를 쪼개어 가지고 떠나 하나님이 자기에게 일러 주신 곳으로 가더니
@@ -5064,7 +5064,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-28', '창세기', '22장 11절 ~ 24절', '&nbsp;', '(창세기 22장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-28', '창세기', '22장 11절 ~ 24절', ' ', '(창세기 22장)
 11. 여호와의 사자가 하늘에서부터 그를 불러 이르시되 아브라함아 아브라함아 하시는지라 아브라함이 이르되 내가 여기 있나이다 하매
 12. 사자가 이르시되 그 아이에게 네 손을 대지 말라 그에게 아무 일도 하지 말라 네가 네 아들 네 독자까지도 내게 아끼지 아니하였으니 내가 이제야 네가 하나님을 경외하는 줄을 아노라
 13. 아브라함이 눈을 들어 살펴본즉 한 숫양이 뒤에 있는데 뿔이 수풀에 걸려 있는지라 아브라함이 가서 그 숫양을 가져다가 아들을 대신하여 번제로 드렸더라
@@ -5129,7 +5129,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-29', '창세기', '23장 1절 ~ 10절', '사라의 죽음&nbsp;', '[창23:1-10]
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-29', '창세기', '23장 1절 ~ 10절', '사라의 죽음 ', '[창23:1-10]
 1 사라가 백이십칠 세를 살았으니 이것이 곧 사라가 누린 햇수라
 2 사라가 가나안 땅 헤브론 곧 기럇아르바에서 죽으매 아브라함이 들어가서 사라를 위하여 슬퍼하며 애통하다가
 3 그 시신 앞에서 일어나 나가서 헷 족속에게 말하여 이르되
@@ -5171,7 +5171,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-30', '창세기', '23장 11절 ~ 20절', '사라의 장지로 헤브론 땅을 사다&nbsp;', '창세기 23장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-09-30', '창세기', '23장 11절 ~ 20절', '사라의 장지로 헤브론 땅을 사다 ', '창세기 23장
 11   내 주여 그리 마시고 내 말을 들으소서 내가 그 밭을 당신에게 드리고 그 속의 굴도 내가 당신에게 드리되 내가 내 동족 앞에서 당신에게 드리오니 당신의 죽은 자를 장사하소서
 12   아브라함이 이에 그 땅의 백성 앞에서 몸을 굽히고
 13   그 땅의 백성이 듣는 데서 에브론에게 말하여 이르되 당신이 합당히 여기면 청하건대 내 말을 들으시오 내가 그 밭 값을 당신에게 주리니 당신은 내게서 받으시오 내가 나의 죽은 자를 거기 장사하겠노라
@@ -5257,7 +5257,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-01', '창세기', '24장 1절 ~ 10절', '&nbsp;', '(창세기 24장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-01', '창세기', '24장 1절 ~ 10절', ' ', '(창세기 24장)
 1.  아브라함이 나이가 많아 늙었고 여호와께서 그에게 범사에 복을 주셨더라
 2. 아브라함이 자기 집 모든 소유를 맡은 늙은 종에게 이르되 청하건대 내 허벅지 밑에 네 손을 넣으라
 3. 내가 너에게 하늘의 하나님, 땅의 하나님이신 여호와를 가리켜 맹세하게 하노니 너는 내가 거주하는 이 지방 가나안 족속의 딸 중에서 내 아들을 위하여 아내를 택하지 말고
@@ -5890,7 +5890,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-11', '창세기', '26장 1절 ~ 10절', '&nbsp;', '(창세기 26장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-11', '창세기', '26장 1절 ~ 10절', ' ', '(창세기 26장)
 1.  아브라함 때에 첫 흉년이 들었더니 그 땅에 또 흉년이 들매 이삭이 그랄로 가서 블레셋 왕 아비멜렉에게 이르렀더니
 2. 여호와께서 이삭에게 나타나 이르시되 애굽으로 내려가지 말고 내가 네게 지시하는 땅에 거주하라
 3. 이 땅에 거류하면 내가 너와 함께 있어 네게 복을 주고 내가 이 모든 땅을 너와 네 자손에게 주리라 내가 네 아버지 아브라함에게 맹세한 것을 이루어
@@ -5958,7 +5958,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-12', '창세기', '26장 11절 ~ 20절', '&nbsp;', '(창세기 26장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-12', '창세기', '26장 11절 ~ 20절', ' ', '(창세기 26장)
 11. 아비멜렉이 이에 모든 백성에게 명하여 이르되 이 사람이나 그의 아내를 범하는 자는 죽이리라 하였더라
 12. 이삭이 그 땅에서 농사하여 그 해에 백 배나 얻었고 여호와께서 복을 주시므로
 13. 그 사람이 창대하고 왕성하여 마침내 거부가 되어
@@ -6125,7 +6125,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-15', '창세기', '27장 1절 ~ 10절', '&nbsp;', '(창세기 27장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-10-15', '창세기', '27장 1절 ~ 10절', ' ', '(창세기 27장)
 1.  이삭이 나이가 많아 눈이 어두워 잘 보지 못하더니 맏아들 에서를 불러 이르되 내 아들아 하매 그가 이르되 내가 여기 있나이다 하니
 2. 이삭이 이르되 내가 이제 늙어 어느 날 죽을는지 알지 못하니
 3. 그런즉 네 기구 곧 화살통과 활을 가지고 들에 가서 나를 위하여 사냥하여

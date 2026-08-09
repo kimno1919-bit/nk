@@ -943,7 +943,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-06-23', '디도서', '1장 11~16절', '그레데 교회의 믿음을 온전하게 하라&nbsp;', '디도서 1장 11~16절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-06-23', '디도서', '1장 11~16절', '그레데 교회의 믿음을 온전하게 하라 ', '디도서 1장 11~16절
 11   그들의 입을 막을 것이라 이런 자들이 더러운 이득을 취하려고 마땅하지 아니한 것을 가르쳐 가정들을 온통 무너뜨리는도다
 12   그레데인 중의 어떤 선지자가 말하되 그레데인들은 항상 거짓말쟁이며 악한 짐승이며 배만 위하는 게으름뱅이라 하니
 13   이 증언이 참되도다 그러므로 네가 그들을 엄히 꾸짖으라 이는 그들로 하여금 믿음을 온전하게 하고
@@ -1074,7 +1074,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-06-25', '디도서', '2장 11~15절', '은혜로운 양육과 하나님의 뜻&nbsp;', '디도서 2장 11~15절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-06-25', '디도서', '2장 11~15절', '은혜로운 양육과 하나님의 뜻 ', '디도서 2장 11~15절
 11   모든 사람에게 구원을 주시는 하나님의 은혜가 나타나
 12   우리를 양육하시되 경건하지 않은 것과 이 세상 정욕을 다 버리고 신중함과 의로움과 경건함으로 이 세상에 살고
 13   복스러운 소망과 우리의 크신 하나님 구주 예수 그리스도의 영광이 나타나심을 기다리게 하셨으니
@@ -1891,7 +1891,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-07-07', '히브리서', '4장 11~16절', '큰 대제사장 주 예수 그리스도를 믿고 은혜의 보좌 앞으로 나아가라&nbsp;', '히브리서 4장 11~16절
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-07-07', '히브리서', '4장 11~16절', '큰 대제사장 주 예수 그리스도를 믿고 은혜의 보좌 앞으로 나아가라 ', '히브리서 4장 11~16절
 11   그러므로 우리가 저 안식에 들어가기를 힘쓸지니 이는 누구든지 저 순종하지 아니하는 본에 빠지지 않게 하려 함이라
 12   하나님의 말씀은 살아 있고 활력이 있어 좌우에 날선 어떤 검보다도 예리하여 혼과 영과 및 관절과 골수를 찔러 쪼개기까지 하며 또 마음의 생각과 뜻을 판단하나니
 13   지으신 것이 하나도 그 앞에 나타나지 않음이 없고 우리의 결산을 받으실 이의 눈 앞에 만물이 벌거벗은 것 같이 드러나느니라
@@ -3385,7 +3385,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-07-28', '히브리서', '12장 21~29절', '말씀하신 이를 거역하지 말라&nbsp;', '홈페이지를 ''남북청년연합선교회''로 이전합니다.
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2026-07-28', '히브리서', '12장 21~29절', '말씀하신 이를 거역하지 말라 ', '홈페이지를 ''남북청년연합선교회''로 이전합니다.
 
 검색 창에서 ''남북청년연합선교회'' 로 검색해 주세요. 
 

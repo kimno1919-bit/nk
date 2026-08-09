@@ -1137,7 +1137,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-02-12', '출애굽기', '17장 1절~10절', '&nbsp;', '(출애굽기 17장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-02-12', '출애굽기', '17장 1절~10절', ' ', '(출애굽기 17장)
 1.  이스라엘 자손의 온 회중이 여호와의 명령대로 신 광야에서 떠나 그 노정대로 행하여 르비딤에 장막을 쳤으나 백성이 마실 물이 없는지라
 2. 백성이 모세와 다투어 이르되 우리에게 물을 주어 마시게 하라 모세가 그들에게 이르되 너희가 어찌하여 나와 다투느냐 너희가 어찌하여 여호와를 시험하느냐
 3. 거기서 백성이 목이 말라 물을 찾으매 그들이 모세에게 대하여 원망하여 이르되 당신이 어찌하여 우리를 애굽에서 인도해 내어서 우리와 우리 자녀와 우리 가축이 목말라 죽게 하느냐
@@ -1329,7 +1329,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-02-15', '출애굽기', '18장 11절~20절', '&nbsp;', '(출애굽기 18장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-02-15', '출애굽기', '18장 11절~20절', ' ', '(출애굽기 18장)
 11. 이제 내가 알았도다 여호와는 모든 신보다 크시므로 이스라엘에게 교만하게 행하는 그들을 이기셨도다 하고
 12. 모세의 장인 이드로가 번제물과 희생제물들을 하나님께 가져오매 아론과 이스라엘 모든 장로가 와서 모세의 장인과 함께 하나님 앞에서 떡을 먹으니라
 13.  이튿날 모세가 백성을 재판하느라고 앉아 있고 백성은 아침부터 저녁까지 모세 곁에 서 있는지라
@@ -1394,7 +1394,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-02-16', '출애굽기', '18장 21절~27절', '&nbsp;', '(출애굽기 18장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-02-16', '출애굽기', '18장 21절~27절', ' ', '(출애굽기 18장)
 21. 너는 또 온 백성 가운데서 능력 있는 사람들 곧 하나님을 두려워하며 진실하며 불의한 이익을 미워하는 자를 살펴서 백성 위에 세워 천부장과 백부장과 오십부장과 십부장을 삼아
 22. 그들이 때를 따라 백성을 재판하게 하라 큰 일은 모두 네게 가져갈 것이요 작은 일은 모두 그들이 스스로 재판할 것이니 그리하면 그들이 너와 함께 담당할 것인즉 일이 네게 쉬우리라
 23. 네가 만일 이 일을 하고 하나님께서도 네게 허락하시면 네가 이 일을 감당하고 이 모든 백성도 자기 곳으로 평안히 가리라
@@ -3742,7 +3742,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-03-26', '출애굽기', '30장 1절~10절', '&nbsp;', '(출애굽기 30장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-03-26', '출애굽기', '30장 1절~10절', ' ', '(출애굽기 30장)
 1.  너는 분향할 제단을 만들지니 곧 조각목으로 만들되
 2. 길이가 한 규빗, 너비가 한 규빗으로 네모가 반듯하게 하고 높이는 두 규빗으로 하며 그 뿔을 그것과 이어지게 하고
 3. 제단 상면과 전후 좌우 면과 뿔을 순금으로 싸고 주위에 금 테를 두를지며
@@ -4298,7 +4298,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-04', '출애굽기', '33장 1절~10절', '&nbsp;', '(출애굽기 33장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-04', '출애굽기', '33장 1절~10절', ' ', '(출애굽기 33장)
 1.  여호와께서 모세에게 이르시되 너는 네가 애굽 땅에서 인도하여 낸 백성과 함께 여기를 떠나서 내가 아브라함과 이삭과 야곱에게 맹세하여 네 자손에게 주기로 한 그 땅으로 올라가라
 2. 내가 사자를 너보다 앞서 보내어 가나안 사람과 아모리 사람과 헷 사람과 브리스 사람과 히위 사람과 여부스 사람을 쫓아내고
 3. 너희를 젖과 꿀이 흐르는 땅에 이르게 하려니와 나는 너희와 함께 올라가지 아니하리니 너희는 목이 곧은 백성인즉 내가 길에서 너희를 진멸할까 염려함이니라 하시니
@@ -4364,7 +4364,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-05', '출애굽기', '33장 11절~23절', '&nbsp;', '(출애굽기 33장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-05', '출애굽기', '33장 11절~23절', ' ', '(출애굽기 33장)
 11. 사람이 자기의 친구와 이야기함 같이 여호와께서는 모세와 대면하여 말씀하시며 모세는 진으로 돌아오나 눈의 아들 젊은 수종자 여호수아는 회막을 떠나지 아니하니라
 12.  모세가 여호와께 아뢰되 보시옵소서 주께서 내게 이 백성을 인도하여 올라가라 하시면서 나와 함께 보낼 자를 내게 지시하지 아니하시나이다 주께서 전에 말씀하시기를 나는 이름으로도 너를 알고 너도 내 앞에 은총을 입었다 하셨사온즉
 13. 내가 참으로 주의 목전에 은총을 입었사오면 원하건대 주의 길을 내게 보이사 내게 주를 알리시고 나로 주의 목전에 은총을 입게 하시며 이 족속을 주의 백성으로 여기소서
@@ -4550,7 +4550,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-08', '출애굽기', '34장 21절~30절', '&nbsp;', '(출애굽기 34장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-08', '출애굽기', '34장 21절~30절', ' ', '(출애굽기 34장)
 21. 너는 엿새 동안 일하고 일곱째 날에는 쉴지니 밭 갈 때에나 거둘 때에도 쉴지며
 22. 칠칠절 곧 맥추의 초실절을 지키고 세말에는 수장절을 지키라
 23. 너희의 모든 남자는 매년 세 번씩 주 여호와 이스라엘의 하나님 앞에 보일지라
@@ -4742,7 +4742,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-11', '출애굽기', '35장 11절~20절', '&nbsp;', '(출애굽기 35장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-11', '출애굽기', '35장 11절~20절', ' ', '(출애굽기 35장)
 11. 곧 성막과 천막과 그 덮개와 그 갈고리와 그 널판과 그 띠와 그 기둥과 그 받침과
 12. 증거궤와 그 채와 속죄소와 그 가리는 휘장과
 13. 상과 그 채와 그 모든 기구와 진설병과
@@ -4807,7 +4807,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-12', '출애굽기', '35장 21절~30절', '&nbsp;', '(출애굽기 35장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-12', '출애굽기', '35장 21절~30절', ' ', '(출애굽기 35장)
 21. 마음이 감동된 모든 자와 자원하는 모든 자가 와서 회막을 짓기 위하여 그 속에서 쓸 모든 것을 위하여, 거룩한 옷을 위하여 예물을 가져다가 여호와께 드렸으니
 22. 곧 마음에 원하는 남녀가 와서 팔찌와 귀고리와 가락지와 목걸이와 여러 가지 금품을 가져다가 사람마다 여호와께 금 예물을 드렸으며
 23. 무릇 청색 자색 홍색 실과 가는 베 실과 염소 털과 붉은 물 들인 숫양의 가죽과 해달의 가죽이 있는 자도 가져왔으며
@@ -4991,7 +4991,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-15', '출애굽기', '36장 11절~20절', '&nbsp;', '(출애굽기 36장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-15', '출애굽기', '36장 11절~20절', ' ', '(출애굽기 36장)
 11. 연결할 끝폭 가에 청색 고를 만들며 다른 연결할 끝폭 가에도 고를 만들되
 12. 그 연결할 한 폭에 고리 쉰 개를 달고 다른 연결할 한 폭의 가에도 고리 쉰 개를 달아 그 고들이 서로 대하게 하고
 13. 금 갈고리 쉰 개를 만들어 그 갈고리로 두 휘장을 연결하여 한 막을 이루었더라
@@ -5156,7 +5156,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-18', '출애굽기', '37장 1절~10절', '&nbsp;', '(출애굽기 37장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-18', '출애굽기', '37장 1절~10절', ' ', '(출애굽기 37장)
 1.  브살렐이 조각목으로 궤를 만들었으니 길이가 두 규빗 반, 너비가 한 규빗 반, 높이가 한 규빗 반이며
 2. 순금으로 안팎을 싸고 위쪽 가장자리로 돌아가며 금 테를 만들었으며
 3. 금 고리 넷을 부어 만들어 네 발에 달았으니 곧 이쪽에 두 고리요 저쪽에 두 고리이며
@@ -5215,7 +5215,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-19', '출애굽기', '37장 11절~20절', '&nbsp;', '(출애굽기 37장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-19', '출애굽기', '37장 11절~20절', ' ', '(출애굽기 37장)
 11. 순금으로 싸고 위쪽 가장자리로 돌아가며 금 테를 둘렀으며
 12. 그 주위에 손바닥 넓이만한 턱을 만들고 그 턱 주위에 금으로 테를 만들었고
 13. 상을 위하여 금 고리 넷을 부어 만들어 네 발 위, 네 모퉁이에 달았으니
@@ -5403,7 +5403,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-22', '출애굽기', '38장 11절~20절', '&nbsp;', '(출애굽기 38장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-22', '출애굽기', '38장 11절~20절', ' ', '(출애굽기 38장)
 11. 그 북쪽에도 백 규빗이라 그 기둥이 스물이며 그 받침이 스물이니 놋이요 기둥의 갈고리와 가름대는 은이며
 12. 서쪽에 포장은 쉰 규빗이라 그 기둥이 열이요 받침이 열이며 기둥의 갈고리와 가름대는 은이며
 13. 동으로 동쪽에도 쉰 규빗이라
@@ -5603,7 +5603,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-25', '출애굽기', '39장 11~20절', '&nbsp;', '(출애굽기 39장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-25', '출애굽기', '39장 11~20절', ' ', '(출애굽기 39장)
 11. 둘째 줄은 석류석 남보석 홍마노요
 12. 셋째 줄은 호박 백마노 자수정이요
 13. 넷째 줄은 녹보석 호마노 벽옥이라 다 금 테에 물렸으니
@@ -5664,7 +5664,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-26', '출애굽기', '39장 21~30절', '&nbsp;', '(출애굽기 39장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-26', '출애굽기', '39장 21~30절', ' ', '(출애굽기 39장)
 21. 청색 끈으로 흉패 고리와 에봇 고리에 꿰어 흉패로 정교하게 짠 에봇 띠 위에 붙여서 에봇에서 벗어지지 않게 하였으니 여호와께서 모세에게 명령하신 대로 하였더라
 22.  그가 에봇 받침 긴 옷을 전부 청색으로 짜서 만들되
 23. 그 옷의 두 어깨 사이에 구멍을 내고 갑옷 깃 같이 그 구멍 주위에 깃을 짜서 찢어지지 않게 하고
@@ -5861,7 +5861,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-29', '출애굽기', '40장 11~20절', '&nbsp;', '(출애굽기 40장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-04-29', '출애굽기', '40장 11~20절', ' ', '(출애굽기 40장)
 11. 너는 또 물두멍과 그 받침에 발라 거룩하게 하고
 12. 너는 또 아론과 그 아들들을 회막 문으로 데려다가 물로 씻기고
 13. 아론에게 거룩한 옷을 입히고 그에게 기름을 부어 거룩하게 하여 그가 내게 제사장의 직분을 행하게 하라
@@ -5980,7 +5980,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-01', '누가복음', '1장 1~10절', '&nbsp;', '(누가복음 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-01', '누가복음', '1장 1~10절', ' ', '(누가복음 1장)
 1.  우리 중에 이루어진 사실에 대하여
 2. 처음부터 목격자와 말씀의 일꾼 된 자들이 전하여 준 그대로 내력을 저술하려고 붓을 든 사람이 많은지라
 3. 그 모든 일을 근원부터 자세히 미루어 살핀 나도 데오빌로 각하에게 차례대로 써 보내는 것이 좋은 줄 알았노니
@@ -6100,7 +6100,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-03', '누가복음', '1장 11~20절', '&nbsp;', '(누가복음 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-03', '누가복음', '1장 11~20절', ' ', '(누가복음 1장)
 11. 주의 사자가 그에게 나타나 향단 우편에 선지라
 12. 사가랴가 보고 놀라며 무서워하니
 13. 천사가 그에게 이르되 사가랴여 무서워하지 말라 너의 간구함이 들린지라 네 아내 엘리사벳이 네게 아들을 낳아 주리니 그 이름을 요한이라 하라

@@ -1353,7 +1353,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-11-09', '창세기', '36장 1절 ~ 10절', '&nbsp;', '(창세기 36장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-11-09', '창세기', '36장 1절 ~ 10절', ' ', '(창세기 36장)
 1.  에서 곧 에돔의 족보는 이러하니라
 2. 에서가 가나안 여인 중 헷 족속 엘론의 딸 아다와 히위 족속 시브온의 딸인 아나의 딸 오홀리바마를 자기 아내로 맞이하고
 3. 또 이스마엘의 딸 느바욧의 누이 바스맛을 맞이하였더니
@@ -1519,7 +1519,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-11-12', '창세기', '36장 31절 ~ 43절', '&nbsp;', '(창세기 36장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-11-12', '창세기', '36장 31절 ~ 43절', ' ', '(창세기 36장)
 31.  이스라엘 자손을 다스리는 왕이 있기 전에 에돔 땅을 다스리던 왕들은 이러하니라
 32. 브올의 아들 벨라가 에돔의 왕이 되었으니 그 도성의 이름은 딘하바며
 33. 벨라가 죽고 보스라 사람 세라의 아들 요밥이 그를 대신하여 왕이 되었고
@@ -2717,7 +2717,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-11-30', '창세기', '42장 1절~10절', '&nbsp;', '(창세기 42장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-11-30', '창세기', '42장 1절~10절', ' ', '(창세기 42장)
 1.  그 때에 야곱이 애굽에 곡식이 있음을 보고 아들들에게 이르되 너희는 어찌하여 서로 바라보고만 있느냐
 2. 야곱이 또 이르되 내가 들은즉 저 애굽에 곡식이 있다 하니 너희는 그리로 가서 거기서 우리를 위하여 사오라 그러면 우리가 살고 죽지 아니하리라 하매
 3. 요셉의 형 열 사람이 애굽에서 곡식을 사려고 내려갔으나
@@ -2905,7 +2905,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-03', '창세기', '42장 31절~38절', '&nbsp;', '(창세기 42장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-03', '창세기', '42장 31절~38절', ' ', '(창세기 42장)
 31. 우리가 그에게 이르되 우리는 확실한 자들이요 정탐꾼이 아니니이다
 32. 우리는 한 아버지의 아들 열두 형제로서 하나는 없어지고 막내는 오늘 우리 아버지와 함께 가나안 땅에 있나이다 하였더니
 33. 그 땅의 주인인 그 사람이 우리에게 이르되 내가 이같이 하여 너희가 확실한 자들임을 알리니 너희 형제 중의 하나를 내게 두고 양식을 가지고 가서 너희 집안의 굶주림을 구하고
@@ -3083,7 +3083,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-06', '창세기', '43장 21절~34절', '&nbsp;', '(창세기 43장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-06', '창세기', '43장 21절~34절', ' ', '(창세기 43장)
 21. 여관에 이르러 자루를 풀어본즉 각 사람의 돈이 전액 그대로 자루 아귀에 있기로 우리가 도로 가져왔고
 22. 양식 살 다른 돈도 우리가 가지고 내려왔나이다 우리의 돈을 우리 자루에 넣은 자는 누구인지 우리가 알지 못하나이다
 23. 그가 이르되 너희는 안심하라 두려워하지 말라 너희 하나님, 너희 아버지의 하나님이 재물을 너희 자루에 넣어 너희에게 주신 것이니라 너희 돈은 내가 이미 받았느니라 하고 시므온을 그들에게로 이끌어내고
@@ -3149,7 +3149,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-07', '창세기', '44장 1절~10절', '&nbsp;', '(창세기 44장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-07', '창세기', '44장 1절~10절', ' ', '(창세기 44장)
 1.  요셉이 그의 집 청지기에게 명하여 이르되 양식을 각자의 자루에 운반할 수 있을 만큼 채우고 각자의 돈을 그 자루에 넣고
 2. 또 내 잔 곧 은잔을 그 청년의 자루 아귀에 넣고 그 양식 값 돈도 함께 넣으라 하매 그가 요셉의 명령대로 하고
 3. 아침이 밝을 때에 사람들과 그들의 나귀들을 보내니라
@@ -3335,7 +3335,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-10', '창세기', '45장 1절~10절', '&nbsp;', '(창세기 45장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-10', '창세기', '45장 1절~10절', ' ', '(창세기 45장)
 1.  요셉이 시종하는 자들 앞에서 그 정을 억제하지 못하여 소리 질러 모든 사람을 자기에게서 물러가라 하고 그 형제들에게 자기를 알리니 그 때에 그와 함께 한 다른 사람이 없었더라
 2. 요셉이 큰 소리로 우니 애굽 사람에게 들리며 바로의 궁중에 들리더라
 3. 요셉이 그 형들에게 이르되 나는 요셉이라 내 아버지께서 아직 살아 계시니이까 형들이 그 앞에서 놀라서 대답하지 못하더라
@@ -3521,7 +3521,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-13', '창세기', '46장 1절~10절', '&nbsp;', '(창세기 46장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-13', '창세기', '46장 1절~10절', ' ', '(창세기 46장)
 1.  이스라엘이 모든 소유를 이끌고 떠나 브엘세바에 이르러 그의 아버지 이삭의 하나님께 희생제사를 드리니
 2. 그 밤에 하나님이 이상 중에 이스라엘에게 나타나 이르시되 야곱아 야곱아 하시는지라 야곱이 이르되 내가 여기 있나이다 하매
 3. 하나님이 이르시되 나는 하나님이라 네 아버지의 하나님이니 애굽으로 내려가기를 두려워하지 말라 내가 거기서 너로 큰 민족을 이루게 하리라
@@ -3583,7 +3583,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-14', '창세기', '46장 11절~20절', '&nbsp;', '(창세기 46장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-14', '창세기', '46장 11절~20절', ' ', '(창세기 46장)
 11. 레위의 아들은 게르손과 그핫과 므라리요
 12. 유다의 아들 곧 엘과 오난과 셀라와 베레스와 세라니 엘과 오난은 가나안 땅에서 죽었고 베레스의 아들은 헤스론과 하물이요
 13. 잇사갈의 아들은 돌라와 부와와 욥과 시므론이요
@@ -3779,7 +3779,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-17', '창세기', '47장 11절~20절', '&nbsp;', '(창세기 47장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-17', '창세기', '47장 11절~20절', ' ', '(창세기 47장)
 11. 요셉이 바로의 명령대로 그의 아버지와 그의 형들에게 거주할 곳을 주되 애굽의 좋은 땅 라암셋을 그들에게 주어 소유로 삼게 하고
 12. 또 그의 아버지와 그의 형들과 그의 아버지의 온 집에 그 식구를 따라 먹을 것을 주어 봉양하였더라
 13.  기근이 더욱 심하여 사방에 먹을 것이 없고 애굽 땅과 가나안 땅이 기근으로 황폐하니
@@ -3993,7 +3993,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-20', '창세기', '48장 11절~22절', '&nbsp;', '(창세기 48장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-20', '창세기', '48장 11절~22절', ' ', '(창세기 48장)
 11. 요셉에게 이르되 내가 네 얼굴을 보리라고는 생각하지 못하였더니 하나님이 내게 네 자손까지도 보게 하셨도다
 12. 요셉이 아버지의 무릎 사이에서 두 아들을 물러나게 하고 땅에 엎드려 절하고
 13. 오른손으로는 에브라임을 이스라엘의 왼손을 향하게 하고 왼손으로는 므낫세를 이스라엘의 오른손을 향하게 하여 이끌어 그에게 가까이 나아가매
@@ -4059,7 +4059,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-21', '창세기', '49장 1절~10절', '&nbsp;', '(창세기 49장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-21', '창세기', '49장 1절~10절', ' ', '(창세기 49장)
 1. 야곱이 그 아들들을 불러 이르되 너희는 모이라 너희가 후일에 당할 일을 내가 너희에게 이르리라
 2. 너희는 모여 들으라 야곱의 아들들아 너희 아버지 이스라엘에게 들을지어다
 3. 르우벤아 너는 내 장자요 내 능력이요 내 기력의 시작이라 위풍이 월등하고 권능이 탁월하다마는
@@ -4437,7 +4437,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-27', '출애굽기', '', '출애굽기 시작', '이스라엘 민족이 애굽(이집트)에서 탈출하여 하나님의 언약 백성이 되는 과정을 함께 묵상하시기 바랍니다.', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-28', '출애굽기', '1장 1절~10절', '&nbsp;', '(출애굽기1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-28', '출애굽기', '1장 1절~10절', ' ', '(출애굽기1장)
 1.  야곱과 함께 각각 자기 가족을 데리고 애굽에 이른 이스라엘 아들들의 이름은 이러하니
 2. 르우벤과 시므온과 레위와 유다와
 3. 잇사갈과 스불론과 베냐민과
@@ -4497,7 +4497,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-29', '출애굽기', '1장 11절~22절', '&nbsp;', '(출애굽기1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-12-29', '출애굽기', '1장 11절~22절', ' ', '(출애굽기1장)
 11. 감독들을 그들 위에 세우고 그들에게 무거운 짐을 지워 괴롭게 하여 그들에게 바로를 위하여 국고성 비돔과 라암셋을 건축하게 하니라
 12. 그러나 학대를 받을수록 더욱 번성하여 퍼져나가니 애굽 사람이 이스라엘 자손으로 말미암아 근심하여
 13. 이스라엘 자손에게 일을 엄하게 시켜
@@ -4705,7 +4705,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-01', '출애굽기', '2장 21절~25절', '&nbsp;', '(출애굽기2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-01', '출애굽기', '2장 21절~25절', ' ', '(출애굽기2장)
 21. 모세가 그와 동거하기를 기뻐하매 그가 그의 딸 십보라를 모세에게 주었더니
 22. 그가 아들을 낳으매 모세가 그의 이름을 게르솜이라 하여 이르되 내가 타국에서 나그네가 되었음이라 하였더라
 23. 여러 해 후에 애굽 왕은 죽었고 이스라엘 자손은 고된 노동으로 말미암아 탄식하며 부르짖으니 그 고된 노동으로 말미암아 부르짖는 소리가 하나님께 상달된지라
@@ -4866,7 +4866,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-03', '출애굽기', '3장 11절~22절', '&nbsp;', '(출애굽기4장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-03', '출애굽기', '3장 11절~22절', ' ', '(출애굽기4장)
 1.  모세가 대답하여 이르되 그러나 그들이 나를 믿지 아니하며 내 말을 듣지 아니하고 이르기를 여호와께서 네게 나타나지 아니하셨다 하리이다
 2. 여호와께서 그에게 이르시되 네 손에 있는 것이 무엇이냐 그가 이르되 지팡이니이다
 3. 여호와께서 이르시되 그것을 땅에 던지라 하시매 곧 땅에 던지니 그것이 뱀이 된지라 모세가 뱀 앞에서 피하매
@@ -4933,7 +4933,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-04', '출애굽기', '4장 1절~10절', '&nbsp;', '(출애굽기4장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-04', '출애굽기', '4장 1절~10절', ' ', '(출애굽기4장)
 1.  모세가 대답하여 이르되 그러나 그들이 나를 믿지 아니하며 내 말을 듣지 아니하고 이르기를 여호와께서 네게 나타나지 아니하셨다 하리이다
 2. 여호와께서 그에게 이르시되 네 손에 있는 것이 무엇이냐 그가 이르되 지팡이니이다
 3. 여호와께서 이르시되 그것을 땅에 던지라 하시매 곧 땅에 던지니 그것이 뱀이 된지라 모세가 뱀 앞에서 피하매
@@ -5000,7 +5000,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-05', '출애굽기', '4장 11절~20절', '&nbsp;', '(출애굽기4장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-05', '출애굽기', '4장 11절~20절', ' ', '(출애굽기4장)
 11. 여호와께서 그에게 이르시되 누가 사람의 입을 지었느냐 누가 말 못 하는 자나 못 듣는 자나 눈 밝은 자나 맹인이 되게 하였느냐 나 여호와가 아니냐
 12. 이제 가라 내가 네 입과 함께 있어서 할 말을 가르치리라
 13. 모세가 이르되 오 주여 보낼 만한 자를 보내소서
@@ -5197,7 +5197,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-08', '출애굽기', '5장 11절~23절', '&nbsp;', '(출애굽기 5장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-01-08', '출애굽기', '5장 11절~23절', ' ', '(출애굽기 5장)
 11. 너희는 짚을 찾을 곳으로 가서 주우라 그러나 너희 일은 조금도 감하지 아니하리라 하셨느니라
 12. 백성이 애굽 온 땅에 흩어져 곡초 그루터기를 거두어다가 짚을 대신하니
 13. 감독들이 그들을 독촉하여 이르되 너희는 짚이 있을 때와 같이 그 날의 일을 그 날에 마치라 하며

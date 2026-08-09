@@ -67,7 +67,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-14', '누가복음', '22장 61~71절', '&nbsp;', '[눅22:61-71]
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-14', '누가복음', '22장 61~71절', ' ', '[눅22:61-71]
 61 주께서 돌이켜 베드로를 보시니 베드로가 주의 말씀 곧 오늘 닭 울기 전에 네가 세 번 나를 부인하리라 하심이 생각나서
 62 밖에 나가서 심히 통곡하니라
 63 지키는 사람들이 예수를 희롱하고 때리며
@@ -144,7 +144,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-15', '누가복음', '23장 1~10절', '&nbsp;', '(누가복음 23장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-15', '누가복음', '23장 1~10절', ' ', '(누가복음 23장)
 1.  무리가 다 일어나 예수를 빌라도에게 끌고 가서
 2. 고발하여 이르되 우리가 이 사람을 보매 우리 백성을 미혹하고 가이사에게 세금 바치는 것을 금하며 자칭 왕 그리스도라 하더이다 하니
 3. 빌라도가 예수께 물어 이르되 네가 유대인의 왕이냐 대답하여 이르시되 네 말이 옳도다
@@ -234,7 +234,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-16', '누가복음', '23장 11~20절', '&nbsp;', '(누가복음 23장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-16', '누가복음', '23장 11~20절', ' ', '(누가복음 23장)
 11. 헤롯이 그 군인들과 함께 예수를 업신여기며 희롱하고 빛난 옷을 입혀 빌라도에게 도로 보내니
 12. 헤롯과 빌라도가 전에는 원수였으나 당일에 서로 친구가 되니라
 13.  빌라도가 대제사장들과 관리들과 백성을 불러 모으고
@@ -455,7 +455,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-19', '누가복음', '23장 41~50절', '&nbsp;', '(누가복음 23장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-19', '누가복음', '23장 41~50절', ' ', '(누가복음 23장)
 41. 우리는 우리가 행한 일에 상당한 보응을 받는 것이니 이에 당연하거니와 이 사람이 행한 것은 옳지 않은 것이 없느니라 하고
 42. 이르되 예수여 당신의 나라에 임하실 때에 나를 기억하소서 하니
 43. 예수께서 이르시되 내가 진실로 네게 이르노니 오늘 네가 나와 함께 낙원에 있으리라 하시니라
@@ -598,7 +598,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-21', '누가복음', '23장 51~56절', '&nbsp;', '누가복음 23장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-21', '누가복음', '23장 51~56절', ' ', '누가복음 23장
 51   (그들의 결의와 행사에 찬성하지 아니한 자라) 그는 유대인의 동네 아리마대 사람이요 하나님의 나라를 기다리는 자라
 52   그가 빌라도에게 가서 예수의 시체를 달라 하여
 53   이를 내려 세마포로 싸고 아직 사람을 장사한 일이 없는 바위에 판 무덤에 넣어 두니
@@ -668,7 +668,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-22', '누가복음', '24장 11~20절', '&nbsp;', '(누가복음 24장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-22', '누가복음', '24장 11~20절', ' ', '(누가복음 24장)
 11. 사도들은 그들의 말이 허탄한 듯이 들려 믿지 아니하나
 12. 베드로는 일어나 무덤에 달려가서 구부려 들여다 보니 세마포만 보이는지라 그 된 일을 놀랍게 여기며 집으로 돌아가니라
 13.  그 날에 그들 중 둘이 예루살렘에서 이십오 리 되는 엠마오라 하는 마을로 가면서
@@ -809,7 +809,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-24', '누가복음', '24장 21~30절', '&nbsp;', '(누가복음 24장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-24', '누가복음', '24장 21~30절', ' ', '(누가복음 24장)
 21. 우리는 이 사람이 이스라엘을 속량할 자라고 바랐노라 이뿐 아니라 이 일이 일어난 지가 사흘째요
 22. 또한 우리 중에 어떤 여자들이 우리로 놀라게 하였으니 이는 그들이 새벽에 무덤에 갔다가
 23. 그의 시체는 보지 못하고 와서 그가 살아나셨다 하는 천사들의 나타남을 보았다 함이라
@@ -881,7 +881,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-25', '누가복음', '24장 41~53절', '부활하시고 제자들에게 나타나신 예수님&nbsp;', '누가복음 24장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-25', '누가복음', '24장 41~53절', '부활하시고 제자들에게 나타나신 예수님 ', '누가복음 24장
 41   그들이 너무 기쁘므로 아직도 믿지 못하고 놀랍게 여길 때에 이르시되 여기 무슨 먹을 것이 있느냐 하시니
 42   이에 구운 생선 한 토막을 드리니
 43   받으사 그 앞에서 잡수시더라
@@ -966,7 +966,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-26', '사도행전', '1장 1~10절', '&nbsp;', '(사도행전 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-26', '사도행전', '1장 1~10절', ' ', '(사도행전 1장)
 1절: 데오빌로여 내가 먼저 쓴 글에는 무릇 예수께서 행하시며 가르치시기를 시작하심부터
 2절: 그가 택하신 사도들에게 성령으로 명하시고 승천하신 날까지의 일을 기록하였노라
 3절: 그가 고난 받으신 후에 또한 그들에게 확실한 많은 증거로 친히 살아 계심을 나타내사 사십 일 동안 그들에게 보이시며 하나님 나라의 일을 말씀하시니라
@@ -1146,7 +1146,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-29', '사도행전', '2장 1~10절', '&nbsp;', '(사도행전 2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-29', '사도행전', '2장 1~10절', ' ', '(사도행전 2장)
 1.  오순절 날이 이미 이르매 그들이 다같이 한 곳에 모였더니
 2. 홀연히 하늘로부터 급하고 강한 바람 같은 소리가 있어 그들이 앉은 온 집에 가득하며
 3. 마치 불의 혀처럼 갈라지는 것들이 그들에게 보여 각 사람 위에 하나씩 임하여 있더니
@@ -1274,7 +1274,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-31', '사도행전', '2장 11~20절', '&nbsp;', '(사도행전 2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-31', '사도행전', '2장 11~20절', ' ', '(사도행전 2장)
 11. 그레데인과 아라비아인들이라 우리가 다 우리의 각 언어로 하나님의 큰 일을 말함을 듣는도다 하고
 12. 다 놀라며 당황하여 서로 이르되 이 어찌 된 일이냐 하며
 13. 또 어떤 이들은 조롱하여 이르되 그들이 새 술에 취하였다 하더라
@@ -1345,7 +1345,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-01', '사도행전', '2장 31~40절', '베드로의 설교&nbsp;', '사도행전 2장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-01', '사도행전', '2장 31~40절', '베드로의 설교 ', '사도행전 2장
 31   미리 본 고로 그리스도의 부활을 말하되 그가 음부에 버림이 되지 않고 그의 육신이 썩음을 당하지 아니하시리라 하더니
 32   이 예수를 하나님이 살리신지라 우리가 다 이 일에 증인이로다
 33   하나님이 오른손으로 예수를 높이시매 그가 약속하신 성령을 아버지께 받아서 너희가 보고 듣는 이것을 부어 주셨느니라
@@ -1412,7 +1412,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-02', '사도행전', '2장 41~47절', '&nbsp;', '(사도행전 2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-02', '사도행전', '2장 41~47절', ' ', '(사도행전 2장)
 41. 그 말을 받은 사람들은 세례를 받으매 이 날에 신도의 수가 삼천이나 더하더라
 42. 그들이 사도의 가르침을 받아 서로 교제하고 떡을 떼며 오로지 기도하기를 힘쓰니라
 43.  사람마다 두려워하는데 사도들로 말미암아 기사와 표적이 많이 나타나니
@@ -1541,7 +1541,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-04', '사도행전', '3장 1~10절', '나사렛 예수 그리스도의 이름으로&nbsp;', '사도행전 3장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-04', '사도행전', '3장 1~10절', '나사렛 예수 그리스도의 이름으로 ', '사도행전 3장
 1   제 구 시 기도 시간에 베드로와 요한이 성전에 올라갈새
 2   나면서 못 걷게 된 이를 사람들이 메고 오니 이는 성전에 들어가는 사람들에게 구걸하기 위하여 날마다 미문이라는 성전 문에 두는 자라
 3   그가 베드로와 요한이 성전에 들어가려 함을 보고 구걸하거늘
@@ -1613,7 +1613,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-05', '사도행전', '4장 1~10절', '&nbsp;', '(사도행전 4장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-05', '사도행전', '4장 1~10절', ' ', '(사도행전 4장)
 1.  사도들이 백성에게 말할 때에 제사장들과 성전 맡은 자와 사두개인들이 이르러
 2. 예수 안에 죽은 자의 부활이 있다고 백성을 가르치고 전함을 싫어하여
 3. 그들을 잡으매 날이 이미 저물었으므로 이튿날까지 가두었으나
@@ -1683,7 +1683,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-06', '사도행전', '3장 21~26절', '&nbsp;', '(사도행전 3장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-06', '사도행전', '3장 21~26절', ' ', '(사도행전 3장)
 21. 하나님이 영원 전부터 거룩한 선지자들의 입을 통하여 말씀하신 바 만물을 회복하실 때까지는 하늘이 마땅히 그를 받아 두리라
 22. 모세가 말하되 주 하나님이 너희를 위하여 너희 형제 가운데서 나 같은 선지자 하나를 세울 것이니 너희가 무엇이든지 그의 모든 말을 들을 것이라
 23. 누구든지 그 선지자의 말을 듣지 아니하는 자는 백성 중에서 멸망 받으리라 하였고
@@ -1873,7 +1873,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-09', '사도행전', '4장 31~37절', '&nbsp;', '(사도행전 4장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-09', '사도행전', '4장 31~37절', ' ', '(사도행전 4장)
 31. 빌기를 다하매 모인 곳이 진동하더니 무리가 다 성령이 충만하여 담대히 하나님의 말씀을 전하니라
 32.  믿는 무리가 한마음과 한 뜻이 되어 모든 물건을 서로 통용하고 자기 재물을 조금이라도 자기 것이라 하는 이가 하나도 없더라
 33. 사도들이 큰 권능으로 주 예수의 부활을 증언하니 무리가 큰 은혜를 받아
@@ -2087,7 +2087,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-12', '사도행전', '5장 31~42절', '&nbsp;', '(사도행전 5장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-12', '사도행전', '5장 31~42절', ' ', '(사도행전 5장)
 31. 이스라엘에게 회개함과 죄 사함을 주시려고 그를 오른손으로 높이사 임금과 구주로 삼으셨느니라
 32. 우리는 이 일에 증인이요 하나님이 자기에게 순종하는 사람들에게 주신 성령도 그러하니라 하더라
 33. 그들이 듣고 크게 노하여 사도들을 없이하고자 할새
@@ -2163,7 +2163,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-13', '사도행전', '5장 21~30절', '&nbsp;', '(사도행전 5장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-13', '사도행전', '5장 21~30절', ' ', '(사도행전 5장)
 21. 그들이 듣고 새벽에 성전에 들어가서 가르치더니 대제사장과 그와 함께 있는 사람들이 와서 공회와 이스라엘 족속의 원로들을 다 모으고 사람을 옥에 보내어 사도들을 잡아오라 하니
 22. 부하들이 가서 옥에서 사도들을 보지 못하고 돌아와
 23. 이르되 우리가 보니 옥은 든든하게 잠기고 지키는 사람들이 문에 서 있으되 문을 열고 본즉 그 안에는 한 사람도 없더이다 하니
@@ -2353,7 +2353,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-16', '사도행전', '7장 1~10절', '&nbsp;', '(사도행전 7장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-16', '사도행전', '7장 1~10절', ' ', '(사도행전 7장)
 1.  대제사장이 이르되 이것이 사실이냐
 2. 스데반이 이르되 여러분 부형들이여 들으소서 우리 조상 아브라함이 하란에 있기 전 메소보다미아에 있을 때에 영광의 하나님이 그에게 보여
 3. 이르시되 네 고향과 친척을 떠나 내가 네게 보일 땅으로 가라 하시니
@@ -2512,7 +2512,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-18', '사도행전', '7장 11~20절', '스데반의 설교&nbsp;', '사도행전 7장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-18', '사도행전', '7장 11~20절', '스데반의 설교 ', '사도행전 7장
 11   그 때에 애굽과 가나안 온 땅에 흉년이 들어 큰 환난이 있을새 우리 조상들이 양식이 없는지라
 12   야곱이 애굽에 곡식 있다는 말을 듣고 먼저 우리 조상들을 보내고
 13   또 재차 보내매 요셉이 자기 형제들에게 알려지게 되고 또 요셉의 친족이 바로에게 드러나게 되니라
@@ -2565,7 +2565,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-19', '사도행전', '7장 31~40절', '&nbsp;', '(사도행전 7장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-19', '사도행전', '7장 31~40절', ' ', '(사도행전 7장)
 31. 모세가 그 광경을 보고 놀랍게 여겨 알아보려고 가까이 가니 주의 소리가 있어
 32. 나는 네 조상의 하나님 즉 아브라함과 이삭과 야곱의 하나님이라 하신대 모세가 무서워 감히 바라보지 못하더라
 33. 주께서 이르시되 네 발의 신을 벗으라 네가 서 있는 곳은 거룩한 땅이니라
@@ -2710,7 +2710,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-21', '사도행전', '7장 41~50절', '&nbsp;', '(사도행전 7장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-21', '사도행전', '7장 41~50절', ' ', '(사도행전 7장)
 41. 그 때에 그들이 송아지를 만들어 그 우상 앞에 제사하며 자기 손으로 만든 것을 기뻐하더니
 42. 하나님이 외면하사 그들을 그 하늘의 군대 섬기는 일에 버려 두셨으니 이는 선지자의 책에 기록된 바 이스라엘의 집이여 너희가 광야에서 사십 년간 희생과 제물을 내게 드린 일이 있었느냐
 43. 몰록의 장막과 신 레판의 별을 받들었음이여 이것은 너희가 절하고자 하여 만든 형상이로다 내가 너희를 바벨론 밖으로 옮기리라 함과 같으니라
@@ -2777,7 +2777,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-22', '사도행전', '8장 1~10절', '박해받는 교회&nbsp;', '사도행전 8장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-22', '사도행전', '8장 1~10절', '박해받는 교회 ', '사도행전 8장
 1   사울은 그가 죽임 당함을 마땅히 여기더라 그 날에 예루살렘에 있는 교회에 큰 박해가 있어 사도 외에는 다 유대와 사마리아 모든 땅으로 흩어지니라
 2   경건한 사람들이 스데반을 장사하고 위하여 크게 울더라
 3   사울이 교회를 잔멸할새 각 집에 들어가 남녀를 끌어다가 옥에 넘기니라
@@ -2845,7 +2845,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-23', '사도행전', '8장 11~20절', '&nbsp;', '(사도행전 8장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-23', '사도행전', '8장 11~20절', ' ', '(사도행전 8장)
 11. 오랫동안 그 마술에 놀랐으므로 그들이 따르더니
 12. 빌립이 하나님 나라와 및 예수 그리스도의 이름에 관하여 전도함을 그들이 믿고 남녀가 다 세례를 받으니
 13. 시몬도 믿고 세례를 받은 후에 전심으로 빌립을 따라다니며 그 나타나는 표적과 큰 능력을 보고 놀라니라
@@ -3056,7 +3056,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-26', '사도행전', '9장 1~10절', '&nbsp;', '(사도행전 9장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-26', '사도행전', '9장 1~10절', ' ', '(사도행전 9장)
 1. 사울이 주의 제자들에 대하여 여전히 위협과 살기가 등등하여 대제사장에게 가서
 2. 다메섹 여러 회당에 가져갈 공문을 청하니 이는 만일 그 도를 따르는 사람을 만나면 남녀를 막론하고 결박하여 예루살렘으로 잡아오려 함이라
 3. 사울이 길을 가다가 다메섹에 가까이 이르더니 홀연히 하늘로부터 빛이 그를 둘러 비추는지라
@@ -3133,7 +3133,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-27', '사도행전', '9장 11~20절', '&nbsp;', '(사도행전 9장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-27', '사도행전', '9장 11~20절', ' ', '(사도행전 9장)
 11. 주께서 이르시되 일어나 직가라 하는 거리로 가서 유다의 집에서 다소 사람 사울이라 하는 사람을 찾으라 그가 기도하는 중이니라
 12. 그가 아나니아라 하는 사람이 들어와서 자기에게 안수하여 다시 보게 하는 것을 보았느니라 하시거늘
 13. 아나니아가 대답하되 주여 이 사람에 대하여 내가 여러 사람에게 듣사온즉 그가 예루살렘에서 주의 성도에게 적지 않은 해를 끼쳤다 하더니
@@ -3337,7 +3337,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-30', '사도행전', '10장 1~10절', '&nbsp;', '(사도행전 10장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-09-30', '사도행전', '10장 1~10절', ' ', '(사도행전 10장)
 1.  가이사랴에 고넬료라 하는 사람이 있으니 이달리야 부대라 하는 군대의 백부장이라
 2. 그가 경건하여 온 집안과 더불어 하나님을 경외하며 백성을 많이 구제하고 하나님께 항상 기도하더니
 3. 하루는 제 구 시쯤 되어 환상 중에 밝히 보매 하나님의 사자가 들어와 이르되 고넬료야 하니
@@ -3475,7 +3475,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-02', '사도행전', '10장 11~20절', '베드로가 환상을 보다&nbsp;', '2025.10.3.
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-02', '사도행전', '10장 11~20절', '베드로가 환상을 보다 ', '2025.10.3.
 
 사도행전 10장
 11   하늘이 열리며 한 그릇이 내려오는 것을 보니 큰 보자기 같고 네 귀를 매어 땅에 드리웠더라
@@ -3552,7 +3552,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-03', '사도행전', '10장 31~40절', '&nbsp;', '(사도행전 10장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-03', '사도행전', '10장 31~40절', ' ', '(사도행전 10장)
 31. 말하되 고넬료야 하나님이 네 기도를 들으시고 네 구제를 기억하셨으니
 32. 사람을 욥바에 보내어 베드로라 하는 시몬을 청하라 그가 바닷가 무두장이 시몬의 집에 유숙하느니라 하시기로
 33. 내가 곧 당신에게 사람을 보내었는데 오셨으니 잘하였나이다 이제 우리는 주께서 당신에게 명하신 모든 것을 듣고자 하여 다 하나님 앞에 있나이다
@@ -3620,7 +3620,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-04', '사도행전', '10장 41~48절', '&nbsp;', '(사도행전 10장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-04', '사도행전', '10장 41~48절', ' ', '(사도행전 10장)
 41. 모든 백성에게 하신 것이 아니요 오직 미리 택하신 증인 곧 죽은 자 가운데서 부활하신 후 그를 모시고 음식을 먹은 우리에게 하신 것이라
 42. 우리에게 명하사 백성에게 전도하되 하나님이 살아 있는 자와 죽은 자의 재판장으로 정하신 자가 곧 이 사람인 것을 증언하게 하셨고
 43. 그에 대하여 모든 선지자도 증언하되 그를 믿는 사람들이 다 그의 이름을 힘입어 죄 사함을 받는다 하였느니라
@@ -3811,7 +3811,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-07', '사도행전', '11장 21~30절', '&nbsp;', '(사도행전 11장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-07', '사도행전', '11장 21~30절', ' ', '(사도행전 11장)
 21. 주의 손이 그들과 함께 하시매 수많은 사람들이 믿고 주께 돌아오더라
 22. 예루살렘 교회가 이 사람들의 소문을 듣고 바나바를 안디옥까지 보내니
 23. 그가 이르러 하나님의 은혜를 보고 기뻐하여 모든 사람에게 굳건한 마음으로 주와 함께 머물러 있으라 권하니
@@ -4050,7 +4050,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-10', '사도행전', '13장 1~10절', '&nbsp;', '(사도행전 13장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-10', '사도행전', '13장 1~10절', ' ', '(사도행전 13장)
 1.  안디옥 교회에 선지자들과 교사들이 있으니 곧 바나바와 니게르라 하는 시므온과 구레네 사람 루기오와 분봉 왕 헤롯의 젖동생 마나엔과 및 사울이라
 2. 주를 섬겨 금식할 때에 성령이 이르시되 내가 불러 시키는 일을 위하여 바나바와 사울을 따로 세우라 하시니
 3. 이에 금식하며 기도하고 두 사람에게 안수하여 보내니라
@@ -4130,7 +4130,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-11', '사도행전', '12장 21~25절', '&nbsp;', '(사도행전 12장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-11', '사도행전', '12장 21~25절', ' ', '(사도행전 12장)
 21. 헤롯이 날을 택하여 왕복을 입고 단상에 앉아 백성에게 연설하니
 22. 백성들이 크게 부르되 이것은 신의 소리요 사람의 소리가 아니라 하거늘
 23. 헤롯이 영광을 하나님께로 돌리지 아니하므로 주의 사자가 곧 치니 벌레에게 먹혀 죽으니라
@@ -4250,7 +4250,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-13', '사도행전', '13장 31~40절', '&nbsp;', '(사도행전 13장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-13', '사도행전', '13장 31~40절', ' ', '(사도행전 13장)
 31. 갈릴리로부터 예루살렘에 함께 올라간 사람들에게 여러 날 보이셨으니 그들이 이제 백성 앞에서 그의 증인이라
 
 32. 우리도 조상들에게 주신 약속을 너희에게 전파하노니
@@ -4520,7 +4520,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-17', '사도행전', '14장 1~10절', '&nbsp;', '(사도행전 14장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-17', '사도행전', '14장 1~10절', ' ', '(사도행전 14장)
 1.  이에 이고니온에서 두 사도가 함께 유대인의 회당에 들어가 말하니 유대와 헬라의 허다한 무리가 믿더라
 2. 그러나 순종하지 아니하는 유대인들이 이방인들의 마음을 선동하여 형제들에게 악감을 품게 하거늘
 3. 두 사도가 오래 있어 주를 힘입어 담대히 말하니 주께서 그들의 손으로 표적과 기사를 행하게 하여 주사 자기 은혜의 말씀을 증언하시니
@@ -4593,7 +4593,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-18', '사도행전', '14장 21~28절', '&nbsp;', '(사도행전 14장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-18', '사도행전', '14장 21~28절', ' ', '(사도행전 14장)
 21. 복음을 그 성에서 전하여 많은 사람을 제자로 삼고 루스드라와 이고니온과 안디옥으로 돌아가서
 22. 제자들의 마음을 굳게 하여 이 믿음에 머물러 있으라 권하고 또 우리가 하나님의 나라에 들어가려면 많은 환난을 겪어야 할 것이라 하고
 23. 각 교회에서 장로들을 택하여 금식 기도 하며 그들이 믿는 주께 그들을 위탁하고
@@ -4799,7 +4799,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-21', '사도행전', '15장 11~20절', '이방인의 구원에 대한 예루살렘 교회의 공인&nbsp;', '사도행전 15장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-21', '사도행전', '15장 11~20절', '이방인의 구원에 대한 예루살렘 교회의 공인 ', '사도행전 15장
 11   그러나 우리는 그들이 우리와 동일하게 주 예수의 은혜로 구원 받는 줄을 믿노라 하니라
 12   온 무리가 가만히 있어 바나바와 바울이 하나님께서 자기들로 말미암아 이방인 중에서 행하신 표적과 기사에 관하여 말하는 것을 듣더니
 13   말을 마치매 야고보가 대답하여 이르되 형제들아 내 말을 들으라
@@ -5355,7 +5355,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-29', '사도행전', '17장 21~34절', '아테네에서도 복음을 전하는 바울&nbsp;', '사도행전 17장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-10-29', '사도행전', '17장 21~34절', '아테네에서도 복음을 전하는 바울 ', '사도행전 17장
 
 21   모든 아덴 사람과 거기서 나그네 된 외국인들이 가장 새로운 것을 말하고 듣는 것 이외에는 달리 시간을 쓰지 않음이더라
 22   바울이 아레오바고 가운데 서서 말하되 아덴 사람들아 너희를 보니 범사에 종교심이 많도다
@@ -6299,7 +6299,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 11. 믿음과 회개 및 감사기도로 마무리', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-11-12', '사도행전', '21장 21~30절', '예언대로 예루살렘에서 유대인들에게 박해를 받는 바울&nbsp;', '사도행전 21장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-11-12', '사도행전', '21장 21~30절', '예언대로 예루살렘에서 유대인들에게 박해를 받는 바울 ', '사도행전 21장
 21   네가 이방에 있는 모든 유대인을 가르치되 모세를 배반하고 아들들에게 할례를 행하지 말고 또 관습을 지키지 말라 한다 함을 그들이 들었도다
 22   그러면 어찌할꼬 그들이 필연 그대가 온 것을 들으리니
 23   우리가 말하는 이대로 하라 서원한 네 사람이 우리에게 있으니
@@ -6641,7 +6641,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 11. 믿음과 회개 및 감사기도로 마무리', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-11-17', '사도행전', '23장 1~10절', '&nbsp;', '사도행전 23장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-11-17', '사도행전', '23장 1~10절', ' ', '사도행전 23장
 1   바울이 공회를 주목하여 이르되 여러분 형제들아 오늘까지 나는 범사에 양심을 따라 하나님을 섬겼노라 하거늘
 2   대제사장 아나니아가 바울 곁에 서 있는 사람들에게 그 입을 치라 명하니
 3   바울이 이르되 회칠한 담이여 하나님이 너를 치시리로다 네가 나를 율법대로 심판한다고 앉아서 율법을 어기고 나를 치라 하느냐 하니

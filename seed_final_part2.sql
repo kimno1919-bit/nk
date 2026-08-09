@@ -2686,7 +2686,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-07-26', '사도행전', '19장 21절 ~ 30절', '바울을 핍박하기 위해 아데미와 관련된 일을 하는 자들을 격동하는 데메드리오&nbsp;', '(사도행전 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-07-26', '사도행전', '19장 21절 ~ 30절', '바울을 핍박하기 위해 아데미와 관련된 일을 하는 자들을 격동하는 데메드리오 ', '(사도행전 19장)
 21 이 일이 있은 후에 바울이 마게도냐와 아가야를 거쳐 예루살렘에 가기로 작정하여 이르되 내가 거기 갔다가 후에 로마도 보아야 하리라 하고
 22 자기를 돕는 사람 중에서 디모데와 에라스도 두 사람을 마게도냐로 보내고 자기는 아시아에 얼마 동안 더 있으니라
 23 그 때쯤 되어 이 도로 말미암아 적지 않은 소동이 있었으니
@@ -2902,7 +2902,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-07-30', '사도행전', '20장 21절 ~ 30절', '사명에 대한 마음가짐 &nbsp;', '(사도행전 20장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-07-30', '사도행전', '20장 21절 ~ 30절', '사명에 대한 마음가짐  ', '(사도행전 20장)
 21 유대인과 헬라인들에게 하나님께 대한 회개와 우리 주 예수 그리스도께 대한 믿음을 증언한 것이라
 22 보라 이제 나는 성령에 매여 예루살렘으로 가는데 거기서 무슨 일을 당할는지 알지 못하노라
 23 오직 성령이 각 성에서 내게 증언하여 결박과 환난이 나를 기다린다 하시나
@@ -3036,7 +3036,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-08-02', '사도행전', '21장 11절 ~ 20절', '주의 뜻대로 이루어지이다&nbsp;', '(사도행전 21장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-08-02', '사도행전', '21장 11절 ~ 20절', '주의 뜻대로 이루어지이다 ', '(사도행전 21장)
 11 우리에게 와서 바울의 띠를 가져다가 자기 수족을 잡아매고 말하기를 성령이 말씀하시되 예루살렘에서 유대인들이 이같이 이 띠 임자를 결박하여 이방인의 손에 넘겨 주리라 하거늘
 12 우리가 그 말을 듣고 그 곳 사람들과 더불어 바울에게 예루살렘으로 올라가지 말라 권하니
 13 바울이 대답하되 여러분이 어찌하여 울어 내 마음을 상하게 하느냐 나는 주 예수의 이름을 위하여 결박 당할 뿐 아니라 예루살렘에서 죽을 것도 각오하였노라 하니
@@ -4531,7 +4531,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-08-31', '로마서', '1장 21절 ~ 32절', '&nbsp;', '(로마서 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2023-08-31', '로마서', '1장 21절 ~ 32절', ' ', '(로마서 1장)
 21 하나님을 알되 하나님을 영화롭게도 아니하며 감사하지도 아니하고 오히려 그 생각이 허망하여지며 미련한 마음이 어두워졌나니
 22 스스로 지혜 있다 하나 어리석게 되어
 23 썩어지지 아니하는 하나님의 영광을 썩어질 사람과 새와 짐승과 기어다니는 동물 모양의 우상으로 바꾸었느니라

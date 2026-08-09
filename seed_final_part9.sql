@@ -66,7 +66,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-06', '누가복음', '1장 41~50절', '&nbsp;', '(누가복음 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-06', '누가복음', '1장 41~50절', ' ', '(누가복음 1장)
 41. 엘리사벳이 마리아가 문안함을 들으매 아이가 복중에서 뛰노는지라 엘리사벳이 성령의 충만함을 받아
 42. 큰 소리로 불러 이르되 여자 중에 네가 복이 있으며 네 태중의 아이도 복이 있도다
 43. 내 주의 어머니가 내게 나아오니 이 어찌 된 일인가
@@ -248,7 +248,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-09', '누가복음', '1장 71~80절', '&nbsp;', '(누가복음 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-09', '누가복음', '1장 71~80절', ' ', '(누가복음 1장)
 71. 우리 원수에게서와 우리를 미워하는 모든 자의 손에서 구원하시는 일이라
 72. 우리 조상을 긍휼히 여기시며 그 거룩한 언약을 기억하셨으니
 73. 곧 우리 조상 아브라함에게 하신 맹세라
@@ -312,7 +312,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-10', '누가복음', '2장 1~10절', '&nbsp;', '(누가복음 2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-10', '누가복음', '2장 1~10절', ' ', '(누가복음 2장)
 1.  그 때에 가이사 아구스도가 영을 내려 천하로 다 호적하라 하였으니
 2. 이 호적은 구레뇨가 수리아 총독이 되었을 때에 처음 한 것이라
 3. 모든 사람이 호적하러 각각 고향으로 돌아가매
@@ -519,7 +519,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-13', '누가복음', '2장 31~40절', '&nbsp;', '(누가복음 2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-13', '누가복음', '2장 31~40절', ' ', '(누가복음 2장)
 31. 이는 만민 앞에 예비하신 것이요
 32. 이방을 비추는 빛이요 주의 백성 이스라엘의 영광이니이다 하니
 33. 그의 부모가 그에 대한 말들을 놀랍게 여기더라
@@ -737,7 +737,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-16', '누가복음', '3장 21~30절', '&nbsp;', '(누가복음 3장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-16', '누가복음', '3장 21~30절', ' ', '(누가복음 3장)
 21.  백성이 다 세례를 받을새 예수도 세례를 받으시고 기도하실 때에 하늘이 열리며
 22. 성령이 비둘기 같은 형체로 그의 위에 강림하시더니 하늘로부터 소리가 나기를 너는 내 사랑하는 아들이라 내가 너를 기뻐하노라 하시니라
 23.  예수께서 가르치심을 시작하실 때에 삼십 세쯤 되시니라 사람들이 아는 대로는 요셉의 아들이니 요셉의 위는 헬리요
@@ -796,7 +796,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-17', '누가복음', '3장 11~20절', '&nbsp;', '(누가복음 3장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-17', '누가복음', '3장 11~20절', ' ', '(누가복음 3장)
 11. 대답하여 이르되 옷 두 벌 있는 자는 옷 없는 자에게 나눠 줄 것이요 먹을 것이 있는 자도 그렇게 할 것이니라 하고
 12. 세리들도 세례를 받고자 하여 와서 이르되 선생이여 우리는 무엇을 하리이까 하매
 13. 이르되 부과된 것 외에는 거두지 말라 하고
@@ -1568,7 +1568,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-28', '누가복음', '6장 1~10절', '&nbsp;', '(누가복음 6장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-28', '누가복음', '6장 1~10절', ' ', '(누가복음 6장)
 1.  안식일에 예수께서 밀밭 사이로 지나가실새 제자들이 이삭을 잘라 손으로 비비어 먹으니
 2. 어떤 바리새인들이 말하되 어찌하여 안식일에 하지 못할 일을 하느냐
 3. 예수께서 대답하여 이르시되 다윗이 자기 및 자기와 함께 한 자들이 시장할 때에 한 일을 읽지 못하였느냐
@@ -1692,7 +1692,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-30', '누가복음', '6장 31~40절', '&nbsp;', '(누가복음 6장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-30', '누가복음', '6장 31~40절', ' ', '(누가복음 6장)
 31. 남에게 대접을 받고자 하는 대로 너희도 남을 대접하라
 32. 너희가 만일 너희를 사랑하는 자만을 사랑하면 칭찬 받을 것이 무엇이냐 죄인들도 사랑하는 자는 사랑하느니라
 33. 너희가 만일 선대하는 자만을 선대하면 칭찬 받을 것이 무엇이냐 죄인들도 이렇게 하느니라
@@ -1767,7 +1767,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-31', '누가복음', '6장 41~49절', '&nbsp;', '(누가복음 6장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-05-31', '누가복음', '6장 41~49절', ' ', '(누가복음 6장)
 41. 어찌하여 형제의 눈 속에 있는 티는 보고 네 눈 속에 있는 들보는 깨닫지 못하느냐
 42. 너는 네 눈 속에 있는 들보를 보지 못하면서 어찌하여 형제에게 말하기를 형제여 나로 네 눈 속에 있는 티를 빼게 하라 할 수 있느냐 외식하는 자여 먼저 네 눈 속에서 들보를 빼라 그 후에야 네가 밝히 보고 형제의 눈 속에 있는 티를 빼리라
 43. 못된 열매 맺는 좋은 나무가 없고 또 좋은 열매 맺는 못된 나무가 없느니라
@@ -1967,7 +1967,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-03', '누가복음', '7장 21~30절', '&nbsp;', '(누가복음 7장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-03', '누가복음', '7장 21~30절', ' ', '(누가복음 7장)
 21. 마침 그 때에 예수께서 질병과 고통과 및 악귀 들린 자를 많이 고치시며 또 많은 맹인을 보게 하신지라
 22. 예수께서 대답하여 이르시되 너희가 가서 보고 들은 것을 요한에게 알리되 맹인이 보며 못 걷는 사람이 걸으며 나병환자가 깨끗함을 받으며 귀먹은 사람이 들으며 죽은 자가 살아나며 가난한 자에게 복음이 전파된다 하라
 23. 누구든지 나로 말미암아 실족하지 아니하는 자는 복이 있도다 하시니라
@@ -2036,7 +2036,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-04', '누가복음', '7장 31~40절', '바리새인과 죄를 지은 한 여자&nbsp;', '누가복음 7장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-04', '누가복음', '7장 31~40절', '바리새인과 죄를 지은 한 여자 ', '누가복음 7장
 31   또 이르시되 이 세대의 사람을 무엇으로 비유할까 무엇과 같은가
 32   비유하건대 아이들이 장터에 앉아 서로 불러 이르되 우리가 너희를 향하여 피리를 불어도 너희가 춤추지 않고 우리가 곡하여도 너희가 울지 아니하였다 함과 같도다
 33   침례 요한이 와서 떡도 먹지 아니하며 포도주도 마시지 아니하매 너희 말이 귀신이 들렸다 하더니
@@ -2159,7 +2159,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-06', '누가복음', '8장 1~10절', '&nbsp;', '(누가복음 8장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-06', '누가복음', '8장 1~10절', ' ', '(누가복음 8장)
 1.  그 후에 예수께서 각 성과 마을에 두루 다니시며 하나님의 나라를 선포하시며 그 복음을 전하실새 열두 제자가 함께 하였고
 2. 또한 악귀를 쫓아내심과 병 고침을 받은 어떤 여자들 곧 일곱 귀신이 나간 자 막달라인이라 하는 마리아와
 3. 헤롯의 청지기 구사의 아내 요안나와 수산나와 다른 여러 여자가 함께 하여 자기들의 소유로 그들을 섬기더라
@@ -2228,7 +2228,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-07', '누가복음', '8장 11~20절', '&nbsp;', '(누가복음 8장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-07', '누가복음', '8장 11~20절', ' ', '(누가복음 8장)
 11. 이 비유는 이러하니라 씨는 하나님의 말씀이요
 12. 길 가에 있다는 것은 말씀을 들은 자니 이에 마귀가 가서 그들이 믿어 구원을 얻지 못하게 하려고 말씀을 그 마음에서 빼앗는 것이요
 13. 바위 위에 있다는 것은 말씀을 들을 때에 기쁨으로 받으나 뿌리가 없어 잠깐 믿다가 시련을 당할 때에 배반하는 자요
@@ -2443,7 +2443,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-10', '누가복음', '8장 41~50절', '&nbsp;', '(누가복음 8장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-10', '누가복음', '8장 41~50절', ' ', '(누가복음 8장)
 41. 이에 회당장인 야이로라 하는 사람이 와서 예수의 발 아래에 엎드려 자기 집에 오시기를 간구하니
 42. 이는 자기에게 열두 살 된 외딸이 있어 죽어감이러라 예수께서 가실 때에 무리가 밀려들더라
 43. 이에 열두 해를 혈루증으로 앓는 중에 아무에게도 고침을 받지 못하던 여자가
@@ -2526,7 +2526,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-11', '누가복음', '8장 51~56절', '죽은 아이를 살리시는 예수님&nbsp;', '누가복음 8장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-11', '누가복음', '8장 51~56절', '죽은 아이를 살리시는 예수님 ', '누가복음 8장
 51   그 집에 이르러 베드로와 요한과 야고보와 아이의 부모 외에는 함께 들어가기를 허락하지 아니하시니라
 52   모든 사람이 아이를 위하여 울며 통곡하매 예수께서 이르시되 울지 말라 죽은 것이 아니라 잔다 하시니
 53   그들이 그 죽은 것을 아는 고로 비웃더라
@@ -2655,7 +2655,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-13', '누가복음', '9장 11~20절', '&nbsp;', '(누가복음 9장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-13', '누가복음', '9장 11~20절', ' ', '(누가복음 9장)
 11. 무리가 알고 따라왔거늘 예수께서 그들을 영접하사 하나님 나라의 일을 이야기하시며 병 고칠 자들은 고치시더라
 12. 날이 저물어 가매 열두 사도가 나아와 여짜오되 무리를 보내어 두루 마을과 촌으로 가서 유하며 먹을 것을 얻게 하소서 우리가 있는 여기는 빈 들이니이다
 13. 예수께서 이르시되 너희가 먹을 것을 주라 하시니 여짜오되 우리에게 떡 다섯 개와 물고기 두 마리밖에 없으니 이 모든 사람을 위하여 먹을 것을 사지 아니하고서는 할 수 없사옵나이다 하니
@@ -2727,7 +2727,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-14', '누가복음', '9장 21~30절', '&nbsp;', '(누가복음 9장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-14', '누가복음', '9장 21~30절', ' ', '(누가복음 9장)
 21. 경고하사 이 말을 아무에게도 이르지 말라 명하시고
 22. 이르시되 인자가 많은 고난을 받고 장로들과 대제사장들과 서기관들에게 버린 바 되어 죽임을 당하고 제삼일에 살아나야 하리라 하시고
 23. 또 무리에게 이르시되 아무든지 나를 따라오려거든 자기를 부인하고 날마다 제 십자가를 지고 나를 따를 것이니라
@@ -2855,7 +2855,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-16', '누가복음', '9장 51~62절', '&nbsp;', '(누가복음 9장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-16', '누가복음', '9장 51~62절', ' ', '(누가복음 9장)
 51.  예수께서 승천하실 기약이 차가매 예루살렘을 향하여 올라가기로 굳게 결심하시고
 52. 사자들을 앞서 보내시매 그들이 가서 예수를 위하여 준비하려고 사마리아인의 한 마을에 들어갔더니
 53. 예수께서 예루살렘을 향하여 가시기 때문에 그들이 받아들이지 아니 하는지라
@@ -2935,7 +2935,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-17', '누가복음', '9장 41~50절', '죽음을 예고하시는 예수님, 높아지기 원하는 제자들&nbsp;', '누가복음 9장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-17', '누가복음', '9장 41~50절', '죽음을 예고하시는 예수님, 높아지기 원하는 제자들 ', '누가복음 9장
 41   예수께서 대답하여 이르시되 믿음이 없고 패역한 세대여 내가 얼마나 너희와 함께 있으며 너희에게 참으리요 네 아들을 이리로 데리고 오라 하시니
 42   올 때에 귀신이 그를 거꾸러뜨리고 심한 경련을 일으키게 하는지라 예수께서 더러운 귀신을 꾸짖으시고 아이를 낫게 하사 그 아버지에게 도로 주시니
 43   사람들이 다 하나님의 위엄에 놀라니라 그들이 다 그 행하시는 모든 일을 놀랍게 여길새 예수께서 제자들에게 이르시되
@@ -3029,7 +3029,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-18', '누가복음', '10장 1~10절', '칠십인을 보내시다&nbsp;', '누가복음 10장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-18', '누가복음', '10장 1~10절', '칠십인을 보내시다 ', '누가복음 10장
 1   그 후에 주께서 따로 칠십 인을 세우사 친히 가시려는 각 동네와 각 지역으로 둘씩 앞서 보내시며
 2   이르시되 추수할 것은 많되 일꾼이 적으니 그러므로 추수하는 주인에게 청하여 추수할 일꾼들을 보내 주소서 하라
 3   갈지어다 내가 너희를 보냄이 어린 양을 이리 가운데로 보냄과 같도다
@@ -3103,7 +3103,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-19', '누가복음', '10장 11~20절', '&nbsp;', '[눅10:11-20]
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-19', '누가복음', '10장 11~20절', ' ', '[눅10:11-20]
 11 너희 동네에서 우리 발에 묻은 먼지도 너희에게 떨어버리노라 그러나 하나님의 나라가 가까이 온 줄을 알라 하라
 12 내가 너희에게 말하노니 그 날에 소돔이 그 동네보다 견디기 쉬우리라
 13 화 있을진저 고라신아, 화 있을진저 벳새다야, 너희에게 행한 모든 권능을 두로와 시돈에서 행하였더라면 그들이 벌써 베옷을 입고 재에 앉아 회개하였으리라
@@ -3167,7 +3167,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-20', '누가복음', '10장 21~30절', '&nbsp;', '(누가복음 10장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-20', '누가복음', '10장 21~30절', ' ', '(누가복음 10장)
 21.  그 때에 예수께서 성령으로 기뻐하시며 이르시되 천지의 주재이신 아버지여 이것을 지혜롭고 슬기 있는 자들에게는 숨기시고 어린 아이들에게는 나타내심을 감사하나이다 옳소이다 이렇게 된 것이 아버지의 뜻이니이다
 22. 내 아버지께서 모든 것을 내게 주셨으니 아버지 외에는 아들이 누구인지 아는 자가 없고 아들과 또 아들의 소원대로 계시를 받는 자 외에는 아버지가 누구인지 아는 자가 없나이다 하시고
 23. 제자들을 돌아 보시며 조용히 이르시되 너희가 보는 것을 보는 눈은 복이 있도다
@@ -3236,7 +3236,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-21', '누가복음', '10장 31~42절', '&nbsp;', '(누가복음 10장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-21', '누가복음', '10장 31~42절', ' ', '(누가복음 10장)
 31. 마침 한 제사장이 그 길로 내려가다가 그를 보고 피하여 지나가고
 32. 또 이와 같이 한 레위인도 그 곳에 이르러 그를 보고 피하여 지나가되
 33. 어떤 사마리아 사람은 여행하는 중 거기 이르러 그를 보고 불쌍히 여겨
@@ -3451,7 +3451,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-24', '누가복음', '11장 21~30절', '&nbsp;', '(누가복음 11장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-24', '누가복음', '11장 21~30절', ' ', '(누가복음 11장)
 21. 강한 자가 무장을 하고 자기 집을 지킬 때에는 그 소유가 안전하되
 22. 더 강한 자가 와서 그를 굴복시킬 때에는 그가 믿던 무장을 빼앗고 그의 재물을 나누느니라
 23. 나와 함께 하지 아니하는 자는 나를 반대하는 자요 나와 함께 모으지 아니하는 자는 헤치는 자니라
@@ -3670,7 +3670,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-27', '누가복음', '12장 1~10절', '&nbsp;', '(누가복음 12장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-27', '누가복음', '12장 1~10절', ' ', '(누가복음 12장)
 1.  그 동안에 무리 수만 명이 모여 서로 밟힐 만큼 되었더니 예수께서 먼저 제자들에게 말씀하여 이르시되 바리새인들의 누룩 곧 외식을 주의하라
 2. 감추인 것이 드러나지 않을 것이 없고 숨긴 것이 알려지지 않을 것이 없나니
 3. 이러므로 너희가 어두운 데서 말한 모든 것이 광명한 데서 들리고 너희가 골방에서 귀에 대고 말한 것이 지붕 위에서 전파되리라
@@ -3734,7 +3734,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-28', '누가복음', '12장 11~20절', '&nbsp;', '(누가복음 12장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-06-28', '누가복음', '12장 11~20절', ' ', '(누가복음 12장)
 11. 사람이 너희를 회당이나 위정자나 권세 있는 자 앞에 끌고 가거든 어떻게 무엇으로 대답하며 무엇으로 말할까 염려하지 말라
 12. 마땅히 할 말을 성령이 곧 그 때에 너희에게 가르치시리라 하시니라
 13.  무리 중에 한 사람이 이르되 선생님 내 형을 명하여 유산을 나와 나누게 하소서 하니
@@ -3928,7 +3928,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-01', '누가복음', '12장 41~50절', '&nbsp;', '(누가복음 12장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-01', '누가복음', '12장 41~50절', ' ', '(누가복음 12장)
 41. 베드로가 여짜오되 주께서 이 비유를 우리에게 하심이니이까 모든 사람에게 하심이니이까
 42. 주께서 이르시되 지혜 있고 진실한 청지기가 되어 주인에게 그 집 종들을 맡아 때를 따라 양식을 나누어 줄 자가 누구냐
 43. 주인이 이를 때에 그 종이 그렇게 하는 것을 보면 그 종은 복이 있으리로다
@@ -3994,7 +3994,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-02', '누가복음', '12장 51~59절', '때를 분간하고 화해하기를 힘쓰라&nbsp;', '누가복음 12장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-02', '누가복음', '12장 51~59절', '때를 분간하고 화해하기를 힘쓰라 ', '누가복음 12장
 
 51   내가 세상에 화평을 주려고 온 줄로 아느냐 내가 너희에게 이르노니 아니라 도리어 분쟁하게 하려 함이로라
 52   이 후부터 한 집에 다섯 사람이 있어 분쟁하되 셋이 둘과, 둘이 셋과 하리니
@@ -4134,7 +4134,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-04', '누가복음', '13장 11~20절', '&nbsp;', '(누가복음 13장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-04', '누가복음', '13장 11~20절', ' ', '(누가복음 13장)
 11. 열여덟 해 동안이나 귀신 들려 앓으며 꼬부라져 조금도 펴지 못하는 한 여자가 있더라
 12. 예수께서 보시고 불러 이르시되 여자여 네가 네 병에서 놓였다 하시고
 13. 안수하시니 여자가 곧 펴고 하나님께 영광을 돌리는지라
@@ -4209,7 +4209,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-05', '누가복음', '13장 21~30절', '&nbsp;', '(누가복음 13장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-05', '누가복음', '13장 21~30절', ' ', '(누가복음 13장)
 21. 마치 여자가 가루 서 말 속에 갖다 넣어 전부 부풀게 한 누룩과 같으니라 하셨더라
 22.  예수께서 각 성 각 마을로 다니사 가르치시며 예루살렘으로 여행하시더니
 23. 어떤 사람이 여짜오되 주여 구원을 받는 자가 적으니이까 그들에게 이르시되
@@ -4404,7 +4404,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-08', '누가복음', '14장 11~20절', '&nbsp;', '(누가복음 14장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-08', '누가복음', '14장 11~20절', ' ', '(누가복음 14장)
 11. 무릇 자기를 높이는 자는 낮아지고 자기를 낮추는 자는 높아지리라
 12. 또 자기를 청한 자에게 이르시되 네가 점심이나 저녁이나 베풀거든 벗이나 형제나 친척이나 부한 이웃을 청하지 말라 두렵건대 그 사람들이 너를 도로 청하여 네게 갚음이 될까 하노라
 13. 잔치를 베풀거든 차라리 가난한 자들과 몸 불편한 자들과 저는 자들과 맹인들을 청하라
@@ -4539,7 +4539,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-10', '누가복음', '15장 1~10절', '&nbsp;', '(누가복음 15장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-10', '누가복음', '15장 1~10절', ' ', '(누가복음 15장)
 1.  모든 세리와 죄인들이 말씀을 들으러 가까이 나아오니
 2. 바리새인과 서기관들이 수군거려 이르되 이 사람이 죄인을 영접하고 음식을 같이 먹는다 하더라
 3. 예수께서 그들에게 이 비유로 이르시되
@@ -4651,7 +4651,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-12', '누가복음', '15장 11~20절', '&nbsp;', '(누가복음 15장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-12', '누가복음', '15장 11~20절', ' ', '(누가복음 15장)
 11.  또 이르시되 어떤 사람에게 두 아들이 있는데
 12. 그 둘째가 아버지에게 말하되 아버지여 재산 중에서 내게 돌아올 분깃을 내게 주소서 하는지라 아버지가 그 살림을 각각 나눠 주었더니
 13. 그 후 며칠이 안 되어 둘째 아들이 재물을 다 모아 가지고 먼 나라에 가 거기서 허랑방탕하여 그 재산을 낭비하더니
@@ -4783,7 +4783,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-14', '누가복음', '16장 1~10절', '불의한 청지기의 지혜로운 행동&nbsp;', '누가복음 16장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-14', '누가복음', '16장 1~10절', '불의한 청지기의 지혜로운 행동 ', '누가복음 16장
 1   또한 제자들에게 이르시되 어떤 부자에게 청지기가 있는데 그가 주인의 소유를 낭비한다는 말이 그 주인에게 들린지라
 2   주인이 그를 불러 이르되 내가 네게 대하여 들은 이 말이 어찌 됨이냐 네가 보던 일을 셈하라 청지기 직무를 계속하지 못하리라 하니
 3   청지기가 속으로 이르되 주인이 내 직분을 빼앗으니 내가 무엇을 할까 땅을 파자니 힘이 없고 빌어 먹자니 부끄럽구나
@@ -4848,7 +4848,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-15', '누가복음', '16장 11~20절', '&nbsp;', '(누가복음 16장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-15', '누가복음', '16장 11~20절', ' ', '(누가복음 16장)
 11. 너희가 만일 불의한 재물에도 충성하지 아니하면 누가 참된 것으로 너희에게 맡기겠느냐
 12. 너희가 만일 남의 것에 충성하지 아니하면 누가 너희의 것을 너희에게 주겠느냐
 13. 집 하인이 두 주인을 섬길 수 없나니 혹 이를 미워하고 저를 사랑하거나 혹 이를 중히 여기고 저를 경히 여길 것임이니라 너희는 하나님과 재물을 겸하여 섬길 수 없느니라
@@ -5055,7 +5055,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-18', '누가복음', '17장 11~20절', '&nbsp;', '(누가복음 17장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-18', '누가복음', '17장 11~20절', ' ', '(누가복음 17장)
 11.  예수께서 예루살렘으로 가실 때에 사마리아와 갈릴리 사이로 지나가시다가
 12. 한 마을에 들어가시니 나병환자 열 명이 예수를 만나 멀리 서서
 13. 소리를 높여 이르되 예수 선생님이여 우리를 불쌍히 여기소서 하거늘
@@ -5125,7 +5125,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-19', '누가복음', '17장 21~30절', '&nbsp;', '(누가복음 17장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-19', '누가복음', '17장 21~30절', ' ', '(누가복음 17장)
 21. 또 여기 있다 저기 있다고도 못하리니 하나님의 나라는 너희 안에 있느니라
 22. 또 제자들에게 이르시되 때가 이르리니 너희가 인자의 날 하루를 보고자 하되 보지 못하리라
 23. 사람이 너희에게 말하되 보라 저기 있다 보라 여기 있다 하리라 그러나 너희는 가지도 말고 따르지도 말라
@@ -5244,7 +5244,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-21', '누가복음', '18장 1~10절', '늘 기도하고 낙심하지 말아야 하는 이유&nbsp;', '누가복음 18장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-21', '누가복음', '18장 1~10절', '늘 기도하고 낙심하지 말아야 하는 이유 ', '누가복음 18장
 1   예수께서 그들에게 항상 기도하고 낙심하지 말아야 할 것을 비유로 말씀하여
 2   이르시되 어떤 도시에 하나님을 두려워하지 않고 사람을 무시하는 한 재판장이 있는데
 3   그 도시에 한 과부가 있어 자주 그에게 가서 내 원수에 대한 나의 원한을 풀어 주소서 하되
@@ -5306,7 +5306,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-22', '누가복음', '18장 11~20절', '&nbsp;', '(누가복음 18장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-22', '누가복음', '18장 11~20절', ' ', '(누가복음 18장)
 11. 바리새인은 서서 따로 기도하여 이르되 하나님이여 나는 다른 사람들 곧 토색, 불의, 간음을 하는 자들과 같지 아니하고 이 세리와도 같지 아니함을 감사하나이다
 12. 나는 이레에 두 번씩 금식하고 또 소득의 십일조를 드리나이다 하고
 13. 세리는 멀리 서서 감히 눈을 들어 하늘을 쳐다보지도 못하고 다만 가슴을 치며 이르되 하나님이여 불쌍히 여기소서 나는 죄인이로소이다 하였느니라
@@ -5373,7 +5373,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-23', '누가복음', '18장 21~30절', '하늘에 보화를 쌓는 사람&nbsp;', '누가복음 18장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-23', '누가복음', '18장 21~30절', '하늘에 보화를 쌓는 사람 ', '누가복음 18장
 21   여짜오되 이것은 내가 어려서부터 다 지키었나이다
 22   예수께서 이 말을 들으시고 이르시되 네게 아직도 한 가지 부족한 것이 있으니 네게 있는 것을 다 팔아 가난한 자들에게 나눠 주라 그리하면 하늘에서 네게 보화가 있으리라 그리고 와서 나를 따르라 하시니
 23   그 사람이 큰 부자이므로 이 말씀을 듣고 심히 근심하더라
@@ -5506,7 +5506,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-25', '누가복음', '19장 1~10절', '&nbsp;', '(누가복음 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-25', '누가복음', '19장 1~10절', ' ', '(누가복음 19장)
 1.  예수께서 여리고로 들어가 지나가시더라
 2. 삭개오라 이름하는 자가 있으니 세리장이요 또한 부자라
 3. 그가 예수께서 어떠한 사람인가 하여 보고자 하되 키가 작고 사람이 많아 할 수 없어
@@ -5581,7 +5581,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-26', '누가복음', '19장 11~20절', '&nbsp;', '(누가복음 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-26', '누가복음', '19장 11~20절', ' ', '(누가복음 19장)
 11.  그들이 이 말씀을 듣고 있을 때에 비유를 더하여 말씀하시니 이는 자기가 예루살렘에 가까이 오셨고 그들은 하나님의 나라가 당장에 나타날 줄로 생각함이더라
 12. 이르시되 어떤 귀인이 왕위를 받아가지고 오려고 먼 나라로 갈 때에
 13. 그 종 열을 불러 은화 열 므나를 주며 이르되 내가 돌아올 때까지 장사하라 하니라
@@ -5798,7 +5798,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-29', '누가복음', '19장 41~48절', '&nbsp;', '(누가복음 19장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-29', '누가복음', '19장 41~48절', ' ', '(누가복음 19장)
 41. 가까이 오사 성을 보시고 우시며
 42. 이르시되 너도 오늘 평화에 관한 일을 알았더라면 좋을 뻔하였거니와 지금 네 눈에 숨겨졌도다
 43. 날이 이를지라 네 원수들이 토둔을 쌓고 너를 둘러 사면으로 가두고
@@ -5866,7 +5866,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-30', '누가복음', '20장 1~10절', '하늘로부터냐 사람으로부터냐&nbsp;', '누가복음 20장
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-07-30', '누가복음', '20장 1~10절', '하늘로부터냐 사람으로부터냐 ', '누가복음 20장
 1   하루는 예수께서 성전에서 백성을 가르치시며 복음을 전하실새 대제사장들과 서기관들이 장로들과 함께 가까이 와서
 2   말하여 이르되 당신이 무슨 권위로 이런 일을 하는지 이 권위를 준 이가 누구인지 우리에게 말하라
 3   대답하여 이르시되 나도 한 말을 너희에게 물으리니 내게 말하라
@@ -5991,7 +5991,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-01', '누가복음', '20장 21~30절', '&nbsp;', '(누가복음 20장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-01', '누가복음', '20장 21~30절', ' ', '(누가복음 20장)
 21. 그들이 물어 이르되 선생님이여 우리가 아노니 당신은 바로 말씀하시고 가르치시며 사람을 외모로 취하지 아니하시고 오직 진리로써 하나님의 도를 가르치시나이다
 22. 우리가 가이사에게 세를 바치는 것이 옳으니이까 옳지 않으니이까 하니
 23. 예수께서 그 간계를 아시고 이르시되
@@ -6060,7 +6060,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-02', '누가복음', '20장 31~40절', '&nbsp;', '(누가복음 20장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-02', '누가복음', '20장 31~40절', ' ', '(누가복음 20장)
 31. 일곱이 다 그와 같이 자식이 없이 죽고
 32. 그 후에 여자도 죽었나이다
 33. 일곱이 다 그를 아내로 취하였으니 부활 때에 그 중에 누구의 아내가 되리이까
@@ -6315,7 +6315,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-06', '누가복음', '21장 11~20절', '&nbsp;', '(누가복음 21장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-06', '누가복음', '21장 11~20절', ' ', '(누가복음 21장)
 11. 곳곳에 큰 지진과 기근과 전염병이 있겠고 또 무서운 일과 하늘로부터 큰 징조들이 있으리라
 12. 이 모든 일 전에 내 이름으로 말미암아 너희에게 손을 대어 박해하며 회당과 옥에 넘겨 주며 임금들과 집권자들 앞에 끌어 가려니와
 13. 이 일이 도리어 너희에게 증거가 되리라
@@ -6430,7 +6430,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-08', '누가복음', '22장 1~10절', '&nbsp;', '(누가복음 22장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-08', '누가복음', '22장 1~10절', ' ', '(누가복음 22장)
 1.  유월절이라 하는 무교절이 다가오매
 2. 대제사장들과 서기관들이 예수를 무슨 방도로 죽일까 궁리하니 이는 그들이 백성을 두려워함이더라
 3. 열둘 중의 하나인 가룟인이라 부르는 유다에게 사탄이 들어가니
@@ -6493,7 +6493,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-09', '누가복음', '22장 11~20절', '&nbsp;', '(누가복음 22장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-09', '누가복음', '22장 11~20절', ' ', '(누가복음 22장)
 11. 그 집 주인에게 이르되 선생님이 네게 하는 말씀이 내가 내 제자들과 함께 유월절을 먹을 객실이 어디 있느냐 하시더라 하라
 12. 그리하면 그가 자리를 마련한 큰 다락방을 보이리니 거기서 준비하라 하시니
 13. 그들이 나가 그 하신 말씀대로 만나 유월절을 준비하니라
@@ -6701,7 +6701,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11.믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-12', '누가복음', '22장 41~50절', '&nbsp;', '(누가복음 22장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2025-08-12', '누가복음', '22장 41~50절', ' ', '(누가복음 22장)
 41. 그들을 떠나 돌 던질 만큼 가서 무릎을 꿇고 기도하여
 42. 이르시되 아버지여 만일 아버지의 뜻이거든 이 잔을 내게서 옮기시옵소서 그러나 내 원대로 마시옵고 아버지의 원대로 되기를 원하나이다 하시니
 43. 천사가 하늘로부터 예수께 나타나 힘을 더하더라

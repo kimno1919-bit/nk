@@ -1534,7 +1534,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-04-28', '히브리서', '12장 21절 ~ 29절', '&nbsp;', '(히브리서 12장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-04-28', '히브리서', '12장 21절 ~ 29절', ' ', '(히브리서 12장)
 21. 그 보이는 바가 이렇듯 무섭기로 모세도 이르되 내가 심히 두렵고 떨린다 하였느니라
 22. 그러나 너희가 이른 곳은 시온 산과 살아 계신 하나님의 도성인 하늘의 예루살렘과 천만 천사와
 23. 하늘에 기록된 장자들의 모임과 교회와 만민의 심판자이신 하나님과 및 온전하게 된 의인의 영들과
@@ -1713,7 +1713,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-05-01', '히브리서', '13장 21절 ~ 25절', '&nbsp;', '(히브리서 13장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-05-01', '히브리서', '13장 21절 ~ 25절', ' ', '(히브리서 13장)
 21. 모든 선한 일에 너희를 온전하게 하사 자기 뜻을 행하게 하시고 그 앞에 즐거운 것을 예수 그리스도로 말미암아 우리 가운데서 이루시기를 원하노라 영광이 그에게 세세무궁토록 있을지어다 아멘
 22. 형제들아 내가 너희를 권하노니 권면의 말을 용납하라 내가 간단히 너희에게 썼느니라
 23. 우리 형제 디모데가 놓인 것을 너희가 알라 그가 속히 오면 내가 그와 함께 가서 너희를 보리라
@@ -1772,7 +1772,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-05-02', '야고보서', '', '야고보서 시작', '야고보서 시작', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-05-03', '야고보서', '1장 1절 ~ 10절', '&nbsp;', '(야고보서 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-05-03', '야고보서', '1장 1절 ~ 10절', ' ', '(야고보서 1장)
 1.  하나님과 주 예수 그리스도의 종 야고보는 흩어져 있는 열두 지파에게 문안하노라
 2.  내 형제들아 너희가 여러 가지 시험을 당하거든 온전히 기쁘게 여기라
 3. 이는 너희 믿음의 시련이 인내를 만들어 내는 줄 너희가 앎이라
@@ -1834,7 +1834,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-05-04', '야고보서', '1장 11절 ~ 20절', '속지 말아야 할 사탄의 시험&nbsp;', '[약1:11-20]
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-05-04', '야고보서', '1장 11절 ~ 20절', '속지 말아야 할 사탄의 시험 ', '[약1:11-20]
 11 해가 돋고 뜨거운 바람이 불어 풀을 말리면 꽃이 떨어져 그 모양의 아름다움이 없어지나니 부한 자도 그 행하는 일에 이와 같이 쇠잔하리라
 12 시험을 참는 자는 복이 있나니 이는 시련을 견디어 낸 자가 주께서 자기를 사랑하는 자들에게 약속하신 생명의 면류관을 얻을 것이기 때문이라
 13 사람이 시험을 받을 때에 내가 하나님께 시험을 받는다 하지 말지니 하나님은 악에게 시험을 받지도 아니하시고 친히 아무도 시험하지 아니하시느니라
@@ -3687,7 +3687,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-06', '요한일서', '2장 21절 ~ 29절', '&nbsp;', '(요한일서 2장21절~29절)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-06', '요한일서', '2장 21절 ~ 29절', ' ', '(요한일서 2장21절~29절)
 21. 내가 너희에게 쓰는 것은 너희가 진리를 알지 못하기 때문이 아니라 알기 때문이요 또 모든 거짓은 진리에서 나지 않기 때문이라
 22. 거짓말하는 자가 누구냐 예수께서 그리스도이심을 부인하는 자가 아니냐 아버지와 아들을 부인하는 그가 적그리스도니
 23. 아들을 부인하는 자에게는 또한 아버지가 없으되 아들을 시인하는 자에게는 아버지도 있느니라
@@ -4344,7 +4344,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 
 INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-16', '유다서', '1장', '유다서', '유다서 시작', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-17', '유다서', '1장 1절 ~ 10절', '&nbsp;', '(유다서 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-17', '유다서', '1장 1절 ~ 10절', ' ', '(유다서 1장)
 1.  예수 그리스도의 종이요 야고보의 형제인 유다는 부르심을 받은 자 곧 하나님 아버지 안에서 사랑을 얻고 예수 그리스도를 위하여 지키심을 받은 자들에게 편지하노라
 2. 긍휼과 평강과 사랑이 너희에게 더욱 많을지어다
 3.  사랑하는 자들아 우리가 일반으로 받은 구원에 관하여 내가 너희에게 편지하려는 생각이 간절하던 차에 성도에게 단번에 주신 믿음의 도를 위하여 힘써 싸우라는 편지로 너희를 권하여야 할 필요를 느꼈노니
@@ -4407,7 +4407,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-18', '유다서', '1장 11절 ~ 20절', '&nbsp;', '(유다서 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-18', '유다서', '1장 11절 ~ 20절', ' ', '(유다서 1장)
 11. 화 있을진저 이 사람들이여, 가인의 길에 행하였으며 삯을 위하여 발람의 어그러진 길로 몰려 갔으며 고라의 패역을 따라 멸망을 받았도다
 12. 그들은 기탄 없이 너희와 함께 먹으니 너희의 애찬에 암초요 자기 몸만 기르는 목자요 바람에 불려가는 물 없는 구름이요 죽고 또 죽어 뿌리까지 뽑힌 열매 없는 가을 나무요
 13. 자기 수치의 거품을 뿜는 바다의 거친 물결이요 영원히 예비된 캄캄한 흑암으로 돌아갈 유리하는 별들이라
@@ -4587,7 +4587,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-22', '요한계시록', '1장 11절 ~ 20절', '&nbsp;', '(요한계시록 1장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-22', '요한계시록', '1장 11절 ~ 20절', ' ', '(요한계시록 1장)
 11. 이르되 네가 보는 것을 두루마리에 써서 에베소, 서머나, 버가모, 두아디라, 사데, 빌라델비아, 라오디게아 등 일곱 교회에 보내라 하시기로
 12. 몸을 돌이켜 나에게 말한 음성을 알아 보려고 돌이킬 때에 일곱 금 촛대를 보았는데
 13. 촛대 사이에 인자 같은 이가 발에 끌리는 옷을 입고 가슴에 금띠를 띠고
@@ -4782,7 +4782,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-25', '요한계시록', '2장 21절 ~ 29절', '&nbsp;', '(요한계시록 2장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-25', '요한계시록', '2장 21절 ~ 29절', ' ', '(요한계시록 2장)
 21. 또 내가 그에게 회개할 기회를 주었으되 자기의 음행을 회개하고자 하지 아니하는도다
 22. 볼지어다 내가 그를 침상에 던질 터이요 또 그와 더불어 간음하는 자들도 만일 그의 행위를 회개하지 아니하면 큰 환난 가운데에 던지고
 23. 또 내가 사망으로 그의 자녀를 죽이리니 모든 교회가 나는 사람의 뜻과 마음을 살피는 자인 줄 알지라 내가 너희 각 사람의 행위대로 갚아 주리라
@@ -4840,7 +4840,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-26', '요한계시록', '3장 1절 ~ 10절', '&nbsp;', '(요한계시록 3장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-26', '요한계시록', '3장 1절 ~ 10절', ' ', '(요한계시록 3장)
 1.  사데 교회의 사자에게 편지하라 하나님의 일곱 영과 일곱 별을 가지신 이가 이르시되 내가 네 행위를 아노니 네가 살았다 하는 이름은 가졌으나 죽은 자로다
 2. 너는 일깨어 그 남은 바 죽게 된 것을 굳건하게 하라 내 하나님 앞에 네 행위의 온전한 것을 찾지 못하였노니
 3. 그러므로 네가 어떻게 받았으며 어떻게 들었는지 생각하고 지켜 회개하라 만일 일깨지 아니하면 내가 도둑 같이 이르리니 어느 때에 네게 이를는지 네가 알지 못하리라
@@ -5025,7 +5025,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12. 받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-29', '요한계시록', '5장 1절 ~ 14절', '&nbsp;', '(요한계시록 5장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-06-29', '요한계시록', '5장 1절 ~ 14절', ' ', '(요한계시록 5장)
 1.  내가 보매 보좌에 앉으신 이의 오른손에 두루마리가 있으니 안팎으로 썼고 일곱 인으로 봉하였더라
 2. 또 보매 힘있는 천사가 큰 음성으로 외치기를 누가 그 두루마리를 펴며 그 인을 떼기에 합당하냐 하나
 3. 하늘 위에나 땅 위에나 땅 아래에 능히 그 두루마리를 펴거나 보거나 할 자가 없더라
@@ -5185,7 +5185,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-02', '요한계시록', '7장 1절 ~ 10절', '&nbsp;', '(요한계시록 7장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-02', '요한계시록', '7장 1절 ~ 10절', ' ', '(요한계시록 7장)
 1.  이 일 후에 내가 네 천사가 땅 네 모퉁이에 선 것을 보니 땅의 사방의 바람을 붙잡아 바람으로 하여금 땅에나 바다에나 각종 나무에 불지 못하게 하더라
 2. 또 보매 다른 천사가 살아 계신 하나님의 인을 가지고 해 돋는 데로부터 올라와서 땅과 바다를 해롭게 할 권세를 받은 네 천사를 향하여 큰 소리로 외쳐
 3. 이르되 우리가 우리 하나님의 종들의 이마에 인치기까지 땅이나 바다나 나무들을 해하지 말라 하더라
@@ -5237,7 +5237,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-03', '요한계시록', '7장 11절 ~ 17절', '&nbsp;', '(요한계시록 7장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-03', '요한계시록', '7장 11절 ~ 17절', ' ', '(요한계시록 7장)
 11. 모든 천사가 보좌와 장로들과 네 생물의 주위에 서 있다가 보좌 앞에 엎드려 얼굴을 대고 하나님께 경배하여
 12. 이르되 아멘 찬송과 영광과 지혜와 감사와 존귀와 권능과 힘이 우리 하나님께 세세토록 있을지어다 아멘 하더라
 13. 장로 중 하나가 응답하여 나에게 이르되 이 흰 옷 입은 자들이 누구며 또 어디서 왔느냐
@@ -5428,7 +5428,7 @@ INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES (
 11. 믿음과 회개 및 감사기도로 마무리
 12.받은 은혜의 말씀 24시간 묵상하며 주님과 동행하기', 0, true);
 
-INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-06', '요한계시록', '9장 1절 ~ 21절', '&nbsp;', '(요한계시록 9장)
+INSERT INTO qts (date, book, chapter, title, content, views, is_public) VALUES ('2024-07-06', '요한계시록', '9장 1절 ~ 21절', ' ', '(요한계시록 9장)
 11. 그들에게 왕이 있으니 무저갱의 사자라 히브리어로는 그 이름이 아바돈이요 헬라어로는 그 이름이 아볼루온이더라
 12. 첫째 화는 지나갔으나 보라 아직도 이 후에 화 둘이 이르리로다
 13. 여섯째 천사가 나팔을 불매 내가 들으니 하나님 앞 금 제단 네 뿔에서 한 음성이 나서
