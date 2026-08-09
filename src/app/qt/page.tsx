@@ -5,6 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { createClient } from "@/utils/supabase/client";
 import { QtComments } from "./QtComments";
+import { Pagination } from "@/components/Pagination";
 
 const BIBLE_BOOKS = [
   "창세기", "출애굽기", "레위기", "민수기", "신명기", "여호수아", "사사기", "룻기", "사무엘상", "사무엘하", "열왕기상", "열왕기하", "역대상", "역대하", "에스라", "느헤미야", "에스더", "욥기", "시편", "잠언", "전도서", "아가", "이사야", "예레미야", "예레미야애가", "에스겔", "다니엘", "호세아", "요엘", "아모스", "오바댜", "요나", "미가", "나훔", "하박국", "스바냐", "학개", "스가랴", "말라기",
@@ -17,7 +18,8 @@ export default function QtPage() {
   const [qts, setQts] = useState<any[]>([]);
   const [selectedBook, setSelectedBook] = useState("모든 성경");
   const [selectedChapter, setSelectedChapter] = useState("모든 장");
-  const [displayCount, setDisplayCount] = useState(10);
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 10;
   const [isLoading, setIsLoading] = useState(true);
   const [sortOrder, setSortOrder] = useState("최신순");
 
@@ -130,6 +132,9 @@ export default function QtPage() {
     }
   });
 
+  const totalPages = Math.ceil(filteredQts.length / ITEMS_PER_PAGE);
+  const currentData = filteredQts.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
+
   return (
     <div className="flex flex-col w-full pb-24 min-h-screen">
       <section className="bg-paper-cream pt-24 pb-16 px-5 text-center border-b border-line-gray">
@@ -149,7 +154,7 @@ export default function QtPage() {
               onChange={(e) => {
                 setSelectedBook(e.target.value);
                 setSelectedChapter("모든 장"); // 성경 변경 시 장 초기화
-                setDisplayCount(10); // 필터 변경 시 표시 개수 초기화
+                setCurrentPage(1); // 필터 변경 시 표시 개수 초기화
               }}
               className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[120px]"
             >
@@ -164,7 +169,7 @@ export default function QtPage() {
                 value={selectedChapter}
                 onChange={(e) => {
                   setSelectedChapter(e.target.value);
-                  setDisplayCount(10);
+                  setCurrentPage(1);
                 }}
                 className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
               >
@@ -179,7 +184,7 @@ export default function QtPage() {
               value={sortOrder}
               onChange={(e) => {
                 setSortOrder(e.target.value);
-                setDisplayCount(10);
+                setCurrentPage(1);
               }}
               className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
             >
@@ -198,7 +203,7 @@ export default function QtPage() {
               <div className="w-10 h-10 border-4 border-deep-navy border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
               <p className="text-ink-2 font-medium">불러오는 중입니다...</p>
             </div>
-          ) : filteredQts.length > 0 ? filteredQts.slice(0, displayCount).map((qt) => {
+          ) : currentData.length > 0 ? currentData.map((qt) => {
             const isExpanded = expandedId === qt.id;
             // 앞부분 100자 정도만 요약으로 보여줌
             const summary = qt.content ? qt.content.slice(0, 100) + (qt.content.length > 100 ? "..." : "") : "";
@@ -275,17 +280,13 @@ export default function QtPage() {
           )}
         </div>
 
-        {/* 더보기 버튼 */}
-        {filteredQts.length > displayCount && (
-          <div className="mt-12 flex justify-center">
-            <Button 
-              variant="secondary" 
-              className="!px-12 !py-4 font-bold text-lg shadow-sm hover:shadow-md transition-all"
-              onClick={() => setDisplayCount(prev => prev + 10)}
-            >
-              더보기 ▼
-            </Button>
-          </div>
+        {/* 페이지네이션 */}
+        {!isLoading && totalPages > 1 && (
+          <Pagination 
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
         )}
       </div>
     </div>
