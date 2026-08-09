@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -13,7 +13,7 @@ const BIBLE_BOOKS = [
   "마태복음", "마가복음", "누가복음", "요한복음", "사도행전", "로마서", "고린도전서", "고린도후서", "갈라디아서", "에베소서", "빌립보서", "골로새서", "데살로니가전서", "데살로니가후서", "디모데전서", "디모데후서", "디도서", "빌레몬서", "히브리서", "야고보서", "베드로전서", "베드로후서", "요한일서", "요한이서", "요한삼서", "유다서", "요한계시록"
 ];
 
-export default function QtPage() {
+function QtContent() {
   const supabase = createClient();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -321,5 +321,13 @@ export default function QtPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function QtPage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center min-h-screen">로딩 중...</div>}>
+      <QtContent />
+    </Suspense>
   );
 }
