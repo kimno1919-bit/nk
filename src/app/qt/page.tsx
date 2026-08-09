@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { createClient } from "@/utils/supabase/client";
@@ -14,14 +15,35 @@ const BIBLE_BOOKS = [
 
 export default function QtPage() {
   const supabase = createClient();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [qts, setQts] = useState<any[]>([]);
-  const [selectedBook, setSelectedBook] = useState("모든 성경");
-  const [selectedChapter, setSelectedChapter] = useState("모든 장");
-  const [currentPage, setCurrentPage] = useState(1);
+  
+  // URL에서 초기 상태 읽기
+  const urlPage = parseInt(searchParams.get("page") || "1", 10);
+  const urlBook = searchParams.get("book") || "모든 성경";
+  const urlChapter = searchParams.get("chapter") || "모든 장";
+  const urlSort = searchParams.get("sort") || "최신순";
+
+  const [selectedBook, setSelectedBook] = useState(urlBook);
+  const [selectedChapter, setSelectedChapter] = useState(urlChapter);
+  const [currentPage, setCurrentPage] = useState(urlPage);
   const ITEMS_PER_PAGE = 10;
   const [isLoading, setIsLoading] = useState(true);
-  const [sortOrder, setSortOrder] = useState("최신순");
+  const [sortOrder, setSortOrder] = useState(urlSort);
+
+  // URL 동기화 함수
+  const updateUrl = (page: number, book: string, chapter: string, sort: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("page", page.toString());
+    params.set("book", book);
+    params.set("chapter", chapter);
+    params.set("sort", sort);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  };
 
   useEffect(() => {
     const fetchQts = async () => {
@@ -152,9 +174,11 @@ export default function QtPage() {
             <select 
               value={selectedBook}
               onChange={(e) => {
-                setSelectedBook(e.target.value);
+                const newBook = e.target.value;
+                setSelectedBook(newBook);
                 setSelectedChapter("모든 장"); // 성경 변경 시 장 초기화
                 setCurrentPage(1); // 필터 변경 시 표시 개수 초기화
+                updateUrl(1, newBook, "모든 장", sortOrder);
               }}
               className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[120px]"
             >
@@ -168,8 +192,10 @@ export default function QtPage() {
               <select 
                 value={selectedChapter}
                 onChange={(e) => {
-                  setSelectedChapter(e.target.value);
+                  const newChapter = e.target.value;
+                  setSelectedChapter(newChapter);
                   setCurrentPage(1);
+                  updateUrl(1, selectedBook, newChapter, sortOrder);
                 }}
                 className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
               >
@@ -183,8 +209,10 @@ export default function QtPage() {
             <select
               value={sortOrder}
               onChange={(e) => {
-                setSortOrder(e.target.value);
+                const newSort = e.target.value;
+                setSortOrder(newSort);
                 setCurrentPage(1);
+                updateUrl(1, selectedBook, selectedChapter, newSort);
               }}
               className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
             >
@@ -285,7 +313,10 @@ export default function QtPage() {
           <Pagination 
             currentPage={currentPage}
             totalPages={totalPages}
-            onPageChange={setCurrentPage}
+            onPageChange={(page) => {
+              setCurrentPage(page);
+              updateUrl(page, selectedBook, selectedChapter, sortOrder);
+            }}
           />
         )}
       </div>

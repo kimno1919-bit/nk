@@ -3,6 +3,7 @@ import { createClient } from "@/utils/supabase/client";
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { useEffect, useState } from "react";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { Pagination } from "@/components/Pagination";
 
 const BIBLE_BOOKS = [
@@ -12,13 +13,28 @@ const BIBLE_BOOKS = [
 
 export default function AdminQtPage() {
   const supabase = createClient();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+
   const [qts, setQts] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   
-  // Pagination & Filter state
-  const [currentPage, setCurrentPage] = useState(1);
-  const [selectedBook, setSelectedBook] = useState("모든 성경");
+  // Pagination & Filter state from URL
+  const urlPage = parseInt(searchParams.get("page") || "1", 10);
+  const urlBook = searchParams.get("book") || "모든 성경";
+
+  const [currentPage, setCurrentPage] = useState(urlPage);
+  const [selectedBook, setSelectedBook] = useState(urlBook);
   const ITEMS_PER_PAGE = 20;
+
+  // Sync state to URL helper
+  const updateUrl = (page: number, book: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("page", page.toString());
+    params.set("book", book);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  };
 
   useEffect(() => {
     const fetchQts = async () => {
@@ -64,8 +80,10 @@ export default function AdminQtPage() {
           <select 
             value={selectedBook}
             onChange={(e) => {
-              setSelectedBook(e.target.value);
+              const newBook = e.target.value;
+              setSelectedBook(newBook);
               setCurrentPage(1); // 필터 변경 시 첫 페이지로 이동
+              updateUrl(1, newBook);
             }}
             className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[120px]"
           >
@@ -126,7 +144,10 @@ export default function AdminQtPage() {
         <Pagination 
           currentPage={currentPage}
           totalPages={totalPages}
-          onPageChange={setCurrentPage}
+          onPageChange={(page) => {
+            setCurrentPage(page);
+            updateUrl(page, selectedBook);
+          }}
         />
       )}
     </div>

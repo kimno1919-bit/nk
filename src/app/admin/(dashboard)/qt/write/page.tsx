@@ -62,15 +62,15 @@ function QtForm() {
     }
 
     router.refresh();
-    router.push("/admin/qt");
+    router.back();
   };
 
   const handleDelete = async () => {
     if (confirm("정말로 삭제하시겠습니까?")) {
       setLoading(true);
       await supabase.from("qts").delete().eq("id", id);
-      router.push("/admin/qt");
       router.refresh();
+      router.back();
     }
   };
 
@@ -151,7 +151,7 @@ function QtForm() {
             )}
           </div>
           <div className="flex gap-3">
-            <Button type="button" variant="tertiary" onClick={() => router.push("/admin/qt")}>취소</Button>
+            <Button type="button" variant="tertiary" onClick={() => router.back()}>취소</Button>
             <Button type="submit" variant="primary" disabled={loading}>
               {loading ? "저장 중..." : "저장하기"}
             </Button>
