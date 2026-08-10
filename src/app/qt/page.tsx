@@ -149,13 +149,18 @@ function QtContent() {
       return 0;
     });
 
+  const normalizeForSearch = (str: string) => {
+    if (!str) return "";
+    return str.toLowerCase().replace(/[\s장절~\-]/g, "");
+  };
+
   const filteredQts = qts.filter(qt => {
     if (selectedBook !== "모든 성경" && qt.book !== selectedBook) return false;
     if (selectedChapter !== "모든 장" && qt.chapter !== selectedChapter) return false;
     if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      const matchBook = qt.book?.toLowerCase().includes(query);
-      if (!matchBook) return false;
+      const query = normalizeForSearch(searchQuery);
+      const targetStr = normalizeForSearch((qt.book || "") + (qt.chapter || "") + (qt.title || ""));
+      if (!targetStr.includes(query)) return false;
     }
     return true;
   }).sort((a, b) => {
@@ -253,7 +258,7 @@ function QtContent() {
             <div className="relative flex items-center ml-auto w-full sm:w-auto">
               <input
                 type="text"
-                placeholder="성경 이름 검색..."
+                placeholder="성경, 장, 제목 검색 (예: 사도행전 1장 1-10절)..."
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
