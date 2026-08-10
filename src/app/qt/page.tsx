@@ -154,9 +154,8 @@ function QtContent() {
     if (selectedChapter !== "모든 장" && qt.chapter !== selectedChapter) return false;
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
-      const matchTitle = qt.title?.toLowerCase().includes(query);
-      const matchContent = qt.content?.toLowerCase().includes(query);
-      if (!matchTitle && !matchContent) return false;
+      const matchBook = qt.book?.toLowerCase().includes(query);
+      if (!matchBook) return false;
     }
     return true;
   }).sort((a, b) => {
@@ -254,7 +253,7 @@ function QtContent() {
             <div className="relative flex items-center ml-auto w-full sm:w-auto">
               <input
                 type="text"
-                placeholder="제목, 본문 검색..."
+                placeholder="성경 이름 검색..."
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
