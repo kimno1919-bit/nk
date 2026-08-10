@@ -27,6 +27,7 @@ function QtContent() {
   const urlBook = searchParams.get("book") || "모든 성경";
   const urlChapter = searchParams.get("chapter") || "모든 장";
   const urlSort = searchParams.get("sort") || "최신순";
+  const urlSearch = searchParams.get("search") || "";
 
   const [selectedBook, setSelectedBook] = useState(urlBook);
   const [selectedChapter, setSelectedChapter] = useState(urlChapter);
@@ -34,14 +35,20 @@ function QtContent() {
   const ITEMS_PER_PAGE = 10;
   const [isLoading, setIsLoading] = useState(true);
   const [sortOrder, setSortOrder] = useState(urlSort);
+  const [searchQuery, setSearchQuery] = useState(urlSearch);
 
   // URL 동기화 함수
-  const updateUrl = (page: number, book: string, chapter: string, sort: string) => {
+  const updateUrl = (page: number, book: string, chapter: string, sort: string, search: string = "") => {
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", page.toString());
     params.set("book", book);
     params.set("chapter", chapter);
     params.set("sort", sort);
+    if (search) {
+      params.set("search", search);
+    } else {
+      params.delete("search");
+    }
     router.replace(`${pathname}?${params.toString()}`, { scroll: false });
   };
 
@@ -145,6 +152,12 @@ function QtContent() {
   const filteredQts = qts.filter(qt => {
     if (selectedBook !== "모든 성경" && qt.book !== selectedBook) return false;
     if (selectedChapter !== "모든 장" && qt.chapter !== selectedChapter) return false;
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const matchTitle = qt.title?.toLowerCase().includes(query);
+      const matchContent = qt.content?.toLowerCase().includes(query);
+      if (!matchTitle && !matchContent) return false;
+    }
     return true;
   }).sort((a, b) => {
     if (sortOrder === "최신순") {
@@ -196,7 +209,7 @@ function QtContent() {
                 setSelectedBook(newBook);
                 setSelectedChapter("모든 장"); // 성경 변경 시 장 초기화
                 setCurrentPage(1); // 필터 변경 시 표시 개수 초기화
-                updateUrl(1, newBook, "모든 장", sortOrder);
+                updateUrl(1, newBook, "모든 장", sortOrder, searchQuery);
               }}
               className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[120px]"
             >
@@ -213,7 +226,7 @@ function QtContent() {
                   const newChapter = e.target.value;
                   setSelectedChapter(newChapter);
                   setCurrentPage(1);
-                  updateUrl(1, selectedBook, newChapter, sortOrder);
+                  updateUrl(1, selectedBook, newChapter, sortOrder, searchQuery);
                 }}
                 className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
               >
@@ -230,13 +243,28 @@ function QtContent() {
                 const newSort = e.target.value;
                 setSortOrder(newSort);
                 setCurrentPage(1);
-                updateUrl(1, selectedBook, selectedChapter, newSort);
+                updateUrl(1, selectedBook, selectedChapter, newSort, searchQuery);
               }}
               className="px-4 py-2 bg-white border border-line-gray rounded text-[15px] text-ink font-medium focus:outline-none focus:border-deep-navy transition-colors min-w-[100px]"
             >
               <option value="최신순">최신순</option>
               <option value="성경순">성경순</option>
             </select>
+            
+            <div className="relative flex items-center ml-auto w-full sm:w-auto">
+              <input
+                type="text"
+                placeholder="제목, 본문 검색..."
+                value={searchQuery}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setCurrentPage(1);
+                  updateUrl(1, selectedBook, selectedChapter, sortOrder, e.target.value);
+                }}
+                className="px-4 py-2 pr-10 w-full sm:w-[200px] bg-white border border-line-gray rounded text-[15px] text-ink focus:outline-none focus:border-deep-navy transition-colors"
+              />
+              <span className="absolute right-3 text-ink-2">🔍</span>
+            </div>
           </div>
           <Link href="/admin/qt">
             <Button variant="secondary" className="!px-6">관리자 글쓰기</Button>
@@ -333,7 +361,7 @@ function QtContent() {
             totalPages={totalPages}
             onPageChange={(page) => {
               setCurrentPage(page);
-              updateUrl(page, selectedBook, selectedChapter, sortOrder);
+              updateUrl(page, selectedBook, selectedChapter, sortOrder, searchQuery);
             }}
           />
         )}
