@@ -41,7 +41,12 @@ for (const post of data) {
     }
   }
 
-  // If the title changed from the original (either because we stripped &nbsp; or because we extracted a new title)
+  // Strip '주제:' or '제목:' from the beginning
+  if (newTitle) {
+    newTitle = newTitle.replace(/^(주제|제목)\s*:\s*/i, '').trim();
+  }
+
+  // If the title changed from the original (either because we stripped &nbsp;, extracted a new title, or removed '주제:')
   if (newTitle !== originalTitle) {
     if (newTitle === '') newTitle = '제목 없음'; // fallback if we still couldn't find one
     
