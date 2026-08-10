@@ -86,7 +86,7 @@ export default function AboutPage() {
           
           <div className="w-full mb-6">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.845946850849!2d127.05063711531!3d37.51864197980649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca46c0a000001%3A0x0!2z7LKt64u07IK87J217Ie87ZWR7IOB6rCA!5e0!3m2!1sko!2skr!4v1700000000000!5m2!1sko!2skr" 
+              src="https://maps.google.com/maps?q=서울%20강남구%20학동로101길%2026&t=&z=16&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="400" 
               style={{ border: 0 }} 
@@ -106,10 +106,10 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="shrink-0 flex gap-4">
-              <a href="https://map.kakao.com/link/search/학동로101길26" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-3 rounded bg-[#FEE500] text-[#000000] font-bold shadow-sm hover:opacity-90 transition-opacity">
+              <a href="https://map.kakao.com/link/search/서울 강남구 학동로101길 26" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-3 rounded bg-[#FEE500] text-[#000000] font-bold shadow-sm hover:opacity-90 transition-opacity">
                 카카오맵
               </a>
-              <a href="https://map.naver.com/v5/search/학동로101길26" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-3 rounded bg-[#03C75A] text-white font-bold shadow-sm hover:opacity-90 transition-opacity">
+              <a href="https://map.naver.com/v5/search/서울 강남구 학동로101길 26" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-3 rounded bg-[#03C75A] text-white font-bold shadow-sm hover:opacity-90 transition-opacity">
                 네이버지도
               </a>
             </div>
