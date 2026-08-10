@@ -38,13 +38,29 @@ function AdminQtContent() {
 
   useEffect(() => {
     const fetchQts = async () => {
-      // 본문(content)을 제외한 메타데이터만 빠르게 불러옵니다.
-      const { data } = await supabase
-        .from("qts")
-        .select("id, date, book, chapter, title, views")
-        .order("date", { ascending: false });
+      let allData: any[] = [];
+      let from = 0;
+      const limit = 1000;
+      let hasMore = true;
+
+      while (hasMore) {
+        // 본문(content)을 제외한 메타데이터만 빠르게 불러옵니다.
+        const { data, error } = await supabase
+          .from("qts")
+          .select("id, date, book, chapter, title, views")
+          .order("date", { ascending: false })
+          .range(from, from + limit - 1);
+          
+        if (error || !data || data.length === 0) {
+          hasMore = false;
+        } else {
+          allData = [...allData, ...data];
+          from += limit;
+          if (data.length < limit) hasMore = false;
+        }
+      }
         
-      if (data) setQts(data);
+      setQts(allData);
       setIsLoading(false);
     };
     fetchQts();

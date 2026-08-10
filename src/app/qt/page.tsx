@@ -47,12 +47,30 @@ function QtContent() {
 
   useEffect(() => {
     const fetchQts = async () => {
-      const { data } = await supabase
-        .from("qts")
-        .select("*, qt_comments(count)")
-        .eq("is_public", true)
-        .order("date", { ascending: false });
-      if (data) setQts(data);
+      let allData: any[] = [];
+      let from = 0;
+      const limit = 1000;
+      let hasMore = true;
+
+      while (hasMore) {
+        // 본문(content)을 포함하여 불러오기
+        const { data, error } = await supabase
+          .from("qts")
+          .select("*, qt_comments(count)")
+          .eq("is_public", true)
+          .order("date", { ascending: false })
+          .range(from, from + limit - 1);
+          
+        if (error || !data || data.length === 0) {
+          hasMore = false;
+        } else {
+          allData = [...allData, ...data];
+          from += limit;
+          if (data.length < limit) hasMore = false;
+        }
+      }
+        
+      setQts(allData);
       setIsLoading(false);
     };
     fetchQts();
