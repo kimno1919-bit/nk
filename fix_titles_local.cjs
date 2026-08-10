@@ -10,15 +10,18 @@ for (const post of data) {
     const subjectIndex = lines.findIndex(l => l.includes('주제') && l.includes('만들기'));
     
     if (subjectIndex >= 0) {
-      const sameLineMatch = lines[subjectIndex].match(/주제\s*만들기\s*[:\.\]]*\s*(.+)/);
       let newTitle = '';
+      const lineStr = lines[subjectIndex];
+      const afterSubject = lineStr.substring(lineStr.indexOf('만들기') + 3).replace(/^[\s:\.\]]+/, '').trim();
       
-      if (sameLineMatch && sameLineMatch[1].trim().length > 0) {
-        newTitle = sameLineMatch[1].trim();
+      if (afterSubject.length > 0) {
+        newTitle = afterSubject;
       } else {
+        // Look at subsequent lines
         for (let i = subjectIndex + 1; i < lines.length; i++) {
-          if (lines[i].length > 0 && !lines[i].match(/^\d+\./)) { 
-            newTitle = lines[i];
+          const nextLine = lines[i];
+          if (nextLine.length > 0 && !nextLine.match(/^\d+\./)) { 
+            newTitle = nextLine;
             break;
           }
         }
