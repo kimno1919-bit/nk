@@ -1,19 +1,63 @@
-import { createClient } from "@/utils/supabase/server";
+"use client";
+import { createClient } from "@/utils/supabase/client";
 import Link from "next/link";
 import { Button } from "@/components/Button";
+import { useEffect, useState, Suspense } from "react";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { Pagination } from "@/components/Pagination";
 
-export default async function AdminSchedulePage() {
-  const supabase = await createClient();
-  const { data: schedules } = await supabase
-    .from("schedules")
-    .select("*")
-    .order("date", { ascending: false });
+function AdminScheduleContent() {
+  const supabase = createClient();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+
+  const [schedules, setSchedules] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [totalCount, setTotalCount] = useState(0);
+
+  const urlPage = parseInt(searchParams.get("page") || "1", 10);
+  const [currentPage, setCurrentPage] = useState(urlPage);
+  const ITEMS_PER_PAGE = 15;
+
+  const updateUrl = (page: number) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("page", page.toString());
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  };
+
+  useEffect(() => {
+    const fetchSchedules = async () => {
+      setIsLoading(true);
+      
+      const { count } = await supabase
+        .from("schedules")
+        .select("*", { count: "exact", head: true });
+        
+      setTotalCount(count || 0);
+
+      const from = (currentPage - 1) * ITEMS_PER_PAGE;
+      const to = from + ITEMS_PER_PAGE - 1;
+
+      const { data, error } = await supabase
+        .from("schedules")
+        .select("*")
+        .order("date", { ascending: false })
+        .range(from, to);
+
+      if (data) setSchedules(data);
+      setIsLoading(false);
+    };
+    fetchSchedules();
+  }, [supabase, currentPage]);
+
+  const totalPages = Math.ceil(totalCount / ITEMS_PER_PAGE);
 
   return (
     <div>
       <div className="flex justify-between items-center mb-8">
         <h2 className="font-serif font-bold text-3xl text-deep-navy">일정 관리</h2>
-        <Link href="/admin/schedule/write">
+        <Link href={`/admin/schedule/write?page=${currentPage}`}>
           <Button variant="primary">새 일정 등록</Button>
         </Link>
       </div>
@@ -30,7 +74,14 @@ export default async function AdminSchedulePage() {
             </tr>
           </thead>
           <tbody>
-            {schedules && schedules.length > 0 ? (
+            {isLoading ? (
+              <tr>
+                <td colSpan={5} className="px-6 py-12 text-center text-ink-2">
+                  <div className="w-6 h-6 border-2 border-deep-navy border-t-transparent rounded-full animate-spin mx-auto mb-2"></div>
+                  데이터를 불러오는 중입니다...
+                </td>
+              </tr>
+            ) : schedules.length > 0 ? (
               schedules.map((schedule) => (
                 <tr key={schedule.id} className="border-b border-line-gray hover:bg-gray-50 transition-colors">
                   <td className="px-6 py-4 font-medium">{schedule.date}</td>
@@ -42,7 +93,7 @@ export default async function AdminSchedulePage() {
                   <td className="px-6 py-4">{schedule.time || "-"}</td>
                   <td className="px-6 py-4 text-ink font-medium">{schedule.title}</td>
                   <td className="px-6 py-4 text-right">
-                    <Link href={`/admin/schedule/write?id=${schedule.id}`} className="text-terracotta hover:underline font-medium">수정</Link>
+                    <Link href={`/admin/schedule/write?id=${schedule.id}&page=${currentPage}`} className="text-terracotta hover:underline font-medium">수정</Link>
                   </td>
                 </tr>
               ))
@@ -56,6 +107,25 @@ export default async function AdminSchedulePage() {
           </tbody>
         </table>
       </div>
+      
+      {!isLoading && totalPages > 1 && (
+        <Pagination 
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={(page) => {
+            setCurrentPage(page);
+            updateUrl(page);
+          }}
+        />
+      )}
     </div>
+  );
+}
+
+export default function AdminSchedulePage() {
+  return (
+    <Suspense fallback={<div className="p-8 text-center">로딩 중...</div>}>
+      <AdminScheduleContent />
+    </Suspense>
   );
 }
