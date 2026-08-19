@@ -128,8 +128,7 @@ export function CommentNotification() {
                   </span>
                 </div>
                 <Button 
-                  variant="outline" 
-                  size="sm" 
+                  variant="tertiary" 
                   onClick={() => markAsRead(comment.id, comment.board_type)}
                   className="text-xs py-1 px-2 border-deep-navy/20 hover:bg-deep-navy hover:text-white"
                 >
