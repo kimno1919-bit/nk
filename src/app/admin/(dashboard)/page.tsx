@@ -1,6 +1,7 @@
 import { Card } from "@/components/Card";
 import Link from "next/link";
 import { Button } from "@/components/Button";
+import { CommentNotification } from "@/components/admin/CommentNotification";
 
 export default function AdminDashboardPage() {
   return (
@@ -11,6 +12,8 @@ export default function AdminDashboardPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <CommentNotification />
+
         <Card className="!p-8 hover:border-deep-navy/30 transition-colors">
           <h3 className="font-bold text-xl text-ink mb-4">공지사항 관리</h3>
           <p className="text-ink-2 mb-6 leading-relaxed">
