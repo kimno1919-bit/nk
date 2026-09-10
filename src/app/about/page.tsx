@@ -55,7 +55,7 @@ export default function AboutPage() {
             <Card bg="warm-sand" className="!p-8">
               <h3 className="font-serif font-bold text-2xl text-deep-navy mb-4">비전 (Vision)</h3>
               <p className="text-ink-2 leading-relaxed text-[16px] break-keep">
-                남과 북의 청년들이 복음 안에서 하나되어 통일 한국의 영적 리더로 세워지는 것을 꿈꿉니다.
+                남과 북의 청년들이 함께 복음 안에서 하나되어 통일 한국의 영적 리더로 세워지는 것을 꿈꿉니다.
               </p>
             </Card>
             <Card bg="warm-sand" className="!p-8">
