@@ -45,22 +45,32 @@ function NoticeForm() {
       setUploading(true);
       if (!e.target.files || e.target.files.length === 0) return;
 
-      const file = e.target.files[0];
-      const fileExt = file.name.split(".").pop();
-      const fileName = `${Math.random()}.${fileExt}`;
-      const filePath = `${fileName}`;
+      const files = Array.from(e.target.files);
+      const newUrls: string[] = [];
 
-      const { error: uploadError } = await supabase.storage
-        .from("media")
-        .upload(filePath, file);
+      for (const file of files) {
+        const fileExt = file.name.split(".").pop();
+        const fileName = `${Math.random()}.${fileExt}`;
+        const filePath = `${fileName}`;
 
-      if (uploadError) {
-        alert("업로드 실패: Storage 버킷 'media'가 존재하지 않거나 권한이 없습니다.");
-        return;
+        const { error: uploadError } = await supabase.storage
+          .from("media")
+          .upload(filePath, file);
+
+        if (uploadError) {
+          alert(`업로드 실패 (${file.name}): Storage 버킷 'media'가 존재하지 않거나 권한이 없습니다.`);
+          continue;
+        }
+
+        const { data } = supabase.storage.from("media").getPublicUrl(filePath);
+        if (data?.publicUrl) {
+          newUrls.push(data.publicUrl);
+        }
       }
 
-      const { data } = supabase.storage.from("media").getPublicUrl(filePath);
-      setImageUrls(prev => [...prev, data.publicUrl]);
+      if (newUrls.length > 0) {
+        setImageUrls(prev => [...prev, ...newUrls]);
+      }
     } catch (error) {
       console.log(error);
     } finally {
@@ -130,6 +140,7 @@ function NoticeForm() {
              <input 
                type="file" 
                accept="image/*"
+               multiple
                className="hidden"
                ref={fileInputRef}
                onChange={handleFileUpload}
