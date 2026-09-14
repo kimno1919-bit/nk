@@ -16,7 +16,7 @@ function NoticeForm() {
   const [category, setCategory] = useState("일반");
   const [isPublic, setIsPublic] = useState(true);
   const [date, setDate] = useState(() => new Date().toISOString().split('T')[0]);
-  const [imageUrl, setImageUrl] = useState("");
+  const [imageUrls, setImageUrls] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -30,7 +30,7 @@ function NoticeForm() {
           setContent(data.content || "");
           setCategory(data.category);
           setIsPublic(data.is_public);
-          setImageUrl(data.image_url || "");
+          setImageUrls(data.image_url ? data.image_url.split(',') : []);
           if (data.created_at) {
             setDate(data.created_at.split('T')[0]);
           }
@@ -60,7 +60,7 @@ function NoticeForm() {
       }
 
       const { data } = supabase.storage.from("media").getPublicUrl(filePath);
-      setImageUrl(data.publicUrl);
+      setImageUrls(prev => [...prev, data.publicUrl]);
     } catch (error) {
       console.log(error);
     } finally {
@@ -78,7 +78,7 @@ function NoticeForm() {
       content, 
       category, 
       is_public: isPublic,
-      image_url: imageUrl,
+      image_url: imageUrls.join(','),
       created_at: new Date(date).toISOString() 
     };
 
@@ -135,17 +135,21 @@ function NoticeForm() {
                onChange={handleFileUpload}
              />
           </div>
-          {imageUrl && (
-            <div className="w-48 h-48 rounded overflow-hidden border border-line-gray relative bg-paper-cream group">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={imageUrl} alt="preview" className="w-full h-full object-cover" />
-              <button 
-                type="button" 
-                onClick={() => setImageUrl("")}
-                className="absolute top-1 right-1 bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity font-bold text-xs shadow"
-              >
-                X
-              </button>
+          {imageUrls.length > 0 && (
+            <div className="flex flex-wrap gap-4">
+              {imageUrls.map((url, idx) => (
+                <div key={idx} className="w-48 h-48 rounded overflow-hidden border border-line-gray relative bg-paper-cream group">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={url} alt={`preview ${idx}`} className="w-full h-full object-cover" />
+                  <button 
+                    type="button" 
+                    onClick={() => setImageUrls(prev => prev.filter((_, i) => i !== idx))}
+                    className="absolute top-1 right-1 bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity font-bold text-xs shadow"
+                  >
+                    X
+                  </button>
+                </div>
+              ))}
             </div>
           )}
         </div>

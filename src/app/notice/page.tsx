@@ -124,9 +124,13 @@ export default function NoticePage() {
                   <h3 className={`font-bold text-ink group-hover:text-deep-navy transition-colors mb-3 ${isExpanded ? 'text-2xl' : 'text-[17px]'}`}>{item.title}</h3>
                   
                   {isExpanded && item.image_url && (
-                    <div className="mb-6 rounded-xl overflow-hidden border border-line-gray">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={item.image_url} alt={item.title} className="w-full h-auto object-cover" />
+                    <div className="mb-6 space-y-4">
+                      {item.image_url.split(',').map((url: string, idx: number) => (
+                        <div key={idx} className="rounded-xl overflow-hidden border border-line-gray">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={url} alt={`${item.title} ${idx + 1}`} className="w-full h-auto object-cover" />
+                        </div>
+                      ))}
                     </div>
                   )}
 
