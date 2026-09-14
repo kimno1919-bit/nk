@@ -17,6 +17,7 @@ function NoticeForm() {
   const [isPublic, setIsPublic] = useState(true);
   const [date, setDate] = useState(() => new Date().toISOString().split('T')[0]);
   const [imageUrls, setImageUrls] = useState<string[]>([]);
+  const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -79,6 +80,23 @@ function NoticeForm() {
     }
   };
 
+  const handleDragStart = (index: number) => {
+    setDraggedIndex(index);
+  };
+
+  const handleDragOver = (e: React.DragEvent, index: number) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (index: number) => {
+    if (draggedIndex === null || draggedIndex === index) return;
+    const updated = [...imageUrls];
+    const [moved] = updated.splice(draggedIndex, 1);
+    updated.splice(index, 0, moved);
+    setImageUrls(updated);
+    setDraggedIndex(null);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -132,7 +150,9 @@ function NoticeForm() {
       <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-xl border border-line-gray shadow-sm">
         
         <div>
-          <label className="block text-sm font-bold text-ink mb-2">이미지 업로드 (선택사항)</label>
+          <label className="block text-sm font-bold text-ink mb-2">
+            이미지 업로드 (선택사항 <span className="text-xs font-normal text-ink-2">- 이미지 드래그하여 순서 변경 가능</span>)
+          </label>
           <div className="flex items-center gap-4 mb-4">
              <Button type="button" variant="secondary" onClick={() => fileInputRef.current?.click()} disabled={uploading}>
                {uploading ? "업로드 중..." : "이미지 파일 선택"}
@@ -149,13 +169,26 @@ function NoticeForm() {
           {imageUrls.length > 0 && (
             <div className="flex flex-wrap gap-4">
               {imageUrls.map((url, idx) => (
-                <div key={idx} className="w-48 h-48 rounded overflow-hidden border border-line-gray relative bg-paper-cream group">
+                <div 
+                  key={idx}
+                  draggable
+                  onDragStart={() => handleDragStart(idx)}
+                  onDragOver={(e) => handleDragOver(e, idx)}
+                  onDrop={() => handleDrop(idx)}
+                  className={`w-48 h-48 rounded overflow-hidden border relative bg-paper-cream group cursor-grab active:cursor-grabbing transition-all ${draggedIndex === idx ? 'opacity-40 scale-95 border-dashed border-deep-navy' : 'border-line-gray shadow-sm hover:shadow-md'}`}
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={url} alt={`preview ${idx}`} className="w-full h-full object-cover" />
+                  <img src={url} alt={`preview ${idx}`} className="w-full h-full object-cover pointer-events-none" />
+                  <span className="absolute bottom-1 left-1 bg-black/60 text-white px-2 py-0.5 rounded text-xs font-bold">
+                    {idx + 1}
+                  </span>
                   <button 
                     type="button" 
-                    onClick={() => setImageUrls(prev => prev.filter((_, i) => i !== idx))}
-                    className="absolute top-1 right-1 bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity font-bold text-xs shadow"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setImageUrls(prev => prev.filter((_, i) => i !== idx));
+                    }}
+                    className="absolute top-1 right-1 bg-red-500 text-white w-6 h-6 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity font-bold text-xs shadow z-10"
                   >
                     X
                   </button>
