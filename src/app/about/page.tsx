@@ -36,9 +36,9 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="mt-10 text-right">
-            <span className="block font-serif font-bold text-2xl text-deep-navy mb-2">남북청년연합선교회 조재필 목사</span>
+            <span className="block font-serif font-bold text-2xl text-deep-navy mb-2">남북청년연합선교회</span>
             <span className="block text-ink-2 text-[15px] leading-relaxed">
-              탈북민 선교사(2011~현재)
+              탈북민 선교(2011~현재)
             </span>
           </div>
         </section>
