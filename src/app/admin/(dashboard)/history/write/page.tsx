@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from "react";
 import { createClient } from "@/utils/supabase/client";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/Button";
+import { normalizeMonth } from "@/utils/historySort";
 
 function HistoryForm() {
   const router = useRouter();
@@ -42,7 +43,7 @@ function HistoryForm() {
 
     const payload = { 
       year, 
-      month, 
+      month: normalizeMonth(month), 
       category, 
       title, 
       content,
@@ -136,7 +137,7 @@ function HistoryForm() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-bold text-ink mb-2">정렬 순서 (숫자가 낮을수록 위로)</label>
+            <label className="block text-sm font-bold text-ink mb-2">정렬 순서 (같은 월 안에서 낮을수록 위로)</label>
             <input 
               type="number" 
               value={sortOrder}

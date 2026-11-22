@@ -5,6 +5,7 @@ import { Button } from "@/components/Button";
 import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { Pagination } from "@/components/Pagination";
+import { sortHistories } from "@/utils/historySort";
 
 function AdminHistoryContent() {
   const supabase = createClient();
@@ -39,14 +40,11 @@ function AdminHistoryContent() {
       const from = (currentPage - 1) * ITEMS_PER_PAGE;
       const to = from + ITEMS_PER_PAGE - 1;
 
-      const { data, error } = await supabase
+      const { data } = await supabase
         .from("histories")
-        .select("*")
-        .order("year", { ascending: false })
-        .order("sort_order", { ascending: true })
-        .range(from, to);
+        .select("*");
 
-      if (data) setHistories(data);
+      if (data) setHistories(sortHistories(data).slice(from, to + 1));
       setIsLoading(false);
     };
     fetchHistories();

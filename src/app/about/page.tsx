@@ -14,13 +14,13 @@ export default function AboutPage() {
 
       <div className="mx-auto max-w-[800px] w-full px-5 mt-16 space-y-24">
         
-        {/* 대표 인사말 */}
+        {/* 인사말 */}
         <section>
           <div className="flex items-center gap-3 mb-8">
             <span className="text-terracotta font-bold tracking-widest text-sm">GREETING</span>
             <div className="h-[1px] flex-1 bg-line-gray"></div>
           </div>
-          <h2 className="font-serif font-bold text-3xl text-deep-navy mb-8">대표 인사말</h2>
+          <h2 className="font-serif font-bold text-3xl text-deep-navy mb-8">인사말</h2>
           <div className="space-y-6 text-[17px] text-ink-2 leading-[1.8] break-keep">
             <p>
               우리는 현재 남북 분단 73년의 아픔의 현실을 가지고 있습니다. 특별히 북녘땅에는 독재 체제와 경제적 어려움으로 백성들이 고통을 당하고 있습니다. 그곳에는 기독교인들에 대한 탄압으로 복음이 막혀 있습니다.
@@ -36,10 +36,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="mt-10 text-right">
-            <span className="block text-ink font-bold text-lg">남북청년연합선교회 대표</span>
-            <span className="block font-serif font-bold text-2xl text-deep-navy mt-1 mb-2">조여호수아 선교사(목사)</span>
+            <span className="block font-serif font-bold text-2xl text-deep-navy mb-2">남북청년연합선교회 조재필 목사</span>
             <span className="block text-ink-2 text-[15px] leading-relaxed">
-              미국 Southwestern Baptist Theological Seminary M.Div.<br />
               탈북민 선교사(2011~현재)
             </span>
           </div>

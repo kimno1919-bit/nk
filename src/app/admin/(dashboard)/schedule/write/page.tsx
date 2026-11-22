@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from "react";
 import { createClient } from "@/utils/supabase/client";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/Button";
+import { todayLocal } from "@/utils/date";
 
 function ScheduleForm() {
   const router = useRouter();
@@ -11,7 +12,7 @@ function ScheduleForm() {
   const id = searchParams.get("id");
   const supabase = createClient();
 
-  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
+  const [date, setDate] = useState(todayLocal());
   const [time, setTime] = useState("");
   const [category, setCategory] = useState("정기모임");
   const [title, setTitle] = useState("");

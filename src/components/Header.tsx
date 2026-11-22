@@ -42,13 +42,6 @@ export function Header() {
             <Link href="/qt" className="hover:text-deep-navy transition-colors">3331 QT</Link>
             <Link href="/notice" className="hover:text-deep-navy transition-colors">공지사항</Link>
           </nav>
-          
-          {/* 우측 영역 (후원하기 버튼) */}
-          <div className="flex items-center gap-4">
-            <Link href="/support">
-              <Button variant="primary" className="!py-2 !px-3 sm:!px-4 !text-[13px] sm:!text-[15px]">후원하기</Button>
-            </Link>
-          </div>
         </div>
       </header>
 

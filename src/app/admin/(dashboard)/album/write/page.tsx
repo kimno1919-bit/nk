@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense, useRef } from "react";
 import { createClient } from "@/utils/supabase/client";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/Button";
+import { todayLocal } from "@/utils/date";
 
 function AlbumForm() {
   const router = useRouter();
@@ -15,7 +16,7 @@ function AlbumForm() {
   const [content, setContent] = useState("");
   const [mediaUrls, setMediaUrls] = useState<string[]>([]);
   const [isPublic, setIsPublic] = useState(true);
-  const [date, setDate] = useState(() => new Date().toISOString().split('T')[0]);
+  const [date, setDate] = useState(() => todayLocal());
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);

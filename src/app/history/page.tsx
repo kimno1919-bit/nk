@@ -2,6 +2,7 @@ import { Card } from "@/components/Card";
 import { createClient } from "@/utils/supabase/server";
 import Link from "next/link";
 import { Button } from "@/components/Button";
+import { sortHistories } from "@/utils/historySort";
 
 const CATEGORY_COLORS: Record<string, string> = {
   "QT": "bg-pine-green/10 text-pine-green",
@@ -22,7 +23,7 @@ export default async function HistoryPage() {
 
   const groupedHistories: Record<number, any[]> = {};
   if (histories) {
-    histories.forEach((h) => {
+    sortHistories(histories).forEach((h) => {
       if (!groupedHistories[h.year]) {
         groupedHistories[h.year] = [];
       }

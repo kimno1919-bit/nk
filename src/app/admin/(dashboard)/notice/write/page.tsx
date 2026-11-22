@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense, useRef } from "react";
 import { createClient } from "@/utils/supabase/client";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/Button";
+import { todayLocal } from "@/utils/date";
 
 function NoticeForm() {
   const router = useRouter();
@@ -15,7 +16,7 @@ function NoticeForm() {
   const [content, setContent] = useState("");
   const [category, setCategory] = useState("일반");
   const [isPublic, setIsPublic] = useState(true);
-  const [date, setDate] = useState(() => new Date().toISOString().split('T')[0]);
+  const [date, setDate] = useState(() => todayLocal());
   const [imageUrls, setImageUrls] = useState<string[]>([]);
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
   const [loading, setLoading] = useState(false);

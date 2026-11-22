@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from "react";
 import { createClient } from "@/utils/supabase/client";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/Button";
+import { todayLocal } from "@/utils/date";
 
 function QtForm() {
   const router = useRouter();
@@ -22,7 +23,7 @@ function QtForm() {
   };
 
   // 오늘 날짜 기본값 세팅 (YYYY-MM-DD 형식)
-  const today = new Date().toISOString().split('T')[0];
+  const today = todayLocal();
 
   const [date, setDate] = useState(today);
   const [book, setBook] = useState("");

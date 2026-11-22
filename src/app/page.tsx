@@ -4,10 +4,16 @@ import { Card } from "@/components/Card";
 import { CopyAccountButton } from "@/components/CopyAccountButton";
 import { LatestQts } from "@/components/LatestQts";
 import { LatestAlbums } from "@/components/LatestAlbums";
+import { createClient } from "@/utils/supabase/server";
+import { sortHistories, normalizeMonth } from "@/utils/historySort";
 
 export const revalidate = 60; // 60초마다 캐시 갱신 (ISR)
 
-export default function Home() {
+export default async function Home() {
+  const supabase = await createClient();
+  const { data: historyData } = await supabase.from("histories").select("*");
+  const recentHistories = sortHistories(historyData ?? []).slice(0, 3);
+
   return (
     <div className="flex flex-col w-full">
       {/* 1. Hero Section */}
@@ -24,9 +30,6 @@ export default function Home() {
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
               <Link href="/ministry">
                 <Button variant="secondary" className="h-14 px-8 text-lg">사역 둘러보기</Button>
-              </Link>
-              <Link href="/support">
-                <Button variant="primary" className="h-14 px-8 text-lg">후원하기</Button>
               </Link>
             </div>
           </div>
@@ -107,44 +110,26 @@ export default function Home() {
               </Link>
             </div>
             <div className="space-y-8">
-              {/* 항목 1 */}
-              <div className="flex gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
-                  <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
+              {recentHistories.length === 0 && (
+                <p className="text-ink-2">등록된 연혁이 없습니다.</p>
+              )}
+              {recentHistories.map((item) => (
+                <div key={item.id} className="flex gap-6 group">
+                  <div className="flex flex-col items-center">
+                    <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
+                    <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
+                  </div>
+                  <div className="pb-2">
+                    <span className="text-[13px] text-terracotta font-bold tracking-wider">
+                      {item.year}. {normalizeMonth(String(item.month ?? ""))}
+                    </span>
+                    <h4 className="text-[18px] font-bold text-ink mt-1.5">{item.title}</h4>
+                    {item.content && (
+                      <p className="text-ink-2 mt-2 text-[15px] leading-relaxed line-clamp-2">{item.content}</p>
+                    )}
+                  </div>
                 </div>
-                <div className="pb-2">
-                  <span className="text-[13px] text-terracotta font-bold tracking-wider">2026. 03</span>
-                  <h4 className="text-[18px] font-bold text-ink mt-1.5">리더십 캠프</h4>
-                  <p className="text-ink-2 mt-2 text-[15px] leading-relaxed">남북 청년 리더들이 모여 훈련과 교제를 나누는 캠프를 진행했습니다.</p>
-                </div>
-              </div>
-
-              {/* 항목 2 */}
-              <div className="flex gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
-                  <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
-                </div>
-                <div className="pb-2">
-                  <span className="text-[13px] text-terracotta font-bold tracking-wider">2026. 02</span>
-                  <h4 className="text-[18px] font-bold text-ink mt-1.5">사랑의 연탄 봉사활동</h4>
-                  <p className="text-ink-2 mt-2 text-[15px] leading-relaxed">추운 겨울, 이웃들에게 따뜻한 연탄과 예수님의 사랑을 전했습니다.</p>
-                </div>
-              </div>
-
-              {/* 항목 3 */}
-              <div className="flex gap-6 group">
-                <div className="flex flex-col items-center">
-                  <div className="w-3.5 h-3.5 rounded-full bg-line-gray group-hover:bg-deep-navy transition-colors mt-1.5"></div>
-                  <div className="w-[1px] h-full bg-line-gray group-hover:bg-deep-navy/30 transition-colors mt-2"></div>
-                </div>
-                <div className="pb-2">
-                  <span className="text-[13px] text-terracotta font-bold tracking-wider">2025. 11</span>
-                  <h4 className="text-[18px] font-bold text-ink mt-1.5">석OO 감독 독립영화 초연 시사회</h4>
-                  <p className="text-ink-2 mt-2 text-[15px] leading-relaxed">청년들이 함께 모여 문화 활동과 교제를 가졌습니다.</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
