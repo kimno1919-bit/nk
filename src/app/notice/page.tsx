@@ -5,6 +5,59 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/Button";
 import { createClient } from "@/utils/supabase/client";
 import { NoticeComments } from "./NoticeComments";
+import { LinkPreviewCard } from "@/components/LinkPreviewCard";
+
+const URL_REGEX = /(https?:\/\/[^\s<>"'()[\]{}]+|www\.[^\s<>"'()[\]{}]+)/g;
+
+const extractUrls = (text: string): string[] => {
+  const matches = text.match(URL_REGEX) || [];
+  const cleaned = matches
+    .map((m) => m.replace(/[.,;:!?]+$/, ""))
+    .map((m) => (m.startsWith("http") ? m : `https://${m}`));
+  return Array.from(new Set(cleaned));
+};
+
+const stripStandaloneUrlLines = (text: string): string => {
+  return text
+    .split("\n")
+    .filter((line) => {
+      const trimmed = line.trim();
+      if (!trimmed) return true;
+      const withoutUrl = trimmed.replace(URL_REGEX, "").trim();
+      return withoutUrl.length > 0;
+    })
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+};
+
+const renderContentWithLinks = (text: string) => {
+  const parts = text.split(URL_REGEX);
+
+  return parts.map((part, index) => {
+    if (/^(https?:\/\/|www\.)/.test(part)) {
+      const trimmed = part.replace(/[.,;:!?]+$/, "");
+      const trailing = part.slice(trimmed.length);
+      const href = trimmed.startsWith("http") ? trimmed : `https://${trimmed}`;
+
+      return (
+        <span key={index}>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="text-terracotta underline underline-offset-2 hover:text-deep-navy break-all transition-colors"
+          >
+            {trimmed}
+          </a>
+          {trailing}
+        </span>
+      );
+    }
+    return part;
+  });
+};
 
 export default function NoticePage() {
   const supabase = createClient();
@@ -112,6 +165,8 @@ export default function NoticePage() {
             ) : notices && notices.length > 0 ? (
               notices.map((item) => {
                 const isExpanded = expandedId === item.id;
+                const urls = item.content ? extractUrls(item.content) : [];
+                const displayContent = item.content ? stripStandaloneUrlLines(item.content) : "";
                 return (
                 <div key={item.id} onClick={() => toggleExpand(item.id)} className={`p-6 hover:bg-paper-cream/50 transition-all duration-300 cursor-pointer group ${isExpanded ? 'bg-paper-cream/30' : ''}`}>
                   <div className="flex items-center gap-3 mb-3">
@@ -134,10 +189,25 @@ export default function NoticePage() {
                     </div>
                   )}
 
-                  {item.content && (
-                    <p className={`text-ink-2 whitespace-pre-wrap leading-relaxed ${isExpanded ? 'text-base mb-6' : 'text-sm line-clamp-2 mt-2'}`}>
-                      {item.content}
+                  {displayContent ? (
+                    <p
+                      onClick={isExpanded ? (e) => e.stopPropagation() : undefined}
+                      className={`text-ink-2 whitespace-pre-wrap leading-relaxed ${isExpanded ? 'text-base mb-6 cursor-text' : 'text-sm line-clamp-2 mt-2'}`}
+                    >
+                      {isExpanded ? renderContentWithLinks(displayContent) : displayContent}
                     </p>
+                  ) : (!isExpanded && urls.length > 0 && (
+                    <p className="text-ink-2 text-sm mt-2">
+                      🔗 관련 링크가 포함되어 있습니다.
+                    </p>
+                  ))}
+
+                  {isExpanded && urls.length > 0 && (
+                    <div className="mb-6 space-y-3">
+                      {urls.map((url) => (
+                        <LinkPreviewCard key={url} url={url} />
+                      ))}
+                    </div>
                   )}
 
                   <div className="mt-4 pt-4 border-t border-line-gray/50 flex justify-between items-center">
@@ -150,9 +220,13 @@ export default function NoticePage() {
                     </div>
                     <div>
                       {isExpanded ? (
-                         <span className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors">
-                           접기 ▲
-                         </span>
+                        <button
+                          type="button"
+                          onClick={(e) => { e.stopPropagation(); toggleExpand(item.id); }}
+                          className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors cursor-pointer"
+                        >
+                          접기 ▲
+                        </button>
                       ) : (
                         <span className="text-sm font-bold text-ink-2 group-hover:text-terracotta transition-colors">
                           자세히 보기 ▼

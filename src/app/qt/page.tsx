@@ -338,9 +338,13 @@ function QtContent() {
                       </>
                     )}
                     {isExpanded && (
-                       <span className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors">
-                         접기 ▲
-                       </span>
+                      <button
+                        type="button"
+                        onClick={(e) => { e.stopPropagation(); toggleExpand(qt.id); }}
+                        className="text-sm font-bold text-ink-2 hover:text-deep-navy transition-colors cursor-pointer"
+                      >
+                        접기 ▲
+                      </button>
                     )}
                   </div>
                   {isExpanded && (
