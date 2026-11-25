@@ -21,12 +21,17 @@ function AdminQtContent() {
   const [isLoading, setIsLoading] = useState(true);
   
   // Pagination & Filter state from URL
-  const urlPage = parseInt(searchParams.get("page") || "1", 10);
+  const urlPage = Math.max(1, parseInt(searchParams.get("page") || "1", 10) || 1);
   const urlBook = searchParams.get("book") || "모든 성경";
 
   const [currentPage, setCurrentPage] = useState(urlPage);
   const [selectedBook, setSelectedBook] = useState(urlBook);
   const ITEMS_PER_PAGE = 20;
+
+  useEffect(() => {
+    setCurrentPage(Math.max(1, parseInt(searchParams.get("page") || "1", 10) || 1));
+    setSelectedBook(searchParams.get("book") || "모든 성경");
+  }, [searchParams]);
 
   // Sync state to URL helper
   const updateUrl = (page: number, book: string) => {

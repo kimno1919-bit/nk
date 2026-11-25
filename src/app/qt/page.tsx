@@ -23,7 +23,7 @@ function QtContent() {
   const [qts, setQts] = useState<any[]>([]);
   
   // URL에서 초기 상태 읽기
-  const urlPage = parseInt(searchParams.get("page") || "1", 10);
+  const urlPage = Math.max(1, parseInt(searchParams.get("page") || "1", 10) || 1);
   const urlBook = searchParams.get("book") || "모든 성경";
   const urlChapter = searchParams.get("chapter") || "모든 장";
   const urlSort = searchParams.get("sort") || "최신순";
@@ -36,6 +36,23 @@ function QtContent() {
   const [isLoading, setIsLoading] = useState(true);
   const [sortOrder, setSortOrder] = useState(urlSort);
   const [searchQuery, setSearchQuery] = useState(urlSearch);
+
+  // URL 쿼리가 변경될 때(예: 상단 메뉴 '3331 QT' 재클릭, 뒤로/앞으로가기) 상태 동기화
+  useEffect(() => {
+    const nextPage = Math.max(1, parseInt(searchParams.get("page") || "1", 10) || 1);
+    const nextBook = searchParams.get("book") || "모든 성경";
+    const nextChapter = searchParams.get("chapter") || "모든 장";
+    const nextSort = searchParams.get("sort") || "최신순";
+    const nextSearch = searchParams.get("search") || "";
+    const nextId = searchParams.get("id");
+
+    setCurrentPage(nextPage);
+    setSelectedBook(nextBook);
+    setSelectedChapter(nextChapter);
+    setSortOrder(nextSort);
+    setSearchQuery(nextSearch);
+    setExpandedId(nextId);
+  }, [searchParams]);
 
   // URL 동기화 함수
   const updateUrl = (page: number, book: string, chapter: string, sort: string, search: string = "") => {
